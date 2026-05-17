@@ -45,4 +45,7 @@ layout: layouts/base.njk
       <textarea name="message" required rows="6" style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; resize:vertical;"></textarea>
     </div>
 
-    <button type="submit" style="align-self:flex-start
+       <button type="submit" style="align-self:flex-start; background:var(--navy); color:#fff; border:none; padding:12px 28px; border-radius:2px; font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:background .15s;">Send Message →</button>
+  </form>
+
+</div>
