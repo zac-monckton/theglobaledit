@@ -6,7 +6,7 @@ layout: layouts/article.njk
 category: Credit & Points
 subcategory: Credit & Points
 parentCategory: Personal Finance
-featuredImage: "[https://www.pexels.com/photo/credit-card-variety-pile-in-close-up-view-32641818"
+featuredImage: "https://www.pexels.com/photo/credit-card-variety-pile-in-close-up-view-32641818"
 readTime: 10
 toc:
   - Understanding Point Value
