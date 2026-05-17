@@ -16,7 +16,7 @@
   .dropdown {
     display: none;
     position: absolute;
-    top: calc(100% + 12px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     background: var(--warm-white);
@@ -28,7 +28,19 @@
     z-index: 200;
     padding: .5rem 0;
   }
+  /* Invisible bridge prevents gap from closing dropdown */
+  .dropdown::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+  }
   .nav-item:hover .dropdown { display: block; }
+  .nav-item:not(:hover) .dropdown { pointer-events: none; }
+  /* Wider hover target on nav items */
+  .nav-item { padding-bottom: 8px; margin-bottom: -8px; }
 
   .dropdown-section {
     padding: .4rem 0;
