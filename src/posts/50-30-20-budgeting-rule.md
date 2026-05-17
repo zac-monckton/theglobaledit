@@ -1,7 +1,7 @@
 ---
 title: "Master Your Money with the 50/30/20 Budgeting Rule"
 description: "The simplest framework for getting your finances under control — and how to adapt it for your own life and goals."
-date: 2025-11-15
+date: 2026-05-05
 layout: layouts/article.njk
 category: Personal Finance
 subcategory: Budgeting
