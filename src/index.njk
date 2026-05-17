@@ -1,0 +1,204 @@
+---
+layout: layouts/base.njk
+title: Where Smart Money Meets Smart Travel
+---
+
+{# Grab the latest posts #}
+{%- set allPosts = collections.posts -%}
+{%- set featured = allPosts[0] -%}
+{%- set sidebarPosts = allPosts | limit(4) -%}
+{%- set travelPosts = collections.travel -%}
+{%- set financePosts = collections.finance -%}
+
+<!-- HERO -->
+<section class="hero">
+  {% if featured %}
+  <a href="{{ featured.url }}" class="hero-featured">
+    <img src="{{ featured.data.featuredImage }}" alt="{{ featured.data.title }}">
+    <div class="hero-featured-overlay">
+      <span class="tag">{{ featured.data.category }}</span>
+      <h2 class="hero-title-lg">{{ featured.data.title }}</h2>
+      <p class="hero-meta">{{ featured.date | dateDisplay }} &nbsp;·&nbsp; {{ featured.data.readTime | default("5") }} min read</p>
+    </div>
+  </a>
+  {% endif %}
+
+  <div class="hero-sidebar">
+    {%- for post in sidebarPosts %}
+    <a href="{{ post.url }}" class="hero-sidebar-item">
+      <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}">
+      <div>
+        <span class="tag {% if post.data.parentCategory == 'Personal Finance' %}navy{% endif %}">{{ post.data.category }}</span>
+        <div class="hero-sidebar-title">{{ post.data.title }}</div>
+        <div class="hero-sidebar-meta">{{ post.date | dateDisplay }}</div>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<!-- CATEGORY STRIP -->
+<div class="cat-strip">
+  <div class="cat-strip-inner">
+    <a href="/europe/" class="cat-item">
+      <img src="/images/cat-europe.jpg" alt="Europe">
+      <div class="cat-item-label">
+        <span>Europe</span>
+        <small>Destinations</small>
+      </div>
+    </a>
+    <a href="/north-america/" class="cat-item">
+      <img src="/images/cat-northamerica.jpg" alt="North America">
+      <div class="cat-item-label">
+        <span>North America</span>
+        <small>Destinations</small>
+      </div>
+    </a>
+    <a href="/asia/" class="cat-item">
+      <img src="/images/cat-asia.jpg" alt="Asia">
+      <div class="cat-item-label">
+        <span>Asia</span>
+        <small>Destinations</small>
+      </div>
+    </a>
+    <a href="/investing/" class="cat-item">
+      <img src="/images/cat-investing.jpg" alt="Investing">
+      <div class="cat-item-label">
+        <span>Investing</span>
+        <small>Personal Finance</small>
+      </div>
+    </a>
+    <a href="/credit-points/" class="cat-item">
+      <img src="/images/cat-creditcards.jpg" alt="Credit &amp; Points">
+      <div class="cat-item-label">
+        <span>Credit &amp; Points</span>
+        <small>Personal Finance</small>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- LATEST TRAVEL -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Travel</h2>
+      <div class="section-header-line"></div>
+      <a href="/travel/">All Travel →</a>
+    </div>
+    <div class="split-section">
+      <div>
+        {%- for post in travelPosts | limit(3) %}
+        <a href="{{ post.url }}" class="card-h">
+          <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}">
+          <div>
+            <div class="card-meta">
+              <span class="tag">{{ post.data.category }}</span>
+              <span class="card-date">{{ post.date | dateDisplay }}</span>
+            </div>
+            <div class="card-title lg">{{ post.data.title }}</div>
+            <p class="card-excerpt">{{ post.data.description }}</p>
+          </div>
+        </a>
+        {%- endfor %}
+      </div>
+
+      <aside>
+        <div class="sidebar-widget">
+          <h3>Trending This Week</h3>
+          {%- for post in allPosts | limit(3) %}
+          <a href="{{ post.url }}" class="sidebar-list-item" style="text-decoration:none;">
+            <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}">
+            <div>
+              <div class="sidebar-list-title">{{ post.data.title }}</div>
+              <div class="sidebar-list-meta">{{ post.data.category }}</div>
+            </div>
+          </a>
+          {%- endfor %}
+        </div>
+
+        <div class="sidebar-widget" style="background:var(--navy);border-color:var(--navy);">
+          <h3 style="color:var(--gold);border-color:rgba(255,255,255,.1);">The Weekly Edit</h3>
+          <p style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:1rem;">One email a week. The best articles, deals, and points tips — curated just for you.</p>
+          <a href="#newsletter" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;">Subscribe Free</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL FINANCE -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Personal Finance</h2>
+      <div class="section-header-line"></div>
+      <a href="/finance/">All Finance →</a>
+    </div>
+
+    <div class="card-grid cols-3" style="margin-bottom:2.5rem;">
+      {%- for post in financePosts | limit(2) %}
+      <a href="{{ post.url }}" style="text-decoration:none;" class="card">
+        <div class="card-img">
+          <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}">
+        </div>
+        <div class="card-meta">
+          <span class="tag navy">{{ post.data.category }}</span>
+          <span class="card-date">{{ post.date | dateDisplay }}</span>
+        </div>
+        <div class="card-title">{{ post.data.title }}</div>
+        <p class="card-excerpt">{{ post.data.description }}</p>
+      </a>
+      {%- endfor %}
+
+      <!-- Finance topics nav card -->
+      <div style="background:var(--navy);padding:1.5rem;border-radius:2px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500;">Finance Topics</div>
+          <a href="/investing/" style="display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-size:14px;text-decoration:none;">Investment Accounts <span style="color:var(--gold);">→</span></a>
+          <a href="/budgeting/" style="display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-size:14px;text-decoration:none;">Budgeting <span style="color:var(--gold);">→</span></a>
+          <a href="/credit-points/" style="display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-size:14px;text-decoration:none;">Credit &amp; Points <span style="color:var(--gold);">→</span></a>
+          <a href="/finance/" style="display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;color:#fff;font-size:14px;text-decoration:none;">Tax &amp; Retirement <span style="color:var(--gold);">→</span></a>
+        </div>
+        <a href="/finance/" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:9px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-top:1.5rem;text-decoration:none;">All Finance Articles</a>
+      </div>
+    </div>
+
+    <div class="card-grid cols-4">
+      <div class="finance-card">
+        <div class="icon"><i class="ti ti-credit-card" aria-hidden="true"></i></div>
+        <h3>Credit Card Rewards</h3>
+        <p>Maximize points, miles, and cash back with the right cards for your spending style.</p>
+      </div>
+      <div class="finance-card">
+        <div class="icon"><i class="ti ti-chart-line" aria-hidden="true"></i></div>
+        <h3>Investment Accounts</h3>
+        <p>From 401(k)s to Roth IRAs — how to pick the right account and grow your wealth.</p>
+      </div>
+      <div class="finance-card">
+        <div class="icon"><i class="ti ti-calculator" aria-hidden="true"></i></div>
+        <h3>Budgeting</h3>
+        <p>Practical frameworks to manage your money so you can afford to live — and travel — well.</p>
+      </div>
+      <div class="finance-card">
+        <div class="icon"><i class="ti ti-building-bank" aria-hidden="true"></i></div>
+        <h3>Tax Strategy</h3>
+        <p>Keep more of what you earn. Smart tax moves for travelers, freelancers, and families.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-inner">
+    <h2>The Weekly Edit</h2>
+    <p>Join thousands of readers getting the best travel guides, credit card tips, and money advice — every week, completely free.</p>
+    <!-- Replace the form below with your email provider's embed code (Mailchimp, ConvertKit, etc.) -->
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="your@email.com" aria-label="Email address">
+      <button type="submit">Subscribe →</button>
+    </form>
+    <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>

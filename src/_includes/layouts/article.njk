@@ -1,0 +1,91 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <img src="{{ featuredImage }}" alt="{{ title }}">
+  <div class="article-hero-overlay">
+    <div class="article-hero-content">
+      <div style="margin-bottom: .75rem;">
+        <span class="tag">{{ category }}</span>
+        {% if subcategory %}&nbsp;<span class="tag">{{ subcategory }}</span>{% endif %}
+      </div>
+      <h1 class="article-headline">{{ title }}</h1>
+      <div class="article-byline">
+        <span>By {{ author | default("The Global Edit") }}</span>
+        <span>{{ date | dateDisplay }}</span>
+        <span>{{ readTime | default("5") }} min read</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY + SIDEBAR -->
+<div class="article-layout">
+  <article class="article-content">
+    {{ content | safe }}
+  </article>
+
+  <aside class="article-sidebar">
+    <!-- Table of Contents -->
+    {% if toc %}
+    <div class="sidebar-widget">
+      <h3>Table of Contents</h3>
+      {% for item in toc %}
+      <a href="#section-{{ loop.index }}" class="toc-item">
+        <span class="toc-num">{{ loop.index }}</span>
+        {{ item }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Share -->
+    <div class="sidebar-widget">
+      <h3>Share This Article</h3>
+      <div style="display:flex;flex-direction:column;gap:.5rem;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.75rem;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;">
+          <i class="ti ti-brand-facebook" style="color:#1877F2;font-size:17px;" aria-hidden="true"></i> Share on Facebook
+        </a>
+        <a href="https://twitter.com/intent/tweet?url={{ page.url }}&text={{ title }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.75rem;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;">
+          <i class="ti ti-brand-x" style="font-size:17px;" aria-hidden="true"></i> Post on X
+        </a>
+      </div>
+    </div>
+
+    <!-- Newsletter CTA -->
+    <div class="sidebar-widget" style="background:var(--navy);border-color:var(--navy);">
+      <h3 style="color:var(--gold);border-color:rgba(255,255,255,.12);">The Weekly Edit</h3>
+      <p style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:1rem;">The best travel and money articles, every week. Free.</p>
+      <!-- Replace with your email provider embed code -->
+      <a href="/#newsletter" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;">Subscribe Free</a>
+    </div>
+  </aside>
+</div>
+
+<!-- RELATED ARTICLES -->
+<div class="related-section" style="background:var(--cream);padding:3.5rem 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="section-header">
+      <h2>You Might Also Like</h2>
+      <div class="section-header-line"></div>
+    </div>
+    <div class="card-grid cols-3">
+      {%- set relatedPosts = collections.posts | selectattr("data.category", "equalto", category) | reject("equalto", page) | list -%}
+      {%- for post in relatedPosts | limit(3) %}
+      <a href="{{ post.url }}" style="text-decoration:none;" class="card">
+        <div class="card-img">
+          <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}">
+        </div>
+        <div class="card-meta">
+          <span class="tag">{{ post.data.category }}</span>
+          <span class="card-date">{{ post.date | dateDisplay }}</span>
+        </div>
+        <div class="card-title">{{ post.data.title }}</div>
+        <p class="card-excerpt">{{ post.data.description }}</p>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</div>

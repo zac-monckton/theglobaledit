@@ -1,0 +1,12 @@
+{
+  "name": "theglobaledit",
+  "version": "1.0.0",
+  "description": "The Global Edit – Where Smart Money Meets Smart Travel",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if title %}{{ title }} – {% endif %}The Global Edit</title>
+<meta name="description" content="{% if description %}{{ description }}{% else %}Where Smart Money Meets Smart Travel{% endif %}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Open Graph -->
+{% if featuredImage %}
+<meta property="og:image" content="{{ featuredImage }}">
+{% endif %}
+<meta property="og:title" content="{% if title %}{{ title }}{% else %}The Global Edit{% endif %}">
+<meta property="og:description" content="{% if description %}{{ description }}{% else %}Where Smart Money Meets Smart Travel{% endif %}">
+<meta property="og:type" content="{% if layout == 'article' %}article{% else %}website{% endif %}">
+
+<!-- Google AdSense — paste your AdSense script tag here when approved -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+{% include "partials/topbar.njk" %}
+{% include "partials/header.njk" %}
+
+<main>
+  {{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}
+
+<script src="/js/main.js"></script>
+</body>
+</html>
