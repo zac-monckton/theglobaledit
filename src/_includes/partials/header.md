@@ -1,0 +1,181 @@
+<style>
+  /* ─── DROPDOWN NAV ─────────────────────────────────────── */
+  .nav-item { position: relative; }
+  .nav-item > a { display: flex; align-items: center; gap: 4px; }
+  .nav-item > a::after {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform .2s;
+  }
+  .nav-item:hover > a::after { transform: rotate(-135deg) translateY(-2px); }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--gold);
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.1);
+    min-width: 200px;
+    z-index: 200;
+    padding: .5rem 0;
+  }
+  .nav-item:hover .dropdown { display: block; }
+
+  .dropdown-section {
+    padding: .4rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .dropdown-section:last-child { border-bottom: none; }
+  .dropdown-label {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding: .4rem 1.25rem .2rem;
+  }
+  .dropdown a {
+    display: block !important;
+    padding: .5rem 1.25rem !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    letter-spacing: .02em !important;
+    text-transform: none !important;
+    color: var(--slate) !important;
+    transition: color .15s, background .15s !important;
+    white-space: nowrap;
+  }
+  .dropdown a:hover {
+    color: var(--navy) !important;
+    background: var(--cream);
+  }
+
+  /* Mobile dropdown */
+  .mobile-dropdown { display: none; padding-left: 1rem; }
+  .mobile-dropdown.open { display: block; }
+  .mobile-dropdown a {
+    font-size: 13px !important;
+    letter-spacing: .04em !important;
+    text-transform: none !important;
+    color: var(--slate) !important;
+    font-weight: 400 !important;
+  }
+  .mobile-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-toggle-arrow {
+    font-size: 18px;
+    color: var(--slate-light);
+    transition: transform .2s;
+    line-height: 1;
+  }
+  .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(90deg); }
+</style>
+
+<header>
+  <div class="header-inner">
+    <nav class="header-nav left">
+
+      <!-- Travel dropdown -->
+      <div class="nav-item">
+        <a href="/travel/">Travel</a>
+        <div class="dropdown">
+          <div class="dropdown-section">
+            <div class="dropdown-label">By Region</div>
+            <a href="/europe/">Europe</a>
+            <a href="/north-america/">North America</a>
+            <a href="/asia/">Asia</a>
+            <a href="/caribbean/">Caribbean</a>
+          </div>
+          <div class="dropdown-section">
+            <div class="dropdown-label">By Type</div>
+            <a href="/hotel-reviews/">Hotel Reviews</a>
+            <a href="/itineraries/">Itineraries</a>
+            <a href="/travel-tips/">Travel Tips</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finance dropdown -->
+      <div class="nav-item">
+        <a href="/finance/">Finance</a>
+        <div class="dropdown">
+          <div class="dropdown-section">
+            <div class="dropdown-label">Topics</div>
+            <a href="/budgeting/">Budgeting</a>
+            <a href="/credit-points/">Credit & Points</a>
+            <a href="/investing/">Investing</a>
+            <a href="/tax-strategy/">Tax Strategy</a>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="header-logo">
+      <a href="/">
+        <div class="logo-wordmark">The Global Edit</div>
+        <div class="logo-tagline">Where Smart Money Meets Smart Travel</div>
+      </a>
+    </div>
+
+    <nav class="header-nav right">
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/#newsletter" class="nav-cta">Newsletter</a>
+    </nav>
+
+    <button class="mobile-nav-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+
+    <!-- Travel -->
+    <div class="mobile-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+      <a href="/travel/" onclick="event.stopPropagation()">Travel</a>
+      <span class="mobile-toggle-arrow">›</span>
+    </div>
+    <div class="mobile-dropdown">
+      <a href="/europe/">Europe</a>
+      <a href="/north-america/">North America</a>
+      <a href="/asia/">Asia</a>
+      <a href="/caribbean/">Caribbean</a>
+      <a href="/hotel-reviews/">Hotel Reviews</a>
+      <a href="/itineraries/">Itineraries</a>
+      <a href="/travel-tips/">Travel Tips</a>
+    </div>
+
+    <!-- Finance -->
+    <div class="mobile-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+      <a href="/finance/" onclick="event.stopPropagation()">Finance</a>
+      <span class="mobile-toggle-arrow">›</span>
+    </div>
+    <div class="mobile-dropdown">
+      <a href="/budgeting/">Budgeting</a>
+      <a href="/credit-points/">Credit & Points</a>
+      <a href="/investing/">Investing</a>
+      <a href="/tax-strategy/">Tax Strategy</a>
+    </div>
+
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="/#newsletter" style="color: var(--gold); border-bottom: none; margin-top: .5rem;">Subscribe to Newsletter →</a>
+  </div>
+</header>
