@@ -6,7 +6,7 @@ layout: layouts/article.njk
 category: Travel
 subcategory: Europe
 parentCategory: Travel
-featuredImage: "https://theglobal-edit.com/wp-content/uploads/2026/05/pexels-photo-26288655.jpeg"
+featuredImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop"
 readTime: 8
 toc:
   - Why "Luxury" Is Relative

@@ -1,12 +1,12 @@
 ---
 title: "Master Your Money with the 50/30/20 Budgeting Rule"
 description: "The simplest framework for getting your finances under control — and how to adapt it for your own life and goals."
-date: 2026-05-05
+date: 2025-11-15
 layout: layouts/article.njk
 category: Personal Finance
 subcategory: Budgeting
 parentCategory: Personal Finance
-featuredImage: "https://theglobal-edit.com/wp-content/uploads/2025/11/pexels-photo-7054417.jpeg"
+featuredImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop"
 readTime: 5
 toc:
   - What Is the 50/30/20 Rule?

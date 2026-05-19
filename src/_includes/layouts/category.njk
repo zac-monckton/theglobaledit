@@ -2,15 +2,26 @@
 layout: layouts/base.njk
 ---
 
-{# Filter posts by this page's category #}
-{%- set categoryPosts = collections.posts | filterByCategory(categoryName) -%}
+{# Filter posts — parent pages use filterByParent, subcategory pages use filterByCategory #}
+{%- if useParentFilter %}
+  {%- set categoryPosts = collections.posts | filterByParent(categoryName) -%}
+{%- else %}
+  {%- set categoryPosts = collections.posts | filterByCategory(categoryName) -%}
+{%- endif %}
 
 <!-- CATEGORY HERO -->
 <div style="background: var(--navy); padding: 3.5rem 0; border-bottom: 1px solid var(--border);">
   <div class="container">
     <div style="max-width: 680px;">
       {% if parentCategory %}
-      <a href="/{{ parentCategory | lower | replace(' ', '-') }}/" style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); font-weight:500; text-decoration:none;">
+      {% if parentCategory == 'Personal Finance' %}
+        {% set parentUrl = '/finance/' %}
+      {% elif parentCategory == 'Travel' %}
+        {% set parentUrl = '/travel/' %}
+      {% else %}
+        {% set parentUrl = '/' + parentCategory | lower | replace(' ', '-') + '/' %}
+      {% endif %}
+      <a href="{{ parentUrl }}" style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); font-weight:500; text-decoration:none;">
         ← {{ parentCategory }}
       </a>
       {% endif %}

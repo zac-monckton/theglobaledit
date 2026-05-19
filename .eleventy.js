@@ -30,20 +30,28 @@ module.exports = function(eleventyConfig) {
     );
   });
 
-  // Collections
+  // Get posts by parent category (for top-level Travel / Finance pages)
+  eleventyConfig.addFilter("filterByParent", (posts, parent) => {
+    return posts.filter(p =>
+      p.data.parentCategory === parent ||
+      p.data.category === parent
+    );
+  });
+
+  // Collections — ** glob picks up all subfolders recursively
   eleventyConfig.addCollection("posts", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/posts/*.md")
+    return collectionApi.getFilteredByGlob("src/posts/**/*.md")
       .sort((a, b) => b.date - a.date);
   });
 
   eleventyConfig.addCollection("travel", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/posts/*.md")
+    return collectionApi.getFilteredByGlob("src/posts/**/*.md")
       .filter(p => p.data.parentCategory === "Travel")
       .sort((a, b) => b.date - a.date);
   });
 
   eleventyConfig.addCollection("finance", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/posts/*.md")
+    return collectionApi.getFilteredByGlob("src/posts/**/*.md")
       .filter(p => p.data.parentCategory === "Personal Finance")
       .sort((a, b) => b.date - a.date);
   });
