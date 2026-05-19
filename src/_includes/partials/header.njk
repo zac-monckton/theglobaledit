@@ -1,6 +1,6 @@
 <style>
   /* ─── DROPDOWN NAV ─────────────────────────────────────── */
-  .nav-item { position: relative; }
+  .nav-item { position: relative; padding-bottom: 8px; margin-bottom: -8px; }
   .nav-item > a { display: flex; align-items: center; gap: 4px; }
   .nav-item > a::after {
     content: '';
@@ -12,7 +12,6 @@
     transition: transform .2s;
   }
   .nav-item:hover > a::after { transform: rotate(-135deg) translateY(-2px); }
-
   .dropdown {
     display: none;
     position: absolute;
@@ -28,81 +27,34 @@
     z-index: 200;
     padding: .5rem 0;
   }
-  /* Invisible bridge prevents gap from closing dropdown */
   .dropdown::before {
     content: '';
     position: absolute;
-    top: -12px;
-    left: 0;
-    right: 0;
-    height: 12px;
+    top: -12px; left: 0; right: 0; height: 12px;
   }
   .nav-item:hover .dropdown { display: block; }
   .nav-item:not(:hover) .dropdown { pointer-events: none; }
-  /* Wider hover target on nav items */
-  .nav-item { padding-bottom: 8px; margin-bottom: -8px; }
-
-  .dropdown-section {
-    padding: .4rem 0;
-    border-bottom: 1px solid var(--border);
-  }
+  .dropdown-section { padding: .4rem 0; border-bottom: 1px solid var(--border); }
   .dropdown-section:last-child { border-bottom: none; }
-  .dropdown-label {
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--gold);
-    padding: .4rem 1.25rem .2rem;
-  }
-  .dropdown a {
-    display: block !important;
-    padding: .5rem 1.25rem !important;
-    font-size: 13px !important;
-    font-weight: 400 !important;
-    letter-spacing: .02em !important;
-    text-transform: none !important;
-    color: var(--slate) !important;
-    transition: color .15s, background .15s !important;
-    white-space: nowrap;
-  }
-  .dropdown a:hover {
-    color: var(--navy) !important;
-    background: var(--cream);
-  }
+  .dropdown-label { font-size: 9px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); padding: .4rem 1.25rem .2rem; }
+  .dropdown a { display: block !important; padding: .5rem 1.25rem !important; font-size: 13px !important; font-weight: 400 !important; letter-spacing: .02em !important; text-transform: none !important; color: var(--slate) !important; transition: color .15s, background .15s !important; white-space: nowrap; }
+  .dropdown a:hover { color: var(--navy) !important; background: var(--cream); }
 
-  /* Mobile dropdown */
+  /* ─── MOBILE MENU ───────────────────────────────────────── */
+  .mobile-menu { display: none; background: var(--warm-white); border-top: 1px solid var(--border); padding: 1rem 1.5rem; }
+  .mobile-menu.open { display: block; }
+  .mobile-menu > a { display: block; padding: 10px 0; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid var(--border); color: var(--navy); text-decoration: none; }
   .mobile-dropdown { display: none; padding-left: 1rem; }
   .mobile-dropdown.open { display: block; }
-  .mobile-dropdown a {
-    font-size: 13px !important;
-    letter-spacing: .04em !important;
-    text-transform: none !important;
-    color: var(--slate) !important;
-    font-weight: 400 !important;
-  }
-  .mobile-toggle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .mobile-toggle-arrow {
-    font-size: 18px;
-    color: var(--slate-light);
-    transition: transform .2s;
-    line-height: 1;
-  }
+  .mobile-dropdown a { display: block !important; padding: 8px 0 !important; font-size: 13px !important; letter-spacing: .04em !important; text-transform: none !important; color: var(--slate) !important; font-weight: 400 !important; border-bottom: 1px solid var(--border); text-decoration: none; }
+  .mobile-toggle { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .mobile-toggle-arrow { font-size: 18px; color: var(--slate-light); transition: transform .2s; line-height: 1; display: inline-block; }
   .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(90deg); }
 </style>
 
 <header>
   <div class="header-inner">
     <nav class="header-nav left">
-
-      <!-- Travel dropdown -->
       <div class="nav-item">
         <a href="/travel/">Travel</a>
         <div class="dropdown">
@@ -121,8 +73,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Finance dropdown -->
       <div class="nav-item">
         <a href="/finance/">Finance</a>
         <div class="dropdown">
@@ -135,7 +85,6 @@
           </div>
         </div>
       </div>
-
     </nav>
 
     <div class="header-logo">
@@ -151,20 +100,18 @@
       <a href="/#newsletter" class="nav-cta">Newsletter</a>
     </nav>
 
-    <button class="mobile-nav-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('open')" aria-label="Open menu">
+    <button class="mobile-nav-toggle" id="mobileMenuBtn" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 
   <!-- MOBILE MENU -->
-  <div class="mobile-menu">
-
-    <!-- Travel -->
-    <div class="mobile-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
-      <a href="/travel/" onclick="event.stopPropagation()">Travel</a>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-toggle" id="travelToggle">
+      <a href="/travel/" id="travelLink">Travel</a>
       <span class="mobile-toggle-arrow">›</span>
     </div>
-    <div class="mobile-dropdown">
+    <div class="mobile-dropdown" id="travelDropdown">
       <a href="/europe/">Europe</a>
       <a href="/north-america/">North America</a>
       <a href="/asia/">Asia</a>
@@ -174,12 +121,11 @@
       <a href="/travel-tips/">Travel Tips</a>
     </div>
 
-    <!-- Finance -->
-    <div class="mobile-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
-      <a href="/finance/" onclick="event.stopPropagation()">Finance</a>
+    <div class="mobile-toggle" id="financeToggle">
+      <a href="/finance/" id="financeLink">Finance</a>
       <span class="mobile-toggle-arrow">›</span>
     </div>
-    <div class="mobile-dropdown">
+    <div class="mobile-dropdown" id="financeDropdown">
       <a href="/budgeting/">Budgeting</a>
       <a href="/credit-points/">Credit & Points</a>
       <a href="/investing/">Investing</a>
@@ -191,3 +137,36 @@
     <a href="/#newsletter" style="color: var(--gold); border-bottom: none; margin-top: .5rem;">Subscribe to Newsletter →</a>
   </div>
 </header>
+
+<script>
+  (function() {
+    var menuBtn = document.getElementById('mobileMenuBtn');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var travelToggle = document.getElementById('travelToggle');
+    var travelDropdown = document.getElementById('travelDropdown');
+    var financeToggle = document.getElementById('financeToggle');
+    var financeDropdown = document.getElementById('financeDropdown');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('open');
+      });
+    }
+
+    if (travelToggle && travelDropdown) {
+      travelToggle.addEventListener('click', function(e) {
+        if (e.target.id === 'travelLink') return;
+        travelToggle.classList.toggle('open');
+        travelDropdown.classList.toggle('open');
+      });
+    }
+
+    if (financeToggle && financeDropdown) {
+      financeToggle.addEventListener('click', function(e) {
+        if (e.target.id === 'financeLink') return;
+        financeToggle.classList.toggle('open');
+        financeDropdown.classList.toggle('open');
+      });
+    }
+  })();
+</script>

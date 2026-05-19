@@ -14,8 +14,9 @@ layout: layouts/base.njk
 
   <p style="font-size: 17px; line-height: 1.85; color: #2d3748; margin-bottom: 2.5rem;">Have a question, story idea, collaboration proposal, or just want to say hello? We'd love to hear from you. Fill out the form below and we'll get back to you within 48 hours.</p>
 
-  <form name="contact" method="POST" data-netlify="true" style="display:flex; flex-direction:column; gap:1.25rem;">
+  <form name="contact" method="POST" action="/success/" data-netlify="true" netlify-honeypot="bot-field" style="display:flex; flex-direction:column; gap:1.25rem;">
     <input type="hidden" name="form-name" value="contact">
+    <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
 
     <div>
       <label style="display:block; font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); margin-bottom:.5rem;">Your Name</label>
@@ -45,7 +46,7 @@ layout: layouts/base.njk
       <textarea name="message" required rows="6" style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; resize:vertical;"></textarea>
     </div>
 
-       <button type="submit" style="align-self:flex-start; background:var(--navy); color:#fff; border:none; padding:12px 28px; border-radius:2px; font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:background .15s;">Send Message →</button>
+    <button type="submit" style="align-self:flex-start; background:var(--navy); color:#fff; border:none; padding:12px 28px; border-radius:2px; font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:background .15s;">Send Message →</button>
   </form>
 
 </div>
