@@ -47,7 +47,8 @@
   .mobile-dropdown { display: none; padding-left: 1rem; }
   .mobile-dropdown.open { display: block; }
   .mobile-dropdown a { display: block !important; padding: 8px 0 !important; font-size: 13px !important; letter-spacing: .04em !important; text-transform: none !important; color: var(--slate) !important; font-weight: 400 !important; border-bottom: 1px solid var(--border); text-decoration: none; }
-  .mobile-toggle { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .mobile-toggle { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0; border-bottom: 1px solid var(--border); -webkit-tap-highlight-color: transparent; }
+  #mobileMenuBtn { cursor: pointer; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
   .mobile-toggle-arrow { font-size: 18px; color: var(--slate-light); transition: transform .2s; line-height: 1; display: inline-block; }
   .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(90deg); }
 </style>
@@ -97,6 +98,9 @@
     <nav class="header-nav right">
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
+      <a href="/search/" aria-label="Search" style="display:flex;align-items:center;" title="Search articles">
+        <i class="ti ti-search" style="font-size:18px;" aria-hidden="true"></i>
+      </a>
       <a href="/#newsletter" class="nav-cta">Newsletter</a>
     </nav>
 
@@ -138,35 +142,4 @@
   </div>
 </header>
 
-<script>
-  (function() {
-    var menuBtn = document.getElementById('mobileMenuBtn');
-    var mobileMenu = document.getElementById('mobileMenu');
-    var travelToggle = document.getElementById('travelToggle');
-    var travelDropdown = document.getElementById('travelDropdown');
-    var financeToggle = document.getElementById('financeToggle');
-    var financeDropdown = document.getElementById('financeDropdown');
 
-    if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', function() {
-        mobileMenu.classList.toggle('open');
-      });
-    }
-
-    if (travelToggle && travelDropdown) {
-      travelToggle.addEventListener('click', function(e) {
-        if (e.target.id === 'travelLink') return;
-        travelToggle.classList.toggle('open');
-        travelDropdown.classList.toggle('open');
-      });
-    }
-
-    if (financeToggle && financeDropdown) {
-      financeToggle.addEventListener('click', function(e) {
-        if (e.target.id === 'financeLink') return;
-        financeToggle.classList.toggle('open');
-        financeDropdown.classList.toggle('open');
-      });
-    }
-  })();
-</script>

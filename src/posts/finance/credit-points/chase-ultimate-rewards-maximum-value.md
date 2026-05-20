@@ -3,7 +3,7 @@ title: "How to Use Chase Ultimate Rewards Points for Maximum Value"
 description: "Most people redeem their points for gift cards or cash back at 1 cent each. Here's how to get 2–5x that value on the same points."
 date: 2026-05-17
 layout: layouts/article.njk
-category: Personal Finance
+category: Credit & Points
 subcategory: Credit & Points
 parentCategory: Personal Finance
 featuredImage: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1200&auto=format&fit=crop"

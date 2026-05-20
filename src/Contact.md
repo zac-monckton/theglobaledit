@@ -12,25 +12,26 @@ layout: layouts/base.njk
 
   <h1 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 600; line-height: 1.2; margin-bottom: 1rem;">Get in Touch</h1>
 
-  <p style="font-size: 17px; line-height: 1.85; color: #2d3748; margin-bottom: 2.5rem;">Have a question, story idea, collaboration proposal, or just want to say hello? We'd love to hear from you. Fill out the form below and we'll get back to you within 48 hours.</p>
+  <p style="font-size: 17px; line-height: 1.85; color: #2d3748; margin-bottom: 2.5rem;">Have a question, story idea, collaboration proposal, or just want to say hello? Fill out the form below and we'll get back to you within 48 hours.</p>
 
-  <form name="contact" method="POST" action="/success/" data-netlify="true" netlify-honeypot="bot-field" style="display:flex; flex-direction:column; gap:1.25rem;">
+  <form name="contact" method="POST" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field" style="display:flex; flex-direction:column; gap:1.25rem;">
+
     <input type="hidden" name="form-name" value="contact">
-    <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+    <div style="display:none;"><input name="bot-field"></div>
 
     <div>
       <label style="display:block; font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); margin-bottom:.5rem;">Your Name</label>
-      <input type="text" name="name" required style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none;">
+      <input type="text" name="name" required style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; box-sizing:border-box;">
     </div>
 
     <div>
       <label style="display:block; font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); margin-bottom:.5rem;">Email Address</label>
-      <input type="email" name="email" required style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none;">
+      <input type="email" name="email" required style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; box-sizing:border-box;">
     </div>
 
     <div>
       <label style="display:block; font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); margin-bottom:.5rem;">Subject</label>
-      <select name="subject" style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none;">
+      <select name="subject" style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; box-sizing:border-box;">
         <option value="">Select a topic...</option>
         <option value="general">General Inquiry</option>
         <option value="collaboration">Collaboration / Partnership</option>
@@ -43,10 +44,11 @@ layout: layouts/base.njk
 
     <div>
       <label style="display:block; font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); margin-bottom:.5rem;">Message</label>
-      <textarea name="message" required rows="6" style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; resize:vertical;"></textarea>
+      <textarea name="message" required rows="6" style="width:100%; padding:10px 14px; border:1px solid var(--border); border-radius:2px; font-family:var(--font-body); font-size:15px; color:var(--navy); background:var(--warm-white); outline:none; resize:vertical; box-sizing:border-box;"></textarea>
     </div>
 
-    <button type="submit" style="align-self:flex-start; background:var(--navy); color:#fff; border:none; padding:12px 28px; border-radius:2px; font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:background .15s;">Send Message →</button>
+    <button type="submit" style="align-self:flex-start; background:var(--navy); color:#fff; border:none; padding:12px 28px; border-radius:2px; font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; cursor:pointer;">Send Message →</button>
+
   </form>
 
 </div>

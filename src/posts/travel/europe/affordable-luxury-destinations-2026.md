@@ -1,21 +1,24 @@
----
-title: "5 \"Luxury\" Destinations That Are Actually Super Affordable in 2026"
+\---
+
+title: "5 "Luxury" Destinations That Are Actually Super Affordable in 2026"
 description: "You don't need a trust fund to travel in style. These destinations deliver five-star experiences at two-star prices."
 date: 2026-05-12
 layout: layouts/article.njk
-category: Travel
+category: Europe
 subcategory: Europe
 parentCategory: Travel
-featuredImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop"
+featuredImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200\&auto=format\&fit=crop"
 readTime: 8
 toc:
-  - Why "Luxury" Is Relative
-  - Albania & the Riviera
-  - Georgia (the Country)
-  - Colombia
-  - Portugal's Alentejo Region
-  - Vietnam's Central Coast
----
+
+* Why "Luxury" Is Relative
+* Albania \& the Riviera
+* Georgia (the Country)
+* Colombia
+* Portugal's Alentejo Region
+* Vietnam's Central Coast
+
+\---
 
 You don't need a trust fund to travel in style. In 2026, a handful of destinations offer the kind of experiences — boutique hotels, excellent food, stunning scenery — that would cost a fortune in Paris or the Maldives, but at a fraction of the price. Here's where to go.
 
@@ -31,7 +34,7 @@ True luxury isn't always about the price tag. It's about the quality of the expe
   </div>
 </div>
 
-## Albania & the Albanian Riviera
+## Albania \& the Albanian Riviera
 
 Albania remains one of Europe's most underrated destinations. The Albanian Riviera — a string of beaches along the Ionian coast — offers crystal-clear water, dramatic cliffs, and genuine hospitality at prices that feel almost impossible. Boutique guesthouses run $60–100 a night, fresh seafood dinners cost $15–25, and you'll share the beach with locals rather than tour groups.
 
@@ -59,3 +62,4 @@ While the Algarve and Lisbon have priced out many travelers, the Alentejo — Po
 Hoi An and Da Nang sit in Vietnam's center and offer a mix of UNESCO heritage, pristine beaches, and extraordinary food. Beach resorts that would cost $400+ a night in Thailand run $80–150 here. The food scene — particularly Hoi An's — is among the best in Southeast Asia, and a full dinner at a top restaurant rarely exceeds $20 per person.
 
 The bottom line: the world's best experiences aren't always behind the highest price tags. These five destinations prove that with a little research and the right credit card points strategy, luxury travel is more accessible than you think.
+

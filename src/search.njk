@@ -1,0 +1,147 @@
+---
+layout: layouts/base.njk
+title: Search
+description: Search all articles on The Global Edit
+permalink: /search/
+---
+
+<div style="max-width:900px; margin:3.5rem auto; padding:0 1.5rem;">
+
+  <div style="margin-bottom:2rem;">
+    <span class="tag">Search</span>
+  </div>
+
+  <h1 style="font-family:var(--font-display); font-size:2.2rem; font-weight:600; color:var(--navy); margin-bottom:2rem;">Search Articles</h1>
+
+  <!-- Search input -->
+  <div style="position:relative; margin-bottom:2.5rem;">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search travel guides, finance tips, hotel reviews..."
+      style="width:100%; padding:14px 50px 14px 18px; border:2px solid var(--border); border-radius:3px; font-family:var(--font-body); font-size:16px; color:var(--navy); background:var(--warm-white); outline:none; box-sizing:border-box; transition:border-color .2s;"
+      onfocus="this.style.borderColor='var(--gold)'"
+      onblur="this.style.borderColor='var(--border)'"
+    >
+    <i class="ti ti-search" style="position:absolute; right:16px; top:50%; transform:translateY(-50%); color:var(--slate-light); font-size:20px;" aria-hidden="true"></i>
+  </div>
+
+  <!-- Filter tags -->
+  <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="filterTags">
+    <button class="filter-btn active" data-filter="all" onclick="filterSearch(this,'all')" style="padding:6px 14px; border:1px solid var(--navy); border-radius:20px; background:var(--navy); color:#fff; font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">All</button>
+    <button class="filter-btn" data-filter="Travel" onclick="filterSearch(this,'Travel')" style="padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:transparent; color:var(--slate); font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">Travel</button>
+    <button class="filter-btn" data-filter="Personal Finance" onclick="filterSearch(this,'Personal Finance')" style="padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:transparent; color:var(--slate); font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">Finance</button>
+    <button class="filter-btn" data-filter="Europe" onclick="filterSearch(this,'Europe')" style="padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:transparent; color:var(--slate); font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">Europe</button>
+    <button class="filter-btn" data-filter="Travel Tips" onclick="filterSearch(this,'Travel Tips')" style="padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:transparent; color:var(--slate); font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">Travel Tips</button>
+    <button class="filter-btn" data-filter="Credit & Points" onclick="filterSearch(this,'Credit & Points')" style="padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:transparent; color:var(--slate); font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">Credit & Points</button>
+    <button class="filter-btn" data-filter="Budgeting" onclick="filterSearch(this,'Budgeting')" style="padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:transparent; color:var(--slate); font-family:var(--font-body); font-size:12px; font-weight:500; cursor:pointer; letter-spacing:.04em;">Budgeting</button>
+  </div>
+
+  <!-- Results count -->
+  <div id="searchCount" style="font-size:13px; color:var(--slate-light); margin-bottom:1.5rem;"></div>
+
+  <!-- Results grid -->
+  <div id="searchResults" class="card-grid cols-3"></div>
+
+  <!-- No results message -->
+  <div id="noResults" style="display:none; text-align:center; padding:4rem 0;">
+    <div style="font-size:48px; margin-bottom:1rem;">🔍</div>
+    <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); margin-bottom:.75rem;">No articles found</h3>
+    <p style="color:var(--slate); font-size:15px;">Try a different search term or browse by category below.</p>
+    <div style="margin-top:1.5rem; display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap;">
+      <a href="/travel/" style="background:var(--navy); color:#fff; padding:10px 20px; border-radius:2px; font-size:12px; font-weight:500; letter-spacing:.06em; text-transform:uppercase; text-decoration:none;">Browse Travel</a>
+      <a href="/finance/" style="background:transparent; color:var(--navy); padding:10px 20px; border-radius:2px; font-size:12px; font-weight:500; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; border:1px solid var(--border);">Browse Finance</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Build search index from all posts -->
+<script>
+var searchIndex = [
+  {%- for post in collections.posts %}
+  {
+    title: {{ post.data.title | dump | safe }},
+    description: {{ post.data.description | dump | safe }},
+    url: "{{ post.url }}",
+    category: {{ post.data.category | dump | safe }},
+    parentCategory: {{ post.data.parentCategory | dump | safe }},
+    image: {{ post.data.featuredImage | dump | safe }},
+    date: "{{ post.date | dateDisplay }}"
+  }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+];
+
+var currentFilter = 'all';
+var currentQuery = '';
+
+function renderResults(results) {
+  var container = document.getElementById('searchResults');
+  var noResults = document.getElementById('noResults');
+  var count = document.getElementById('searchCount');
+
+  if (results.length === 0) {
+    container.innerHTML = '';
+    noResults.style.display = 'block';
+    count.textContent = '';
+    return;
+  }
+
+  noResults.style.display = 'none';
+  count.textContent = results.length + ' article' + (results.length !== 1 ? 's' : '') + ' found';
+
+  container.innerHTML = results.map(function(post) {
+    return '<a href="' + post.url + '" style="text-decoration:none;" class="card">' +
+      '<div class="card-img"><img src="' + post.image + '" alt="' + post.title + '" loading="lazy"></div>' +
+      '<div class="card-meta"><span class="tag">' + post.category + '</span><span class="card-date">' + post.date + '</span></div>' +
+      '<div class="card-title">' + post.title + '</div>' +
+      '<p class="card-excerpt">' + post.description + '</p>' +
+      '</a>';
+  }).join('');
+}
+
+function runSearch() {
+  var q = currentQuery.toLowerCase().trim();
+  var results = searchIndex.filter(function(post) {
+    var matchesFilter = currentFilter === 'all' ||
+      post.category === currentFilter ||
+      post.parentCategory === currentFilter;
+    if (!matchesFilter) return false;
+    if (!q) return true;
+    return post.title.toLowerCase().includes(q) ||
+      post.description.toLowerCase().includes(q) ||
+      post.category.toLowerCase().includes(q);
+  });
+  renderResults(results);
+}
+
+function filterSearch(btn, filter) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.style.background = 'transparent';
+    b.style.color = 'var(--slate)';
+    b.style.borderColor = 'var(--border)';
+  });
+  btn.style.background = 'var(--navy)';
+  btn.style.color = '#fff';
+  btn.style.borderColor = 'var(--navy)';
+  runSearch();
+}
+
+document.getElementById('searchInput').addEventListener('input', function() {
+  currentQuery = this.value;
+  runSearch();
+});
+
+// Show all articles on load
+runSearch();
+
+// Support URL query param ?q=search+term
+var params = new URLSearchParams(window.location.search);
+if (params.get('q')) {
+  var input = document.getElementById('searchInput');
+  input.value = params.get('q');
+  currentQuery = params.get('q');
+  runSearch();
+}
+</script>
