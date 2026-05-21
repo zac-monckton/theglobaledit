@@ -24,7 +24,7 @@ The Road to Hana is one of those experiences that lives up to the hype — and t
 
 But the Road to Hana also punishes the unprepared. Show up at 10am with no reservations, a half tank of gas, and no snacks, and you'll spend the day stuck behind tour vans, fighting for parking at every stop, and eating whatever's left at the roadside stands. The difference between a transcendent day and a frustrating one comes down almost entirely to preparation.
 
-This guide covers everything — start times, what to stop for, what to skip, where to eat, what requires reservations, and how to choose between driving yourself and hiring a guide.
+This guide covers everything — start times, what to stop for, what to skip, where to eat, what requires reservations, and how to choose between driving yourself and hiring a guide. Planning your broader Maui trip around this drive? See our <a href="/posts/travel/north-america/complete-maui-travel-guide/">Complete Maui Travel Guide</a> for where to stay, what else to do, and the best resorts for every budget.
 
 ## What to Know Before You Go
 
@@ -197,7 +197,7 @@ Leaving at 6:30am means:
   </div>
 </div>
 
-If you absolutely cannot leave before 8am, consider driving the road in reverse — starting from Hana and driving west toward Kahului. You'll miss the early morning light but avoid the tour van convoy entirely since they're all heading the opposite direction.
+If you're staying at the <a href="/posts/travel/hotel-reviews/andaz-maui-review/">Andaz Maui at Wailea</a>, it's ideally positioned for an early Hana departure — roughly 35 minutes from the start of Highway 360. If you absolutely cannot leave before 8am, consider driving the road in reverse — starting from Hana and driving west toward Kahului. You'll miss the early morning light but avoid the tour van convoy entirely since they're all heading the opposite direction.
 
 ---
 
@@ -405,7 +405,7 @@ The Road to Hana is a full-day outdoor experience. What you bring makes a signif
 
 **Snacks:** The gaps between food stops can be 45–60 minutes of driving. Granola bars, trail mix, and fruit from Mana Foods in Paia are good backup options.
 
-**Offline maps:** Download the Hana Highway route in Google Maps the night before. Also consider downloading the Gypsy Guide Road to Hana app — it's $3 and provides audio narration at each mile marker, telling you what's coming up, the history of each stop, and safety tips. Worth every cent.
+**Offline maps:** Download the Hana Highway route in Google Maps the night before. Also consider downloading the Gypsy Guide Road to Hana app — it's $3 and provides audio narration at each mile marker, telling you what's coming up, the history of each stop, and safety tips. Worth every cent. And if you're funding the trip on points, our <a href="/posts/finance/credit-points/chase-ultimate-rewards-maximum-value/">Chase Ultimate Rewards guide</a> and <a href="/posts/finance/credit-points/world-of-hyatt-program-explained/">World of Hyatt breakdown</a> show how to cover both flights and hotel for this trip.
 
 ---
 
@@ -421,4 +421,4 @@ Most visitors do the Road to Hana as a day trip, driving back the same way they 
   <p>"The Road to Hana rewards the early riser, the unhurried, and the prepared. The rest of the equation takes care of itself."</p>
 </div>
 
-The Road to Hana is one of those rare travel experiences that genuinely delivers on its reputation — but only if you approach it right. Leave early, go slow, bring cash, book the black sand beach 90 days out, and resist the urge to rush. The road has been there for centuries. It can wait for you to take your time.
+For the complete Maui itinerary around this drive — including <a href="/posts/travel/hotel-reviews/andaz-maui-review/">where to stay</a>, what to budget, and how to maximize points — see our <a href="/posts/travel/north-america/complete-maui-travel-guide/">Complete Maui Travel Guide</a>. The Road to Hana is one of those rare travel experiences that genuinely delivers on its reputation — but only if you approach it right. Leave early, go slow, bring cash, book the black sand beach 90 days out, and resist the urge to rush. The road has been there for centuries. It can wait for you to take your time.

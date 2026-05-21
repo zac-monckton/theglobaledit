@@ -279,3 +279,90 @@ footer { background: var(--navy); color: rgba(255,255,255,.6); padding: 3.5rem 0
   .article-headline { font-size: 1.8rem; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ─── MOBILE ARTICLE FIXES ──────────────────────────────── */
+@media (max-width: 640px) {
+
+  /* Prevent any element from overflowing the viewport */
+  .article-content * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Article body font size — more readable on small screens */
+  .article-content p { font-size: 16px; line-height: 1.75; }
+  .article-content li { font-size: 15px; }
+
+  /* Article hero headline */
+  .article-headline { font-size: 1.6rem !important; }
+
+  /* Tables — make them scrollable on mobile */
+  .article-content table,
+  .data-table,
+  .compare-table,
+  .dest-table,
+  .hyatt-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 13px;
+  }
+
+  /* Custom grids inside articles — stack on mobile */
+  .scenario-grid,
+  .tool-grid,
+  .partner-grid,
+  .earn-grid,
+  .resort-grid,
+  .activity-wrap,
+  .area-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Quiz options — wrap on mobile */
+  .quiz-options { gap: .4rem; }
+  .quiz-option { font-size: 13px; padding: 7px 12px; }
+
+  /* Pro tips and info boxes */
+  .pro-tip, .info-box { padding: 1rem; }
+  .pro-tip { flex-direction: column; gap: .5rem; }
+
+  /* Rating boxes */
+  .rating-overall { flex-direction: column; gap: .5rem; }
+
+  /* Checklist items */
+  .checklist-item label { font-size: 14px; }
+
+  /* Sweet spot and status bar */
+  .status-bar { flex-wrap: wrap; }
+  .status-tier { min-width: 45%; }
+
+  /* Calculator rows */
+  .calc-row { flex-direction: column; }
+  .calc-field { min-width: 100%; }
+
+  /* Pullquote */
+  .pullquote p { font-size: 1.05rem !important; }
+
+  /* Article layout sidebar hidden on mobile already — ensure no overflow */
+  .article-layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 1rem !important;
+    margin: 1.5rem auto !important;
+  }
+
+  /* Category page hero text */
+  h1[style*="2.5rem"] { font-size: 1.8rem !important; }
+}
+
+/* ─── PREVENT HORIZONTAL SCROLL SITE-WIDE ───────────────── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.article-content {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

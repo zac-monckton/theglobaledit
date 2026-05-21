@@ -1,200 +1,145 @@
 ---
-title: "Best Time to Book Flights for the Cheapest Fares (Backed by Data)"
-description: "The algorithm is always watching. Here's how to watch it back — and book at exactly the right moment."
+title: "The Best Time to Book Flights (And What Actually Affects the Price)"
+description: "Airline pricing isn't random — it follows patterns. Here's how to read them and consistently book cheaper flights."
 date: 2026-05-14
 layout: layouts/article.njk
 category: Travel Tips
-subcategory: Travel Tips
 parentCategory: Travel
 featuredImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&auto=format&fit=crop"
-readTime: 8
+readTime: 10
 toc:
-  - The Booking Window
-  - The Day-of-Week Factor
-  - Tools That Do the Heavy Lifting
-  - Fare Alerts
-  - Advanced Moves
+  - How Airline Pricing Actually Works
+  - The Booking Window Sweet Spot
+  - Best Days to Book and Fly
+  - Domestic vs International Timing
+  - How to Use Points for Flights
+  - Tools That Actually Help
+  - What to Avoid
   - Your Flight Booking Checklist
 ---
 
-There's a persistent myth that cheap flights are random — a matter of luck, timing, or stumbling onto a sale. The reality is more structured. Airlines use sophisticated dynamic pricing models that adjust fares based on demand curves, booking lead time, competitor pricing, and day-of-week patterns. Understanding those patterns gives you a real, repeatable edge.
+Airline pricing feels chaotic until you understand the logic behind it. Prices aren't random — they follow patterns driven by demand, competition, seat inventory, and booking windows. Once you understand those patterns, you can work with them instead of against them.
 
-Here's what the data actually says — and how to turn it into action.
+## How Airline Pricing Actually Works
 
-<style>
-.stat-box{background:var(--navy);border-radius:4px;padding:28px;margin:32px 0;text-align:center;}
-.stat-box .big{font-family:var(--font-display);font-size:3.5rem;color:var(--gold);display:block;line-height:1;margin-bottom:8px;}
-.stat-box p{color:rgba(255,255,255,.7);margin:0;font-size:0.95rem;}
-.data-table{width:100%;border-collapse:collapse;margin:28px 0;font-size:0.95rem;}
-.data-table th{background:var(--navy);color:white;padding:12px 16px;text-align:left;font-weight:500;font-size:12px;letter-spacing:1px;text-transform:uppercase;}
-.data-table td{padding:13px 16px;border-bottom:1px solid var(--border);color:var(--slate);}
-.data-table tr:nth-child(even) td{background:var(--cream);}
-.good{color:#0F6E56;font-weight:600;}
-.bad{color:#C0392B;font-weight:600;}
-.tool-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:28px 0;}
-.tool-card{background:var(--cream);border:1px solid var(--border);border-radius:3px;padding:20px;transition:box-shadow 0.2s;}
-.tool-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.08);}
-.tool-card .tool-name{font-weight:600;font-size:1rem;color:var(--navy);margin-bottom:6px;}
-.tool-card .tool-desc{font-size:0.88rem;color:var(--slate-light);line-height:1.5;}
-.tool-card a{display:inline-block;margin-top:12px;font-size:12px;font-weight:500;color:var(--gold);text-decoration:none;letter-spacing:0.5px;border-bottom:none !important;}
-.tool-card a::after{content:' →';}
-.expand-btn{width:100%;background:none;border:1px solid var(--border);border-radius:3px;padding:16px 20px;text-align:left;font-family:var(--font-body);font-size:0.97rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;transition:background 0.15s;}
-.expand-btn:hover{background:var(--cream);}
-.expand-btn .arrow{transition:transform 0.25s;font-size:1.1rem;color:var(--gold);}
-.expand-btn.open .arrow{transform:rotate(180deg);}
-.expand-content{display:none;background:white;border:1px solid var(--border);border-top:none;border-radius:0 0 3px 3px;padding:20px;margin-bottom:12px;font-size:0.95rem;color:var(--slate);line-height:1.7;}
-.expand-content.open{display:block;}
-.checklist-wrap{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:28px;margin:32px 0;}
-.checklist-wrap h3{margin-top:0;font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:16px;font-family:var(--font-body);}
-.checklist-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer;}
-.checklist-item:last-child{border-bottom:none;}
-.checklist-item input[type="checkbox"]{width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;}
-.checklist-item label{cursor:pointer;font-size:0.97rem;color:var(--slate);line-height:1.5;}
-.checklist-item input:checked+label{text-decoration:line-through;color:#bbb;}
-.progress-bar{height:5px;background:var(--border);border-radius:3px;margin-bottom:20px;overflow:hidden;}
-.progress-fill{height:100%;background:var(--navy);border-radius:3px;transition:width 0.4s ease;width:0%;}
-.progress-text{font-size:12px;color:var(--slate-light);margin-bottom:8px;}
-</style>
+Airlines use yield management systems that constantly adjust prices based on how many seats have sold, how far out the flight is, and what competitors are charging. The goal is to fill every seat at the highest possible price — which means prices generally rise as a flight fills up, but can also drop when demand is lower than expected.
 
-<div class="stat-box">
-  <span class="big">47%</span>
-  <p>Average savings travelers can achieve on domestic flights by booking at the optimal window vs. last minute, according to fare analysis research.</p>
+There's no single "cheapest day to book" that works universally. What exists are predictable patterns that shift by route, season, and airline. Understanding those patterns is the skill.
+
+<div class="info-box">
+  <div class="info-box-title">The Core Principle</div>
+  <p>Airlines want full planes. When they're not filling seats fast enough, prices drop. When seats are selling quickly, prices rise. Your job is to find the window where the airline is still trying to fill seats but hasn't panicked into a fare sale yet.</p>
 </div>
 
-## The Booking Window: How Far Out Is Optimal?
+## The Booking Window Sweet Spot
 
-The single biggest lever you have is when you book relative to your departure date. Airlines release seats in fare "buckets" — as lower buckets sell out, the next tier opens at a higher price. The sweet spot sits before demand spikes but after airlines have loaded competitive fares.
+Research consistently shows the lowest average fares for most routes fall within these windows:
 
-<table class="data-table">
-  <thead>
-    <tr><th>Route Type</th><th>Too Early</th><th>Sweet Spot</th><th>Too Late</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Domestic (US)</td><td class="bad">6+ months</td><td class="good">3–8 weeks</td><td class="bad">Under 2 weeks</td></tr>
-    <tr><td>Short-haul International</td><td class="bad">9+ months</td><td class="good">2–4 months</td><td class="bad">Under 3 weeks</td></tr>
-    <tr><td>Long-haul International</td><td class="bad">11+ months</td><td class="good">3–6 months</td><td class="bad">Under 6 weeks</td></tr>
-    <tr><td>Peak Season (summer/holidays)</td><td class="bad">12+ months</td><td class="good">4–6 months</td><td class="bad">Under 8 weeks</td></tr>
-    <tr><td>Off-peak / shoulder season</td><td class="bad">6+ months</td><td class="good">6–10 weeks</td><td class="bad">Under 10 days</td></tr>
-  </tbody>
-</table>
+**Domestic flights:** 1-3 months before departure. The sweet spot for most routes is 6-8 weeks out. Booking more than 4 months out rarely saves money — airlines are still testing price levels. Booking less than 2 weeks out is usually expensive unless you catch a last-minute sale.
+
+**International flights:** 2-6 months before departure. Europe in summer: book 3-5 months out. Off-peak international: 2-3 months can work. Business class award redemptions often have better availability at 11-12 months out when seats first open.
+
+**The exception — sales and error fares:** These can appear at any time and disappear within hours. Fare alert tools (Google Flights, Hopper, Scott's Cheap Flights) catch these automatically.
+
+## Best Days to Book and Fly
+
+**Best days to book:** Tuesday and Wednesday afternoons have historically shown slightly lower average fares as airlines respond to weekend searches. The difference is rarely dramatic — $10-30 on domestic routes — but if you're flexible, it's worth checking midweek.
+
+**Best days to fly:** Tuesday, Wednesday, and Saturday are consistently the cheapest departure days. Friday and Sunday are the most expensive — business travelers go home on Fridays, leisure travelers fly Sunday. Avoid these days when flexibility exists.
+
+**Best times to fly:** Early morning and late evening flights are cheaper and more punctual. Mid-morning and early afternoon flights command a premium because they're most convenient.
 
 <div class="pro-tip">
   <div class="pro-tip-icon">💡</div>
   <div>
-    <div class="pro-tip-title">Pro Tip</div>
-    <p>Booking too early is a real phenomenon. Airlines often haven't loaded competitive fares 9–12 months out, and you may pay more than someone who waited. Set a fare alert and let the price come to you.</p>
+    <div class="pro-tip-title">The Tuesday Principle</div>
+    <p>Airlines typically release sale fares on Monday nights and other carriers match by Tuesday afternoon. Searching Tuesday or Wednesday afternoon often catches fares before they're picked up by aggregator algorithms that drive prices back up.</p>
   </div>
 </div>
 
-## The Day-of-Week Factor
+## Domestic vs International Timing
 
-Both the day you *search* and the day you *fly* affect price. The data consistently shows mid-week departures (Tuesday, Wednesday) are cheaper than weekend departures — because leisure demand spikes Friday through Sunday. Similarly, searching on Tuesday or Wednesday often surfaces better fares than weekend browsing.
+**Domestic US flights:**
+- Book 4-8 weeks out for most routes
+- Holiday travel (Thanksgiving, Christmas, July 4th): book 3-4 months out
+- Last-minute (under 2 weeks): usually expensive unless you catch a sale alert
 
-<table class="data-table">
-  <thead><tr><th>Day to Depart</th><th>Relative Cost</th></tr></thead>
-  <tbody>
-    <tr><td>Tuesday / Wednesday</td><td class="good">Cheapest — 10–15% below average</td></tr>
-    <tr><td>Thursday</td><td class="good">Often good value</td></tr>
-    <tr><td>Saturday</td><td>Mixed — leisure off-peak on some routes</td></tr>
-    <tr><td>Friday / Sunday</td><td class="bad">Most expensive — peak leisure demand</td></tr>
-    <tr><td>Monday</td><td class="bad">Business travel premium on many routes</td></tr>
-  </tbody>
-</table>
+**Transatlantic (US to Europe):**
+- Peak summer (June-August): book 4-6 months out
+- Shoulder season (April-May, September-October): 2-3 months often works
+- Off-peak (November-March excluding holidays): flexible booking often finds good deals at 4-8 weeks
 
-## Tools That Do the Heavy Lifting
+If you're flexible on destination, our guide to <a href="/posts/travel/europe/affordable-luxury-destinations-2026/">5 affordable luxury destinations in 2026</a> covers places where flights AND accommodation costs are significantly lower than traditional European hotspots — combining timing strategy with destination flexibility amplifies your savings significantly.
 
-Manual searching is inefficient. These tools actively track, predict, and alert you — use at least two in combination.
+**Asia-Pacific:**
+- Generally book 3-5 months out
+- Japan sakura season (late March-April) and Golden Week: book 5-6 months out
+- Australia and New Zealand: book 4-6 months out for decent fares
 
-<div class="tool-grid">
-  <div class="tool-card">
-    <div class="tool-name">Google Flights</div>
-    <div class="tool-desc">The best starting point. Price calendar, flexible date search, and fare tracking built in. Free.</div>
-    <a href="https://flights.google.com" target="_blank" rel="noopener">Open Google Flights</a>
-  </div>
-  <div class="tool-card">
-    <div class="tool-name">Hopper</div>
-    <div class="tool-desc">AI-powered fare prediction. Tells you whether to book now or wait, with a confidence score.</div>
-    <a href="https://www.hopper.com" target="_blank" rel="noopener">Open Hopper</a>
-  </div>
-  <div class="tool-card">
-    <div class="tool-name">Kayak Explore</div>
-    <div class="tool-desc">Enter your home airport and a budget — it shows everywhere you can fly for that price. Great for flexible travelers.</div>
-    <a href="https://www.kayak.com/explore" target="_blank" rel="noopener">Open Kayak Explore</a>
-  </div>
-  <div class="tool-card">
-    <div class="tool-name">Going (Scott's Cheap Flights)</div>
-    <div class="tool-desc">Human-curated mistake fares and flash deals sent to your inbox. Premium tier worth it for frequent travelers.</div>
-    <a href="https://app.going.com" target="_blank" rel="noopener">Open Going</a>
-  </div>
-</div>
+## How to Use Points for Flights
 
-## Fare Alerts: Set It and Actually Save
+Points and miles can dramatically reduce — or eliminate — the cash cost of flights, but only if you use them strategically.
 
-The single most underused tool in flight booking. Every major platform lets you set a route-specific alert — when fares drop below your target, you get an email or push notification. Most travelers never use this feature. The ones who do consistently pay less.
+**The best transferable currency for flights:** <a href="/posts/finance/credit-points/chase-ultimate-rewards-maximum-value/">Chase Ultimate Rewards</a> offers transfer to United MileagePlus, Air France/KLM Flying Blue, British Airways Executive Club, and several others. Transferring to airline partners and booking award seats often delivers 2-4 cents per point in value — significantly better than booking through the Chase Travel portal.
 
-<div class="info-box">
-  <div class="info-box-title">How to Set a Google Flights Alert</div>
-  <p>Search your route → click the toggle labeled "Track prices" in the top right of the results → choose your notification preference. You'll get emailed when prices move significantly. Set alerts for your top 3 target destinations simultaneously.</p>
-</div>
+For hotel stays at your destination, remember that <a href="/posts/finance/credit-points/world-of-hyatt-program-explained/">Chase UR points also transfer to World of Hyatt</a> at 1:1 — so a single points balance can cover both your flight and hotel if you plan the redemptions strategically.
 
-## Advanced Moves
+**When to book with points vs cash:**
+- Business and first class: almost always use points — cash prices are prohibitive and point values are highest
+- Economy on expensive routes (transpacific, transatlantic): often worth it
+- Economy on cheap routes: frequently better to pay cash and preserve points for premium redemptions
 
-<button class="expand-btn" onclick="toggleExpand(this)">
-  The "hidden city" ticketing strategy — and why to use it carefully
-  <span class="arrow">▾</span>
-</button>
-<div class="expand-content">
-  <p>Hidden city ticketing exploits a pricing quirk where a flight from A → C (stopping at B) is cheaper than a direct A → B ticket. You book A → C and get off at B. It's technically against most airlines' terms of service, works only for one-way trips with carry-on only, and can cause issues if the airline re-routes you. Use it occasionally, not as a habit. Skiplagged surfaces these routes automatically.</p>
-</div>
+## Tools That Actually Help
 
-<button class="expand-btn" onclick="toggleExpand(this)">
-  Positioning flights: the cheap hack for expensive routes
-  <span class="arrow">▾</span>
-</button>
-<div class="expand-content">
-  <p>If your nearest airport is expensive to fly from, check fares from airports 1–2 hours away. A $60 bus or train to a major hub can save $200–$400 on a transatlantic fare. Common examples: Tulsa → Dallas before an international departure; Providence instead of Boston Logan; Oakland instead of SFO.</p>
-</div>
+**Google Flights** — The best free tool for understanding fare patterns. Use the calendar view to see prices across different departure dates. The price tracking feature alerts you when fares change on routes you've searched.
 
-<button class="expand-btn" onclick="toggleExpand(this)">
-  Using points to book flights — when it's actually worth it
-  <span class="arrow">▾</span>
-</button>
-<div class="expand-content">
-  <p>Points redemptions are most valuable on premium cabin international flights, not cheap economy routes. A 30,000-point economy redemption worth $300 is fine — but the same 60,000 points transferred to the right airline partner for a $3,000 business class seat is extraordinary value. Always calculate the cents-per-point value before redeeming. Under 1.5 cents per point? Consider paying cash and saving points for premium redemptions.</p>
-</div>
+**Hopper** — Predicts whether prices will rise or fall and recommends when to buy. Most useful for domestic routes where its prediction models are well-calibrated.
+
+**Scott's Cheap Flights (now Going)** — A newsletter service that alerts you to mistake fares and genuine sales. The paid tier ($35/year) is worth it for frequent travelers — it catches deals the algorithms miss.
+
+**Skyscanner** — Useful for flexible destination searches and the "everywhere" feature that shows cheapest destinations from your home airport on given dates.
+
+**Seat Guru** — Not for booking, but for choosing seats after booking. Identifies which seats have extra legroom, obstructed windows, or proximity to lavatories.
+
+## What to Avoid
+
+**Booking on impulse during peak browsing times.** Sunday is the most expensive day to book flights — airlines know people are planning their weeks and price accordingly.
+
+**Assuming the cheapest fare is always best.** A $50 saving on a flight that has a 6-hour layover or arrives at an inconvenient airport may cost more in time, transport, and stress than it saves.
+
+**Ignoring baggage fees when comparing prices.** Spirit at $89 with $65 in baggage fees versus Southwest at $129 with two free checked bags is not the deal it appears.
+
+**Booking non-refundable fares without travel insurance.** Plans change. A basic travel insurance policy (often $15-30 for domestic trips) is worth it when booking non-refundable fares, particularly for international travel.
+
+**Forgetting to factor accommodation into the total trip cost.** A cheap flight to an expensive city may cost more total than a pricier flight somewhere with lower accommodation costs. Our <a href="/posts/travel/travel-tips/hotel-vs-airbnb-vs-hostel/">Hotel vs. Airbnb vs. Hostel guide</a> helps you think through the full trip cost picture, and our <a href="/posts/finance/budgeting/50-30-20-budgeting-rule/">50/30/20 budgeting framework</a> shows how to build travel into your finances sustainably.
 
 ## Your Flight Booking Checklist
 
-<div class="checklist-wrap">
-  <h3>✈️ Pre-Booking Checklist</h3>
-  <div class="progress-text" id="progress-text-8">0 of 8 completed</div>
-  <div class="progress-bar"><div class="progress-fill" id="progress-fill-8"></div></div>
-  <div id="checklist-8">
-    <div class="checklist-item"><input type="checkbox" id="c8-1" onchange="updateProgress('8',8)"><label for="c8-1">Check Google Flights first — use the price calendar view to find the cheapest dates within your window</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-2" onchange="updateProgress('8',8)"><label for="c8-2">Search in incognito/private mode to avoid cookie-based price increases</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-3" onchange="updateProgress('8',8)"><label for="c8-3">Check nearby airports — compare fares from all airports within 2 hours of your home</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-4" onchange="updateProgress('8',8)"><label for="c8-4">Set a fare alert on Google Flights for your route if not booking immediately</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-5" onchange="updateProgress('8',8)"><label for="c8-5">Check Hopper's "buy or wait" recommendation before committing</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-6" onchange="updateProgress('8',8)"><label for="c8-6">Compare the total cost including baggage fees — not just the base fare</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-7" onchange="updateProgress('8',8)"><label for="c8-7">Check if your credit card offers trip cancellation protection before paying</label></div>
-    <div class="checklist-item"><input type="checkbox" id="c8-8" onchange="updateProgress('8',8)"><label for="c8-8">Pay with a travel rewards card to earn points on the purchase</label></div>
+<div class="checklist-wrap" style="background:var(--cream);border:1px solid var(--border);border-radius:2px;padding:1.75rem;margin:2rem 0;">
+  <h3 style="margin-top:0;font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:1rem;font-family:var(--font-body);">Flight Booking Checklist</h3>
+  <div class="progress-text" id="progress-text-fl">0 of 8 completed</div>
+  <div class="progress-bar" style="height:5px;background:var(--border);border-radius:3px;margin-bottom:1.25rem;overflow:hidden;"><div class="progress-fill" id="progress-fill-fl" style="height:100%;background:var(--navy);border-radius:3px;transition:width .4s ease;width:0%;"></div></div>
+  <div id="checklist-fl">
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-1" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-1" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Set up Google Flights price tracking for your route as soon as you know your travel dates</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-2" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-2" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Check Tuesday and Wednesday for slightly lower fares — avoid booking on Sunday</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-3" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-3" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Compare Tuesday, Wednesday, and Saturday departure dates — often $30-80 cheaper than Friday and Sunday</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-4" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-4" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Check Chase UR transfer partners for award availability before paying cash for premium cabin flights</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-5" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-5" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Factor in baggage fees when comparing low-cost vs full-service carriers</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-6" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-6" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Use Seat Guru to select your seat immediately after booking</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);"><input type="checkbox" id="cfl-7" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-7" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">For holiday travel, book 3-4 months out — don't wait for a sale that won't come</label></div>
+    <div class="checklist-item" style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;"><input type="checkbox" id="cfl-8" onchange="updateProgressFL()" style="width:18px;height:18px;accent-color:var(--navy);cursor:pointer;margin-top:2px;flex-shrink:0;"><label for="cfl-8" style="cursor:pointer;font-size:15px;color:var(--slate);line-height:1.55;">Sign up for Going (Scott's Cheap Flights) fare alerts for your home airport</label></div>
   </div>
 </div>
 
-<div class="pro-tip">
-  <div class="pro-tip-icon">⚠️</div>
-  <div>
-    <div class="pro-tip-title">Watch Out For</div>
-    <p>Airlines often release seat sales on Tuesday evenings (US Eastern time) after competitors have adjusted fares. Checking Wednesday morning frequently surfaces the best weekly fares on domestic routes.</p>
-  </div>
-</div>
+The travelers who consistently pay less for flights aren't the ones refreshing booking sites obsessively — they're the ones who understand the patterns, set up the right alerts, and act quickly when conditions align. Build the habits once and they pay dividends on every trip.
 
 <script>
-function toggleExpand(btn){const c=btn.nextElementSibling;btn.classList.toggle('open');c.classList.toggle('open');}
-function updateProgress(id,total){
-  const checks=document.querySelectorAll(`#checklist-${id} input[type="checkbox"]`);
-  const done=Array.from(checks).filter(c=>c.checked).length;
-  document.getElementById(`progress-fill-${id}`).style.width=(done/total*100)+'%';
-  document.getElementById(`progress-text-${id}`).textContent=`${done} of ${total} completed`;
+function updateProgressFL(){
+  var checks=document.querySelectorAll('#checklist-fl input[type="checkbox"]');
+  var done=Array.from(checks).filter(function(c){return c.checked;}).length;
+  var total=checks.length;
+  document.getElementById('progress-fill-fl').style.width=(done/total*100)+'%';
+  document.getElementById('progress-text-fl').textContent=done+' of '+total+' completed';
+  checks.forEach(function(c){if(c.checked){c.nextElementSibling.style.textDecoration='line-through';c.nextElementSibling.style.color='#bbb';}else{c.nextElementSibling.style.textDecoration='none';c.nextElementSibling.style.color='var(--slate)';}});
 }
 </script>

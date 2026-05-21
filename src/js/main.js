@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  // ─── MOBILE MENU ──────────────────────────────────────────
+  // ─── MOBILE MENU TOGGLE ───────────────────────────────────
   var menuBtn = document.getElementById('mobileMenuBtn');
   var mobileMenu = document.getElementById('mobileMenu');
 
@@ -10,24 +10,31 @@ document.addEventListener('DOMContentLoaded', function() {
       e.stopPropagation();
       mobileMenu.classList.toggle('open');
     }
-    menuBtn.addEventListener('click', toggleMenu);
-    menuBtn.addEventListener('touchend', toggleMenu);
+    menuBtn.addEventListener('click', toggleMenu, { passive: false });
+    menuBtn.addEventListener('touchend', toggleMenu, { passive: false });
   }
 
   // ─── MOBILE TRAVEL DROPDOWN ───────────────────────────────
   var travelToggle = document.getElementById('travelToggle');
   var travelDropdown = document.getElementById('travelDropdown');
+  var travelArrow = travelToggle ? travelToggle.querySelector('.mobile-toggle-arrow') : null;
 
   if (travelToggle && travelDropdown) {
     function toggleTravel(e) {
+      // Allow link clicks to pass through
       if (e.target.tagName === 'A') return;
       e.preventDefault();
       e.stopPropagation();
-      travelToggle.classList.toggle('open');
-      travelDropdown.classList.toggle('open');
+      var isOpen = travelDropdown.classList.contains('open');
+      // Close finance if open
+      if (financeDropdown) financeDropdown.classList.remove('open');
+      if (financeToggle) financeToggle.classList.remove('open');
+      // Toggle travel
+      travelDropdown.classList.toggle('open', !isOpen);
+      travelToggle.classList.toggle('open', !isOpen);
     }
-    travelToggle.addEventListener('click', toggleTravel);
-    travelToggle.addEventListener('touchend', toggleTravel);
+    travelToggle.addEventListener('click', toggleTravel, { passive: false });
+    travelToggle.addEventListener('touchend', toggleTravel, { passive: false });
   }
 
   // ─── MOBILE FINANCE DROPDOWN ──────────────────────────────
@@ -39,11 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
       if (e.target.tagName === 'A') return;
       e.preventDefault();
       e.stopPropagation();
-      financeToggle.classList.toggle('open');
-      financeDropdown.classList.toggle('open');
+      var isOpen = financeDropdown.classList.contains('open');
+      // Close travel if open
+      if (travelDropdown) travelDropdown.classList.remove('open');
+      if (travelToggle) travelToggle.classList.remove('open');
+      // Toggle finance
+      financeDropdown.classList.toggle('open', !isOpen);
+      financeToggle.classList.toggle('open', !isOpen);
     }
-    financeToggle.addEventListener('click', toggleFinance);
-    financeToggle.addEventListener('touchend', toggleFinance);
+    financeToggle.addEventListener('click', toggleFinance, { passive: false });
+    financeToggle.addEventListener('touchend', toggleFinance, { passive: false });
   }
 
   // ─── NEWSLETTER FORM ──────────────────────────────────────
@@ -65,23 +77,24 @@ document.addEventListener('DOMContentLoaded', function() {
   var cookieDecline = document.getElementById('cookieDecline');
 
   if (cookieBanner) {
-    var consent = localStorage.getItem('tge-cookie-consent');
-    if (!consent) {
-      setTimeout(function() {
-        cookieBanner.style.display = 'block';
-      }, 1500);
-    }
+    try {
+      var consent = localStorage.getItem('tge-cookie-consent');
+      if (!consent) {
+        setTimeout(function() {
+          cookieBanner.style.display = 'block';
+        }, 1500);
+      }
+    } catch(e) {}
 
     if (cookieAccept) {
       cookieAccept.addEventListener('click', function() {
-        localStorage.setItem('tge-cookie-consent', 'accepted');
+        try { localStorage.setItem('tge-cookie-consent', 'accepted'); } catch(e) {}
         cookieBanner.style.display = 'none';
       });
     }
-
     if (cookieDecline) {
       cookieDecline.addEventListener('click', function() {
-        localStorage.setItem('tge-cookie-consent', 'declined');
+        try { localStorage.setItem('tge-cookie-consent', 'declined'); } catch(e) {}
         cookieBanner.style.display = 'none';
       });
     }
