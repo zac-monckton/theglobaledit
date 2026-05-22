@@ -60,26 +60,35 @@
     -webkit-user-select: none;
     min-height: 48px;
   }
+
+  /* Hamburger — hidden on desktop, shown on mobile via media query only */
   #mobileMenuBtn {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
     min-width: 44px;
     min-height: 44px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 640px) {
+    #mobileMenuBtn { display: flex; }
+  }
+
+  /* Single declaration for toggle arrow — no duplicate */
   .mobile-toggle-arrow {
     min-width: 44px;
     min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-size: 18px;
+    color: var(--slate-light);
+    transition: transform .2s;
+    line-height: 1;
     -webkit-tap-highlight-color: transparent;
   }
-  .mobile-toggle-arrow { font-size: 18px; color: var(--slate-light); transition: transform .2s; line-height: 1; display: inline-block; }
   .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(90deg); }
 </style>
 
@@ -171,5 +180,3 @@
     <a href="/#newsletter" style="color: var(--gold); border-bottom: none; margin-top: .5rem;">Subscribe to Newsletter →</a>
   </div>
 </header>
-
-

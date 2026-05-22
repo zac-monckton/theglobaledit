@@ -4,7 +4,7 @@ description: "The simplest framework for getting your finances under control —
 date: 2026-05-11
 layout: layouts/article.njk
 category: Budgeting
-parentCategory: Finance
+parentCategory: Personal Finance
 featuredImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop"
 readTime: 5
 toc:

@@ -5,7 +5,7 @@ date: 2026-05-20
 layout: layouts/article.njk
 category: Hotel Reviews
 parentCategory: Travel
-featuredImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop"
+featuredImage: "/images/andaz-pool.jpeg"
 readTime: 14
 toc:
   - The Quick Verdict

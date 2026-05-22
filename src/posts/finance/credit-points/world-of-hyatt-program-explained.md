@@ -4,7 +4,7 @@ description: "Hyatt has the smallest footprint of the major hotel loyalty progra
 date: 2026-05-19
 layout: layouts/article.njk
 category: Credit & Points
-parentCategory: Finance
+parentCategory: Personal Finance
 featuredImage: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&auto=format&fit=crop"
 readTime: 13
 toc:
