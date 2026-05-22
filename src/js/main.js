@@ -15,45 +15,46 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // ─── MOBILE DROPDOWNS ─────────────────────────────────────
-  // Both sets of variables declared up front so each toggle function
-  // can reference the other without hitting undefined.
-  var travelToggle   = document.getElementById('travelToggle');
-  var travelDropdown = document.getElementById('travelDropdown');
-  var financeToggle  = document.getElementById('financeToggle');
+  var travelToggle    = document.getElementById('travelToggle');
+  var travelDropdown  = document.getElementById('travelDropdown');
+  var financeToggle   = document.getElementById('financeToggle');
   var financeDropdown = document.getElementById('financeDropdown');
 
+  function openDropdown(dropdown, toggle) {
+    dropdown.classList.add('open');
+    toggle.classList.add('open');
+  }
+
+  function closeDropdown(dropdown, toggle) {
+    dropdown.classList.remove('open');
+    toggle.classList.remove('open');
+  }
+
   if (travelToggle && travelDropdown) {
-    function toggleTravel(e) {
-      if (e.target.tagName === 'A') return;
+    // The arrow span is the dedicated tap target — not the whole row
+    var travelArrow = travelToggle.querySelector('.mobile-toggle-arrow');
+    var travelTarget = travelArrow || travelToggle;
+
+    travelTarget.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       var isOpen = travelDropdown.classList.contains('open');
-      // Close finance if open
-      if (financeDropdown) financeDropdown.classList.remove('open');
-      if (financeToggle)   financeToggle.classList.remove('open');
-      // Toggle travel
-      travelDropdown.classList.toggle('open', !isOpen);
-      travelToggle.classList.toggle('open', !isOpen);
-    }
-    travelToggle.addEventListener('click',    toggleTravel, { passive: false });
-    travelToggle.addEventListener('touchend', toggleTravel, { passive: false });
+      if (financeDropdown) closeDropdown(financeDropdown, financeToggle);
+      isOpen ? closeDropdown(travelDropdown, travelToggle) : openDropdown(travelDropdown, travelToggle);
+    });
   }
 
   if (financeToggle && financeDropdown) {
-    function toggleFinance(e) {
-      if (e.target.tagName === 'A') return;
+    var financeArrow = financeToggle.querySelector('.mobile-toggle-arrow');
+    var financeTarget = financeArrow || financeToggle;
+
+    financeTarget.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       var isOpen = financeDropdown.classList.contains('open');
-      // Close travel if open
-      if (travelDropdown) travelDropdown.classList.remove('open');
-      if (travelToggle)   travelToggle.classList.remove('open');
-      // Toggle finance
-      financeDropdown.classList.toggle('open', !isOpen);
-      financeToggle.classList.toggle('open', !isOpen);
-    }
-    financeToggle.addEventListener('click',    toggleFinance, { passive: false });
-    financeToggle.addEventListener('touchend', toggleFinance, { passive: false });
+      if (travelDropdown) closeDropdown(travelDropdown, travelToggle);
+      isOpen ? closeDropdown(financeDropdown, financeToggle) : openDropdown(financeDropdown, financeToggle);
+    });
   }
 
   // ─── NEWSLETTER FORM ──────────────────────────────────────

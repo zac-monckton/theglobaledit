@@ -51,17 +51,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
     min-height: 48px;
   }
 
-  /* Hamburger — hidden on desktop, shown on mobile via media query only */
+  /* Hamburger — hidden on desktop, shown on mobile only */
   #mobileMenuBtn {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -76,18 +71,23 @@
     #mobileMenuBtn { display: flex; }
   }
 
-  /* Single declaration for toggle arrow — no duplicate */
+  /* Arrow button inside mobile toggle row */
   .mobile-toggle-arrow {
+    background: none;
+    border: none;
+    padding: 0;
     min-width: 44px;
     min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--slate-light);
     transition: transform .2s;
     line-height: 1;
+    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
   .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(90deg); }
 </style>
@@ -152,7 +152,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-toggle" id="travelToggle">
       <a href="/travel/" id="travelLink">Travel</a>
-      <span class="mobile-toggle-arrow">›</span>
+      <button class="mobile-toggle-arrow" aria-label="Expand Travel menu">›</button>
     </div>
     <div class="mobile-dropdown" id="travelDropdown">
       <a href="/europe/">Europe</a>
@@ -166,7 +166,7 @@
 
     <div class="mobile-toggle" id="financeToggle">
       <a href="/finance/" id="financeLink">Finance</a>
-      <span class="mobile-toggle-arrow">›</span>
+      <button class="mobile-toggle-arrow" aria-label="Expand Finance menu">›</button>
     </div>
     <div class="mobile-dropdown" id="financeDropdown">
       <a href="/budgeting/">Budgeting</a>
