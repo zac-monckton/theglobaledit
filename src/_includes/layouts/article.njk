@@ -2,31 +2,6 @@
 layout: layouts/base.njk
 ---
 
-<!-- READING PROGRESS BAR -->
-<div id="readingProgress" style="position:fixed; top:0; left:0; height:3px; background:var(--gold); width:0%; z-index:9999; transition:width .1s;"></div>
-
-<!-- BREADCRUMBS -->
-<div style="background:var(--cream); border-bottom:1px solid var(--border); padding:.75rem 0;">
-  <div class="container" style="font-size:12px; color:var(--slate-light); display:flex; align-items:center; gap:.4rem; flex-wrap:wrap;">
-    <a href="/" style="color:var(--slate-light); text-decoration:none; transition:color .15s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--slate-light)'">Home</a>
-    <span>›</span>
-    {% if parentCategory %}
-      {% if parentCategory == 'Travel' %}
-        <a href="/travel/" style="color:var(--slate-light); text-decoration:none; transition:color .15s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--slate-light)'">Travel</a>
-      {% elif parentCategory == 'Personal Finance' %}
-        <a href="/finance/" style="color:var(--slate-light); text-decoration:none; transition:color .15s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--slate-light)'">Finance</a>
-      {% endif %}
-      <span>›</span>
-    {% endif %}
-    {% if category %}
-      {% set catSlug = category | lower | replace(' ', '-') | replace('&', '') | replace('--', '-') %}
-      <a href="/{{ catSlug }}/" style="color:var(--slate-light); text-decoration:none; transition:color .15s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--slate-light)'">{{ category }}</a>
-      <span>›</span>
-    {% endif %}
-    <span style="color:var(--navy); font-weight:500;">{{ title | truncate(40) }}</span>
-  </div>
-</div>
-
 <!-- ARTICLE HERO -->
 <div class="article-hero">
   <img src="{{ featuredImage }}" alt="{{ title }}">
@@ -34,6 +9,7 @@ layout: layouts/base.njk
     <div class="article-hero-content">
       <div style="margin-bottom: .75rem;">
         <span class="tag">{{ category }}</span>
+        {% if subcategory %}&nbsp;<span class="tag">{{ subcategory }}</span>{% endif %}
       </div>
       <h1 class="article-headline">{{ title }}</h1>
       <div class="article-byline">
@@ -45,15 +21,12 @@ layout: layouts/base.njk
   </div>
 </div>
 
-<!-- AI DISCLOSURE -->
-<div style="background:#FBF3E2;border:1px solid #E8C97A;border-radius:3px;padding:.85rem 1.25rem;margin:1.5rem 0 0;font-size:13px;color:#7A5C10;line-height:1.6;">
-  <strong>Editorial Disclosure:</strong> This article was written with the assistance of artificial intelligence and reflects the author's honest research, experience, and editorial judgment. AI-assisted content on The Global Edit is always reviewed, edited, and approved by our editorial team before publication. We maintain full editorial independence — no hotel, brand, or advertiser has paid for or influenced this content.
-</div>
-
 <!-- ARTICLE BODY + SIDEBAR -->
 <div class="article-layout">
-  <article class="article-content" id="articleContent">
+  <article class="article-content">
     {{ content | safe }}
+
+    <p style="margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--border);font-size:12px;color:var(--slate-light);line-height:1.6;"><strong style="font-weight:500;color:var(--slate);">Editorial Disclosure:</strong> This article was written with the assistance of artificial intelligence and reflects the author's honest research, experience, and editorial judgment. AI-assisted content on The Global Edit is always reviewed, edited, and approved by our editorial team before publication. We maintain full editorial independence — no hotel, brand, or advertiser has paid for or influenced this content.</p>
   </article>
 
   <aside class="article-sidebar">
@@ -74,10 +47,10 @@ layout: layouts/base.njk
     <div class="sidebar-widget">
       <h3>Share This Article</h3>
       <div style="display:flex;flex-direction:column;gap:.5rem;">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://theglobal-edit.com{{ page.url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.75rem;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;text-decoration:none;color:var(--navy);">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.75rem;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;">
           <i class="ti ti-brand-facebook" style="color:#1877F2;font-size:17px;" aria-hidden="true"></i> Share on Facebook
         </a>
-        <a href="https://twitter.com/intent/tweet?url=https://theglobal-edit.com{{ page.url }}&text={{ title | urlencode }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.75rem;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;text-decoration:none;color:var(--navy);">
+        <a href="https://twitter.com/intent/tweet?url={{ page.url }}&text={{ title }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.75rem;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;">
           <i class="ti ti-brand-x" style="font-size:17px;" aria-hidden="true"></i> Post on X
         </a>
       </div>
@@ -87,37 +60,13 @@ layout: layouts/base.njk
     <div class="sidebar-widget" style="background:var(--navy);border-color:var(--navy);">
       <h3 style="color:var(--gold);border-color:rgba(255,255,255,.12);">The Weekly Edit</h3>
       <p style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:1rem;">The best travel and money articles, every week. Free.</p>
-      <a href="/#newsletter" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;">Subscribe Free</a>
+      <!-- Replace with your email provider embed code -->
+      <a href="/#newsletter" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;">Subscribe Free</a>
     </div>
   </aside>
 </div>
 
 <!-- RELATED ARTICLES -->
-{%- set sameCat = collections.posts | filterByCategory(category) -%}
-{%- set sameParent = collections.posts | filterByParent(parentCategory) -%}
-{%- set relatedPosts = [] -%}
-
-{# First fill with same category posts (excluding current) #}
-{%- for post in sameCat -%}
-  {%- if post.url != page.url and relatedPosts.length < 3 -%}
-    {%- set relatedPosts = relatedPosts.concat([post]) -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{# Then fill remaining slots with same parent category #}
-{%- for post in sameParent -%}
-  {%- if post.url != page.url and relatedPosts.length < 3 -%}
-    {%- set alreadyAdded = false -%}
-    {%- for rp in relatedPosts -%}
-      {%- if rp.url == post.url -%}{%- set alreadyAdded = true -%}{%- endif -%}
-    {%- endfor -%}
-    {%- if not alreadyAdded -%}
-      {%- set relatedPosts = relatedPosts.concat([post]) -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{% if relatedPosts.length > 0 %}
 <div class="related-section" style="background:var(--cream);padding:3.5rem 0;border-top:1px solid var(--border);">
   <div class="container">
     <div class="section-header">
@@ -125,10 +74,11 @@ layout: layouts/base.njk
       <div class="section-header-line"></div>
     </div>
     <div class="card-grid cols-3">
-      {%- for post in relatedPosts %}
+      {%- set relatedPosts = collections.posts | selectattr("data.category", "equalto", category) | reject("equalto", page) | list -%}
+      {%- for post in relatedPosts | limit(3) %}
       <a href="{{ post.url }}" style="text-decoration:none;" class="card">
         <div class="card-img">
-          <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}" loading="lazy">
+          <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}">
         </div>
         <div class="card-meta">
           <span class="tag">{{ post.data.category }}</span>
@@ -141,22 +91,3 @@ layout: layouts/base.njk
     </div>
   </div>
 </div>
-{% endif %}
-
-<script>
-// Reading progress bar
-(function() {
-  var bar = document.getElementById('readingProgress');
-  var article = document.getElementById('articleContent');
-  if (!bar || !article) return;
-  function updateProgress() {
-    var articleTop = article.offsetTop;
-    var articleHeight = article.offsetHeight;
-    var scrolled = window.scrollY - articleTop;
-    var progress = Math.min(Math.max(scrolled / articleHeight * 100, 0), 100);
-    bar.style.width = progress + '%';
-  }
-  window.addEventListener('scroll', updateProgress, { passive: true });
-  updateProgress();
-})();
-</script>

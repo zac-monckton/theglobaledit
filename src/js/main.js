@@ -14,32 +14,30 @@ document.addEventListener('DOMContentLoaded', function() {
     menuBtn.addEventListener('touchend', toggleMenu, { passive: false });
   }
 
-  // ─── MOBILE TRAVEL DROPDOWN ───────────────────────────────
-  var travelToggle = document.getElementById('travelToggle');
+  // ─── MOBILE DROPDOWNS ─────────────────────────────────────
+  // Both sets of variables declared up front so each toggle function
+  // can reference the other without hitting undefined.
+  var travelToggle   = document.getElementById('travelToggle');
   var travelDropdown = document.getElementById('travelDropdown');
-  var travelArrow = travelToggle ? travelToggle.querySelector('.mobile-toggle-arrow') : null;
+  var financeToggle  = document.getElementById('financeToggle');
+  var financeDropdown = document.getElementById('financeDropdown');
 
   if (travelToggle && travelDropdown) {
     function toggleTravel(e) {
-      // Allow link clicks to pass through
       if (e.target.tagName === 'A') return;
       e.preventDefault();
       e.stopPropagation();
       var isOpen = travelDropdown.classList.contains('open');
       // Close finance if open
       if (financeDropdown) financeDropdown.classList.remove('open');
-      if (financeToggle) financeToggle.classList.remove('open');
+      if (financeToggle)   financeToggle.classList.remove('open');
       // Toggle travel
       travelDropdown.classList.toggle('open', !isOpen);
       travelToggle.classList.toggle('open', !isOpen);
     }
-    travelToggle.addEventListener('click', toggleTravel, { passive: false });
+    travelToggle.addEventListener('click',    toggleTravel, { passive: false });
     travelToggle.addEventListener('touchend', toggleTravel, { passive: false });
   }
-
-  // ─── MOBILE FINANCE DROPDOWN ──────────────────────────────
-  var financeToggle = document.getElementById('financeToggle');
-  var financeDropdown = document.getElementById('financeDropdown');
 
   if (financeToggle && financeDropdown) {
     function toggleFinance(e) {
@@ -49,12 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
       var isOpen = financeDropdown.classList.contains('open');
       // Close travel if open
       if (travelDropdown) travelDropdown.classList.remove('open');
-      if (travelToggle) travelToggle.classList.remove('open');
+      if (travelToggle)   travelToggle.classList.remove('open');
       // Toggle finance
       financeDropdown.classList.toggle('open', !isOpen);
       financeToggle.classList.toggle('open', !isOpen);
     }
-    financeToggle.addEventListener('click', toggleFinance, { passive: false });
+    financeToggle.addEventListener('click',    toggleFinance, { passive: false });
     financeToggle.addEventListener('touchend', toggleFinance, { passive: false });
   }
 
@@ -72,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // ─── COOKIE CONSENT ───────────────────────────────────────
-  var cookieBanner = document.getElementById('cookieBanner');
-  var cookieAccept = document.getElementById('cookieAccept');
+  var cookieBanner  = document.getElementById('cookieBanner');
+  var cookieAccept  = document.getElementById('cookieAccept');
   var cookieDecline = document.getElementById('cookieDecline');
 
   if (cookieBanner) {
