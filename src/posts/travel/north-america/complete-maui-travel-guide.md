@@ -5,7 +5,7 @@ date: 2026-05-10
 layout: layouts/article.njk
 category: North America
 parentCategory: Travel
-featuredImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop"
+featuredImage: "/images/maui-travel-guide.jpeg"
 readTime: 15
 toc:
   - Why Maui Stands Apart

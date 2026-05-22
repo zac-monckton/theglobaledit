@@ -43,20 +43,9 @@
   /* ─── MOBILE MENU ───────────────────────────────────────── */
   .mobile-menu { display: none; background: var(--warm-white); border-top: 1px solid var(--border); padding: 1rem 1.5rem; }
   .mobile-menu.open { display: block; }
-  .mobile-menu > a { display: block; padding: 10px 0; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid var(--border); color: var(--navy); text-decoration: none; }
-  .mobile-dropdown { display: none; padding-left: 1rem; }
-  .mobile-dropdown.open { display: block; }
-  .mobile-dropdown a { display: block !important; padding: 8px 0 !important; font-size: 13px !important; letter-spacing: .04em !important; text-transform: none !important; color: var(--slate) !important; font-weight: 400 !important; border-bottom: 1px solid var(--border); text-decoration: none; }
-  .mobile-toggle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--border);
-    min-height: 48px;
-  }
-
-  /* Hamburger — hidden on desktop, shown on mobile only */
+  .mobile-menu a { display: block; padding: 9px 0; font-size: 13px; font-weight: 400; letter-spacing: .02em; border-bottom: 1px solid var(--border); color: var(--slate); text-decoration: none; }
+  .mobile-menu a.mobile-parent-link { font-weight: 600; color: var(--navy); }
+  .mobile-section-label { font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); padding: 1rem 0 .25rem; }
   #mobileMenuBtn {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -70,26 +59,6 @@
   @media (max-width: 640px) {
     #mobileMenuBtn { display: flex; }
   }
-
-  /* Arrow button inside mobile toggle row */
-  .mobile-toggle-arrow {
-    background: none;
-    border: none;
-    padding: 0;
-    min-width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 20px;
-    color: var(--slate-light);
-    transition: transform .2s;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-  }
-  .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(90deg); }
 </style>
 
 <header>
@@ -150,33 +119,30 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-toggle" id="travelToggle">
-      <a href="/travel/" id="travelLink">Travel</a>
-      <button class="mobile-toggle-arrow" aria-label="Expand Travel menu">›</button>
-    </div>
-    <div class="mobile-dropdown" id="travelDropdown">
-      <a href="/europe/">Europe</a>
-      <a href="/north-america/">North America</a>
-      <a href="/asia/">Asia</a>
-      <a href="/caribbean/">Caribbean</a>
-      <a href="/hotel-reviews/">Hotel Reviews</a>
-      <a href="/itineraries/">Itineraries</a>
-      <a href="/travel-tips/">Travel Tips</a>
-    </div>
 
-    <div class="mobile-toggle" id="financeToggle">
-      <a href="/finance/" id="financeLink">Finance</a>
-      <button class="mobile-toggle-arrow" aria-label="Expand Finance menu">›</button>
-    </div>
-    <div class="mobile-dropdown" id="financeDropdown">
-      <a href="/budgeting/">Budgeting</a>
-      <a href="/credit-points/">Credit & Points</a>
-      <a href="/investing/">Investing</a>
-      <a href="/tax-strategy/">Tax Strategy</a>
-    </div>
+    <div class="mobile-section-label">Travel</div>
+    <a href="/travel/" class="mobile-parent-link">All Travel</a>
+    <a href="/posts/travel/europe/">Europe</a>
+    <a href="/posts/travel/north-america/">North America</a>
+    <a href="/posts/travel/asia/">Asia</a>
+    <a href="/posts/travel/caribbean/">Caribbean</a>
+    <a href="/posts/travel/hotel-reviews/">Hotel Reviews</a>
+    <a href="/posts/travel/itineraries/">Itineraries</a>
+    <a href="/posts/travel/travel-tips/">Travel Tips</a>
 
+    <div class="mobile-section-label">Finance</div>
+    <a href="/finance/" class="mobile-parent-link">All Finance</a>
+    <a href="/posts/finance/budgeting/">Budgeting</a>
+    <a href="/posts/finance/credit-points/">Credit & Points</a>
+    <a href="/posts/finance/investing/">Investing</a>
+    <a href="/posts/finance/tax-strategy/">Tax Strategy</a>
+
+    <div class="mobile-section-label">Company</div>
     <a href="/about/">About</a>
     <a href="/contact/">Contact</a>
-    <a href="/#newsletter" style="color: var(--gold); border-bottom: none; margin-top: .5rem;">Subscribe to Newsletter →</a>
+    <a href="/#newsletter" style="color: var(--gold);">Newsletter</a>
+
   </div>
 </header>
+
+

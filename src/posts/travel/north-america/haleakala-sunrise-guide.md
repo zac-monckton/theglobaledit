@@ -5,7 +5,7 @@ date: 2026-05-21
 layout: layouts/article.njk
 category: North America
 parentCategory: Travel
-featuredImage: "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1200&auto=format&fit=crop"
+featuredImage: "/images/Haleakala-Sunrise.jpg"
 readTime: 11
 toc:
   - Why Haleakalā Sunrise Is Worth It
