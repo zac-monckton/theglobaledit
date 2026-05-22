@@ -4,7 +4,7 @@ description: "Chase Ultimate Rewards is the most flexible points currency in tra
 date: 2026-05-17
 layout: layouts/article.njk
 category: Credit & Points
-parentCategory: Personal Finance
+parentCategory: Finance
 featuredImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&auto=format&fit=crop"
 readTime: 11
 toc:

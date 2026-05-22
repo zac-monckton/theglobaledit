@@ -1,22 +1,19 @@
-\---
-
+---
 title: "Master Your Money with the 50/30/20 Budgeting Rule"
 description: "The simplest framework for getting your finances under control — and how to adapt it for your own life and goals."
 date: 2026-05-11
 layout: layouts/article.njk
 category: Budgeting
-parentCategory: Personal Finance
-featuredImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200\&auto=format\&fit=crop"
+parentCategory: Finance
+featuredImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop"
 readTime: 5
 toc:
-
-* What Is the 50/30/20 Rule?
-* The 50 Percent Needs
-* The 30 Percent Wants
-* The 20 Percent Savings and Debt
-* How to Adapt It for Travel
-
-\---
+  - What Is the 50/30/20 Rule?
+  - The 50 Percent Needs
+  - The 30 Percent Wants
+  - The 20 Percent Savings and Debt
+  - How to Adapt It for Travel
+---
 
 Budgeting doesn't have to be complicated. The 50/30/20 rule is one of the most effective frameworks for managing your money, regardless of your income level. Here's how it works and how to make it your own.
 
@@ -66,4 +63,3 @@ Travel doesn't have to compete with your financial goals if you're strategic. A 
 **Off-peak travel** dramatically reduces the cash cost of the same experiences — often by 30-50%. Knowing <a href="/posts/travel/travel-tips/best-time-to-book-flights/">when to book flights</a> can save another 20-40% on top of that.
 
 The 50/30/20 rule isn't perfect for everyone — high cost-of-living cities may require adjustments. But as a starting framework, it's one of the most effective tools for getting your financial life in order without making budgeting your full-time job.
-

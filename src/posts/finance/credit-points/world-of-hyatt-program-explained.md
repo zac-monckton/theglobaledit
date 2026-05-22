@@ -1,25 +1,22 @@
-\---
-
+---
 title: "The World of Hyatt Program Explained: Best Ways to Earn and Redeem"
 description: "Hyatt has the smallest footprint of the major hotel loyalty programs — and the most valuable points. Here's everything you need to know to earn more and redeem smarter."
-date: 2026-05-13
+date: 2026-05-19
 layout: layouts/article.njk
-category: Credit \& Points
-parentCategory: Personal Finance
-featuredImage: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200\&auto=format\&fit=crop"
+category: Credit & Points
+parentCategory: Finance
+featuredImage: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&auto=format&fit=crop"
 readTime: 13
 toc:
-
-* Why Hyatt Points Are Worth More
-* Understanding the Category System
-* Best Ways to Earn Hyatt Points
-* Chase Ultimate Rewards The Master Key
-* Best Redemptions in Every Category
-* Elite Status Is It Worth Chasing
-* Mistakes That Waste Your Points
-* Your Hyatt Action Plan
-
-\---
+  - Why Hyatt Points Are Worth More
+  - Understanding the Category System
+  - Best Ways to Earn Hyatt Points
+  - Chase Ultimate Rewards The Master Key
+  - Best Redemptions in Every Category
+  - Elite Status Is It Worth Chasing
+  - Mistakes That Waste Your Points
+  - Your Hyatt Action Plan
+---
 
 World of Hyatt is the smallest of the major hotel loyalty programs — roughly 1,200 properties compared to Marriott's 8,500. That limited footprint is the most common reason people overlook it. It's also the reason its points are worth significantly more than the competition.
 
@@ -40,16 +37,16 @@ For a real-world example of these redemption rates in action, see our full <a hr
 
 World of Hyatt divides its properties into eight categories, with award rates scaling from Category 1 to Category 8.
 
-|Category|Standard Points/Night|Peak Points/Night|Off-Peak Points/Night|
-|-|-|-|-|
-|Category 1|3,500|5,000|2,500|
-|Category 2|6,500|8,500|4,500|
-|Category 3|9,000|12,000|6,500|
-|Category 4|12,000|16,000|8,500|
-|Category 5|17,000|21,000|13,000|
-|Category 6|22,000|27,000|17,000|
-|Category 7|30,000|37,000|23,000|
-|Category 8|40,000|50,000|30,000|
+| Category | Standard Points/Night | Peak Points/Night | Off-Peak Points/Night |
+|---|---|---|---|
+| Category 1 | 3,500 | 5,000 | 2,500 |
+| Category 2 | 6,500 | 8,500 | 4,500 |
+| Category 3 | 9,000 | 12,000 | 6,500 |
+| Category 4 | 12,000 | 16,000 | 8,500 |
+| Category 5 | 17,000 | 21,000 | 13,000 |
+| Category 6 | 22,000 | 27,000 | 17,000 |
+| Category 7 | 30,000 | 37,000 | 23,000 |
+| Category 8 | 40,000 | 50,000 | 30,000 |
 
 **The fifth-night-free benefit:** A stay of five or more consecutive nights at the same property costs the equivalent of four nights in points — a 20% discount. Always book multi-night stays as a single reservation.
 
@@ -127,11 +124,11 @@ World of Hyatt rewards the strategic traveler disproportionately. You don't need
 
 <script>
 function updateProgressHY(){
-  var checks=document.querySelectorAll('#checklist-hy input\[type="checkbox"]');
+  var checks=document.querySelectorAll('#checklist-hy input[type="checkbox"]');
   var done=Array.from(checks).filter(function(c){return c.checked;}).length;
   var total=checks.length;
-  document.getElementById('progress-fill-hy').style.width=(done/total\*100)+'%';
+  document.getElementById('progress-fill-hy').style.width=(done/total*100)+'%';
   document.getElementById('progress-text-hy').textContent=done+' of '+total+' completed';
   checks.forEach(function(c){if(c.checked){c.nextElementSibling.style.textDecoration='line-through';c.nextElementSibling.style.color='#bbb';}else{c.nextElementSibling.style.textDecoration='none';c.nextElementSibling.style.color='var(--slate)';}});
 }
-
+</script>

@@ -1,27 +1,24 @@
-\---
-
+---
 title: "How to Negotiate a Hotel Upgrade at Check-In (It Actually Works)"
 description: "Most travelers never ask. The ones who do — and ask the right way — get upgraded more often than you'd think. Here's the exact playbook, word for word."
 date: 2026-05-15
 layout: layouts/article.njk
-category: Hotel Reviews
+category: Travel Tips
 parentCategory: Travel
-featuredImage: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200\&auto=format\&fit=crop"
+featuredImage: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&auto=format&fit=crop"
 readTime: 12
 toc:
-
-* Why Upgrades Happen at All
-* Who Gets Upgraded
-* The Upgrade Playbook
-* What to Say Word for Word
-* Loyalty Programs Are Your Biggest Lever
-* Timing When to Ask
-* What Works Online Before You Arrive
-* When You Don't Get It
-* The Mistakes That Kill Your Chances
-* Your Pre Check In Checklist
-
-\---
+  - Why Upgrades Happen at All
+  - Who Gets Upgraded
+  - The Upgrade Playbook
+  - What to Say Word for Word
+  - Loyalty Programs Are Your Biggest Lever
+  - Timing When to Ask
+  - What Works Online Before You Arrive
+  - When You Don't Get It
+  - The Mistakes That Kill Your Chances
+  - Your Pre Check In Checklist
+---
 
 Here's what the hotel industry doesn't advertise: a meaningful percentage of available room upgrades go unclaimed every single night simply because guests don't ask. Front desk agents have discretion. They like helping people who are pleasant and prepared. And in most cases, the cost to the hotel of moving you to a better room is essentially zero.
 
@@ -54,7 +51,7 @@ That last criterion — demeanor — is the one you control entirely.
 
 There are four moments in the hotel process where upgrades happen.
 
-**Step 1 — Call the hotel 48 hours before arrival.** Call the actual property, not the chain's reservation center. Ask whether there are complimentary upgrade opportunities given occupancy. Script: "Hi, I have a reservation arriving tomorrow under \[name]. I'm a \[loyalty tier] member and I was wondering if there might be any complimentary upgrade availability. No worries if not — I just wanted to ask."
+**Step 1 — Call the hotel 48 hours before arrival.** Call the actual property, not the chain's reservation center. Ask whether there are complimentary upgrade opportunities given occupancy. Script: "Hi, I have a reservation arriving tomorrow under [name]. I'm a [loyalty tier] member and I was wondering if there might be any complimentary upgrade availability. No worries if not — I just wanted to ask."
 
 **Step 2 — Pre-arrival message.** If the hotel sends a pre-arrival email, reply mentioning your stay occasion or noting you'd love to be considered for any available upgrades.
 
@@ -76,7 +73,7 @@ There are four moments in the hotel process where upgrades happen.
 "Is there any chance there are complimentary upgrades available this evening? We're really looking forward to the stay — but no worries at all if not."
 
 **The Loyalty Play:**
-"I'm a \[Gold/Platinum/Diamond] member — I'd love to be considered for any available upgrade if that's something you're able to do tonight."
+"I'm a [Gold/Platinum/Diamond] member — I'd love to be considered for any available upgrade if that's something you're able to do tonight."
 
 **The Occasion Angle:**
 "My partner and I are here for our anniversary — is there anything available that might make the stay a little special? No pressure if not."
@@ -152,11 +149,11 @@ The travelers who get upgraded most consistently aren't the loudest or most enti
 
 <script>
 function updateProgressHU(){
-  var checks=document.querySelectorAll('#checklist-hu input\[type="checkbox"]');
+  var checks=document.querySelectorAll('#checklist-hu input[type="checkbox"]');
   var done=Array.from(checks).filter(function(c){return c.checked;}).length;
   var total=checks.length;
-  document.getElementById('progress-fill-hu').style.width=(done/total\*100)+'%';
+  document.getElementById('progress-fill-hu').style.width=(done/total*100)+'%';
   document.getElementById('progress-text-hu').textContent=done+' of '+total+' completed';
   checks.forEach(function(c){if(c.checked){c.nextElementSibling.style.textDecoration='line-through';c.nextElementSibling.style.color='#bbb';}else{c.nextElementSibling.style.textDecoration='none';c.nextElementSibling.style.color='var(--slate)';}});
 }
-
+</script>
