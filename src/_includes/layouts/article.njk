@@ -26,7 +26,7 @@ layout: layouts/base.njk
   <article class="article-content">
     {{ content | safe }}
 
-    <p style="margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--border);font-size:12px;color:var(--slate-light);line-height:1.6;"><strong style="font-weight:500;color:var(--slate);">Editorial Disclosure:</strong> This article was written with the assistance of artificial intelligence and reflects the author's honest research, experience, and editorial judgment. AI-assisted content on The Global Edit is always reviewed, edited, and approved by our editorial team before publication. We maintain full editorial independence — no hotel, brand, or advertiser has paid for or influenced this content.</p>
+    <p style="margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--border);font-size:12px;color:var(--slate-light);line-height:1.6;"><strong style="font-weight:500;color:var(--slate);">Editorial Disclosure:</strong> This article was written with the assistance of artificial intelligence and reflects the author's honest research, experience, and editorial judgment. AI-assisted content on The Global Edit is always reviewed, edited, and approved by our editorial team before publication.</p>
   </article>
 
   <aside class="article-sidebar">
@@ -57,14 +57,119 @@ layout: layouts/base.njk
     </div>
 
     <!-- Newsletter CTA -->
-    <div class="sidebar-widget" style="background:var(--navy);border-color:var(--navy);">
-      <h3 style="color:var(--gold);border-color:rgba(255,255,255,.12);">The Weekly Edit</h3>
-      <p style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:1rem;">The best travel and money articles, every week. Free.</p>
-      <!-- Replace with your email provider embed code -->
-      <a href="/#newsletter" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;">Subscribe Free</a>
+<div class="sidebar-newsletter">
+  <div class="sidebar-newsletter-eyebrow">Free Newsletter</div>
+  <div class="sidebar-newsletter-heading">The Weekly Edit</div>
+  <p class="sidebar-newsletter-sub">Smart travel and money insights every week. Free.</p>
+  <form action="https://app.kit.com/forms/9480612/subscriptions"
+        class="seva-form kit-form-sidebar"
+        method="post"
+        data-sv-form="9480612"
+        data-uid="018ad640ca"
+        data-format="inline"
+        data-version="5">
+    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+    <div data-element="fields">
+      <input class="sidebar-kit-input"
+             name="email_address"
+             aria-label="Your email address"
+             placeholder="Your email address"
+             required
+             type="email">
+      <button data-element="submit" class="sidebar-kit-btn">
+        <div class="formkit-spinner"><div></div><div></div><div></div></div>
+        <span>Subscribe Free</span>
+      </button>
     </div>
-  </aside>
+  </form>
+  <p class="sidebar-kit-disclaimer">No spam. Unsubscribe anytime.</p>
 </div>
+
+<style>
+.sidebar-newsletter {
+  background: var(--navy);
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-newsletter-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .5rem;
+}
+
+.sidebar-newsletter-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.sidebar-newsletter-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,.6);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sidebar-kit-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: .5rem;
+  transition: border-color 200ms;
+}
+
+.sidebar-kit-input::placeholder {
+  color: rgba(255,255,255,.4);
+}
+
+.sidebar-kit-input:focus {
+  border-color: var(--gold);
+  background: rgba(255,255,255,.12);
+}
+
+.sidebar-kit-btn {
+  width: 100%;
+  background: var(--gold);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 200ms;
+  position: relative;
+}
+
+.sidebar-kit-btn:hover {
+  background: #b37d22;
+}
+
+.sidebar-kit-disclaimer {
+  font-size: 11px;
+  color: rgba(255,255,255,.3);
+  margin: .5rem 0 0;
+  text-align: center;
+}
+</style>
+
 
 <!-- RELATED ARTICLES -->
 <div class="related-section" style="background:var(--cream);padding:3.5rem 0;border-top:1px solid var(--border);">

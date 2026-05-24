@@ -201,15 +201,180 @@ title: Where Smart Money Meets Smart Travel
 </section>
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
-  <div class="newsletter-inner">
-    <h2>The Weekly Edit</h2>
-    <p>Join thousands of readers getting the best travel guides, credit card tips, and money advice — every week, completely free.</p>
-    <!-- Replace the form below with your email provider's embed code (Mailchimp, ConvertKit, etc.) -->
-    <form class="newsletter-form" onsubmit="return false;">
-      <input type="email" placeholder="your@email.com" aria-label="Email address">
-      <button type="submit">Subscribe →</button>
-    </form>
-    <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <div class="section-eyebrow">Free Newsletter</div>
+        <h2 class="newsletter-heading">The Weekly Edit</h2>
+        <p class="newsletter-sub">Smart travel and money insights, every week. No spam, no fluff — just the good stuff. Free forever.</p>
+      </div>
+      <div class="newsletter-form-wrap">
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+        <form action="https://app.kit.com/forms/9480612/subscriptions"
+              class="seva-form kit-form-homepage"
+              method="post"
+              data-sv-form="9480612"
+              data-uid="018ad640ca"
+              data-format="inline"
+              data-version="5">
+          <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+          <div class="kit-fields" data-element="fields">
+            <input class="kit-input"
+                   name="email_address"
+                   aria-label="Your email address"
+                   placeholder="Your email address"
+                   required
+                   type="email">
+            <button data-element="submit" class="kit-btn">
+              <div class="formkit-spinner"><div></div><div></div><div></div></div>
+              <span>Subscribe Free</span>
+            </button>
+          </div>
+          <p class="kit-disclaimer">Join smart travelers and savers. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+.newsletter-section {
+  background: var(--navy);
+  padding: 4rem 2rem;
+}
+
+.newsletter-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.newsletter-text .section-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .75rem;
+}
+
+.newsletter-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: .75rem;
+  line-height: 1.2;
+}
+
+.newsletter-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,.6);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.kit-fields {
+  display: flex;
+  gap: 0;
+  margin-bottom: .75rem;
+}
+
+.kit-input {
+  flex: 1;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-right: none;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  transition: border-color 200ms;
+}
+
+.kit-input::placeholder {
+  color: rgba(255,255,255,.4);
+}
+
+.kit-input:focus {
+  border-color: var(--gold);
+  background: rgba(255,255,255,.12);
+}
+
+.kit-btn {
+  background: var(--gold);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 200ms;
+  position: relative;
+}
+
+.kit-btn:hover {
+  background: #b37d22;
+}
+
+.kit-disclaimer {
+  font-size: 12px;
+  color: rgba(255,255,255,.35);
+  margin: 0;
+}
+
+.formkit-alert-error {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 .75rem;
+  font-size: 13px;
+  color: #f2643b;
+}
+
+.formkit-alert:empty {
+  display: none;
+}
+
+.formkit-spinner {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .newsletter-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .newsletter-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .kit-fields {
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  .kit-input {
+    border-right: 1px solid rgba(255,255,255,.15);
+    border-radius: 2px;
+  }
+
+  .kit-btn {
+    border-radius: 2px;
+    padding: 14px 20px;
+  }
+}
+</style>

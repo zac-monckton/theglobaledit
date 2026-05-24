@@ -302,7 +302,7 @@ The honest truth: if you have to ask whether you'll use the Reserve's credits, t
 
 ---
 
-## The Bottom Line
+## The Final Edit
 
 <div id="section-9"></div>
 
@@ -316,4 +316,4 @@ For a deeper look at how to actually deploy Chase Ultimate Rewards points for ma
 
 ---
 
-*The Global Edit maintains full editorial independence. We are not compensated by Chase or any card issuer to recommend specific products. Card benefits, fees, and offers are subject to change — always verify current terms at chase.com before applying.*
+*Card benefits, fees, and offers are subject to change — always verify current terms at chase.com before applying. The Global Edit may earn a commission if you apply for a card through links on this site. This does not influence our recommendations or editorial verdict.*
