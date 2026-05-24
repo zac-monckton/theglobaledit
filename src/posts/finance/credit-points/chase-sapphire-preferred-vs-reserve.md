@@ -1,5 +1,5 @@
 ---
-title: "Is the Chase Sapphire Reserve Worth $795? We've Held Both Cards — Here's the Truth"
+title: "Is the Chase Sapphire Reserve Worth $795? We've Held Both Sapphire Cards — Here's the Truth"
 description: "We've held both the Chase Sapphire Preferred and Reserve. Here's an honest breakdown of the $795 annual fee, every credit, lounge access, and which card is actually worth it for your wallet."
 date: 2026-05-22
 layout: layouts/article.njk
