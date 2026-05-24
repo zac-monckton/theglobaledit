@@ -31,30 +31,44 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (travelToggle && travelDropdown) {
-    // The arrow span is the dedicated tap target — not the whole row
+    // Tap the arrow to toggle — label navigates to /travel/
     var travelArrow = travelToggle.querySelector('.mobile-toggle-arrow');
-    var travelTarget = travelArrow || travelToggle;
-
-    travelTarget.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      var isOpen = travelDropdown.classList.contains('open');
-      if (financeDropdown) closeDropdown(financeDropdown, financeToggle);
-      isOpen ? closeDropdown(travelDropdown, travelToggle) : openDropdown(travelDropdown, travelToggle);
-    });
+    if (travelArrow) {
+      travelArrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isOpen = travelDropdown.classList.contains('open');
+        if (financeDropdown) closeDropdown(financeDropdown, financeToggle);
+        isOpen ? closeDropdown(travelDropdown, travelToggle) : openDropdown(travelDropdown, travelToggle);
+      });
+      travelArrow.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isOpen = travelDropdown.classList.contains('open');
+        if (financeDropdown) closeDropdown(financeDropdown, financeToggle);
+        isOpen ? closeDropdown(travelDropdown, travelToggle) : openDropdown(travelDropdown, travelToggle);
+      }, { passive: false });
+    }
   }
 
   if (financeToggle && financeDropdown) {
     var financeArrow = financeToggle.querySelector('.mobile-toggle-arrow');
-    var financeTarget = financeArrow || financeToggle;
-
-    financeTarget.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      var isOpen = financeDropdown.classList.contains('open');
-      if (travelDropdown) closeDropdown(travelDropdown, travelToggle);
-      isOpen ? closeDropdown(financeDropdown, financeToggle) : openDropdown(financeDropdown, financeToggle);
-    });
+    if (financeArrow) {
+      financeArrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isOpen = financeDropdown.classList.contains('open');
+        if (travelDropdown) closeDropdown(travelDropdown, travelToggle);
+        isOpen ? closeDropdown(financeDropdown, financeToggle) : openDropdown(financeDropdown, financeToggle);
+      });
+      financeArrow.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isOpen = financeDropdown.classList.contains('open');
+        if (travelDropdown) closeDropdown(travelDropdown, travelToggle);
+        isOpen ? closeDropdown(financeDropdown, financeToggle) : openDropdown(financeDropdown, financeToggle);
+      }, { passive: false });
+    }
   }
 
   // ─── NEWSLETTER FORM ──────────────────────────────────────

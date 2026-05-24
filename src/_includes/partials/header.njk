@@ -41,20 +41,59 @@
   .dropdown a:hover { color: var(--navy) !important; background: var(--cream); }
 
   /* ─── MOBILE MENU ───────────────────────────────────────── */
-  .mobile-menu { display: none; background: var(--warm-white); border-top: 1px solid var(--border); padding: 1rem 1.5rem; }
+  .mobile-menu { display: none; background: var(--warm-white); border-top: 1px solid var(--border); padding: .5rem 0 1rem; }
   .mobile-menu.open { display: block; }
-  .mobile-menu a { display: block; padding: 9px 0; font-size: 13px; font-weight: 400; letter-spacing: .02em; border-bottom: 1px solid var(--border); color: var(--slate); text-decoration: none; }
-  .mobile-menu a.mobile-parent-link { font-weight: 600; color: var(--navy); }
-  .mobile-section-label { font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); padding: 1rem 0 .25rem; }
+
+  /* Top-level toggle rows */
+  .mobile-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 1.5rem; cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .mobile-toggle-label {
+    font-size: 13px; font-weight: 600; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--navy); text-decoration: none;
+  }
+  .mobile-toggle-arrow {
+    width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 18px; flex-shrink: 0;
+    transition: transform .25s ease;
+  }
+  .mobile-toggle.open .mobile-toggle-arrow { transform: rotate(180deg); }
+
+  /* Dropdown panels */
+  .mobile-dropdown { display: none; background: var(--cream); border-bottom: 1px solid var(--border); }
+  .mobile-dropdown.open { display: block; }
+  .mobile-dropdown-label {
+    font-size: 9px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--gold); padding: .85rem 1.5rem .2rem;
+  }
+  .mobile-dropdown a {
+    display: block; padding: 10px 1.5rem 10px 2rem;
+    font-size: 13px; font-weight: 400; color: var(--slate);
+    border-bottom: 1px solid var(--border); text-decoration: none;
+  }
+  .mobile-dropdown a:last-child { border-bottom: none; }
+  .mobile-dropdown a:active { background: var(--border); }
+
+  /* Company links */
+  .mobile-company-links { padding: .5rem 0; }
+  .mobile-company-links a {
+    display: block; padding: 11px 1.5rem;
+    font-size: 13px; font-weight: 400; color: var(--slate);
+    border-bottom: 1px solid var(--border); text-decoration: none;
+  }
+  .mobile-company-links a:last-child { border-bottom: none; }
+  .mobile-company-links a.gold { color: var(--gold); font-weight: 500; }
+
   #mobileMenuBtn {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
-    min-width: 44px;
-    min-height: 44px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-width: 44px; min-height: 44px;
+    flex-direction: column; justify-content: center; align-items: center;
   }
   @media (max-width: 640px) {
     #mobileMenuBtn { display: flex; }
@@ -120,27 +159,43 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
 
-    <div class="mobile-section-label">Travel</div>
-    <a href="/travel/" class="mobile-parent-link">All Travel</a>
-    <a href="/posts/travel/europe/">Europe</a>
-    <a href="/posts/travel/north-america/">North America</a>
-    <a href="/posts/travel/asia/">Asia</a>
-    <a href="/posts/travel/caribbean/">Caribbean</a>
-    <a href="/posts/travel/hotel-reviews/">Hotel Reviews</a>
-    <a href="/posts/travel/itineraries/">Itineraries</a>
-    <a href="/posts/travel/travel-tips/">Travel Tips</a>
+    <!-- Travel toggle -->
+    <div class="mobile-toggle" id="travelToggle">
+      <a href="/travel/" class="mobile-toggle-label">Travel</a>
+      <span class="mobile-toggle-arrow"><i class="ti ti-chevron-down" aria-hidden="true"></i></span>
+    </div>
+    <div class="mobile-dropdown" id="travelDropdown">
+      <div class="mobile-dropdown-label">By Region</div>
+      <a href="/posts/travel/europe/">Europe</a>
+      <a href="/posts/travel/north-america/">North America</a>
+      <a href="/posts/travel/asia/">Asia</a>
+      <a href="/posts/travel/caribbean/">Caribbean</a>
+      <div class="mobile-dropdown-label">By Type</div>
+      <a href="/posts/travel/hotel-reviews/">Hotel Reviews</a>
+      <a href="/posts/travel/itineraries/">Itineraries</a>
+      <a href="/posts/travel/travel-tips/">Travel Tips</a>
+    </div>
 
-    <div class="mobile-section-label">Finance</div>
-    <a href="/finance/" class="mobile-parent-link">All Finance</a>
-    <a href="/posts/finance/budgeting/">Budgeting</a>
-    <a href="/posts/finance/credit-points/">Credit & Points</a>
-    <a href="/posts/finance/investing/">Investing</a>
-    <a href="/posts/finance/tax-strategy/">Tax Strategy</a>
+    <!-- Finance toggle -->
+    <div class="mobile-toggle" id="financeToggle">
+      <a href="/finance/" class="mobile-toggle-label">Finance</a>
+      <span class="mobile-toggle-arrow"><i class="ti ti-chevron-down" aria-hidden="true"></i></span>
+    </div>
+    <div class="mobile-dropdown" id="financeDropdown">
+      <div class="mobile-dropdown-label">Topics</div>
+      <a href="/posts/finance/budgeting/">Budgeting</a>
+      <a href="/posts/finance/credit-points/">Credit &amp; Points</a>
+      <a href="/posts/finance/investing/">Investing</a>
+      <a href="/posts/finance/tax-strategy/">Tax Strategy</a>
+    </div>
 
-    <div class="mobile-section-label">Company</div>
-    <a href="/about/">About</a>
-    <a href="/contact/">Contact</a>
-    <a href="/#newsletter" style="color: var(--gold);">Newsletter</a>
+    <!-- Company links -->
+    <div class="mobile-company-links">
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/search/">Search</a>
+      <a href="/#newsletter" class="gold">Newsletter</a>
+    </div>
 
   </div>
 </header>
