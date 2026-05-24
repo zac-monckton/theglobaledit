@@ -5,7 +5,7 @@ date: 2026-05-24
 layout: layouts/article.njk
 category: Credit & Points
 parentCategory: Personal Finance
-featuredImage: "/images/sapphire-reserve.png""
+featuredImage: "/images/sapphire-reserve.png"
 readTime: 14
 tags:
   - Credit & Points
