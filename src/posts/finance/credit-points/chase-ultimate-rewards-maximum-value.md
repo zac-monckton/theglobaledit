@@ -40,18 +40,18 @@ Three things separate Chase Ultimate Rewards from competing currencies like Amex
 
 The power of Chase UR comes from combining multiple cards that all pool their points together.
 
-**Chase Sapphire Reserve ($550/year)**
-- 3x on all travel and dining worldwide
+**Chase Sapphire Reserve ($795/year)**
+- 8x on Chase Travel purchases, 4x on flights and hotels booked direct, 3x on dining worldwide
 - 1.5 cents per point in Chase Travel portal (vs 1.25 for Preferred)
-- $300 annual travel credit (effectively drops the fee to $250)
-- Priority Pass lounge access
+- $300 annual travel credit (effectively drops the fee to $495 before other credits)
+- Priority Pass lounge access + Chase Sapphire Lounges
 - Best card if you spend heavily on travel and dining
 
 **Chase Sapphire Preferred ($95/year)**
 - 3x on dining, 2x on travel
 - 1.25 cents per point in Chase Travel portal
 - Best entry point for most people — excellent value at $95/year
-- Sign-up bonus typically 60,000-80,000 UR points
+- Sign-up bonus varies — check current offers at chase.com
 
 **Chase Freedom Unlimited (no annual fee)**
 - 1.5x on everything
@@ -118,7 +118,7 @@ The Chase Travel portal lets you book flights, hotels, and cars directly using p
 
 **Business cards.** If you have self-employment or business income, the Chase Ink Business Preferred (3x on travel, shipping, advertising, and phone/internet) and Chase Ink Business Cash (5x at office supply stores and on internet/cable/phone) add powerful earning categories.
 
-**Sign-up bonuses.** The highest-value UR earning event is the sign-up bonus on a new Sapphire card. At 60,000-80,000 points, a single bonus transferred to Hyatt covers 2-4 nights at properties that would otherwise cost $200-400/night.
+**Sign-up bonuses.** The highest-value UR earning event is the sign-up bonus on a new Sapphire card. The Reserve currently offers 125,000 points (check chase.com for the latest offer) — transferred to Hyatt, that covers 4-6 nights at properties that would otherwise cost $300-600/night.
 
 ## Real-World Redemption Examples
 

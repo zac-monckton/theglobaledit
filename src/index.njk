@@ -219,6 +219,9 @@ title: Where Smart Money Meets Smart Travel
               data-format="inline"
               data-version="5"
               data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;You&amp;rsquo;re in! Check your inbox to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;}}}">
+          <div data-element="content" class="kit-success-content" style="display:none;">
+            <p class="kit-success-message"></p>
+          </div>
           <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
           <div class="kit-fields" data-element="fields">
             <input class="kit-input"
@@ -383,5 +386,19 @@ title: Where Smart Money Meets Smart Travel
     border-radius: 2px;
     padding: 14px 20px;
   }
+}
+</style>
+
+<style>
+.kit-success-content {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.kit-success-message {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #fff;
+  line-height: 1.6;
 }
 </style>
