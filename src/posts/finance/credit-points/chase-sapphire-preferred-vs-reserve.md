@@ -5,7 +5,7 @@ date: 2026-05-22
 layout: layouts/article.njk
 category: Credit & Points
 parentCategory: Personal Finance
-featuredImage: "/images/reserve-or-preferred.jpg"
+featuredImage: "/images/reserve-or-preferred.png"
 readTime: 14
 tags:
   - Credit & Points
