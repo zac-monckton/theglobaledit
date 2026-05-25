@@ -30,45 +30,45 @@ document.addEventListener('DOMContentLoaded', function() {
     toggle.classList.remove('open');
   }
 
-  if (travelToggle && travelDropdown) {
-    // Tap the arrow to toggle — label navigates to /travel/
-    var travelArrow = travelToggle.querySelector('.mobile-toggle-arrow');
-    if (travelArrow) {
-      travelArrow.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var isOpen = travelDropdown.classList.contains('open');
-        if (financeDropdown) closeDropdown(financeDropdown, financeToggle);
-        isOpen ? closeDropdown(travelDropdown, travelToggle) : openDropdown(travelDropdown, travelToggle);
-      });
-      travelArrow.addEventListener('touchend', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var isOpen = travelDropdown.classList.contains('open');
-        if (financeDropdown) closeDropdown(financeDropdown, financeToggle);
-        isOpen ? closeDropdown(travelDropdown, travelToggle) : openDropdown(travelDropdown, travelToggle);
-      }, { passive: false });
+  // Unified toggle handler — works on both real iPhone touch and desktop click.
+  // Listens on the entire toggle row. If the tap/click target is the label <a>,
+  // allow navigation. If it's anywhere else (arrow, row background), toggle the dropdown.
+  function makeToggleHandler(dropdown, toggle, otherDropdown, otherToggle) {
+    var touchHandled = false;
+
+    function handleToggle(e) {
+      // If the user tapped/clicked the label link, let it navigate — don't toggle
+      if (e.target.classList.contains('mobile-toggle-label') || e.target.closest('.mobile-toggle-label')) {
+        return;
+      }
+      e.preventDefault();
+      e.stopPropagation();
+      var isOpen = dropdown.classList.contains('open');
+      if (otherDropdown) closeDropdown(otherDropdown, otherToggle);
+      isOpen ? closeDropdown(dropdown, toggle) : openDropdown(dropdown, toggle);
     }
+
+    // touchend fires on real iPhone — handle it and set flag to skip the ghost click
+    toggle.addEventListener('touchend', function(e) {
+      touchHandled = true;
+      handleToggle(e);
+      // Reset flag after ghost click window passes
+      setTimeout(function() { touchHandled = false; }, 500);
+    }, { passive: false });
+
+    // click fires on desktop and as a fallback — skip if already handled by touchend
+    toggle.addEventListener('click', function(e) {
+      if (touchHandled) return;
+      handleToggle(e);
+    });
+  }
+
+  if (travelToggle && travelDropdown) {
+    makeToggleHandler(travelDropdown, travelToggle, financeDropdown, financeToggle);
   }
 
   if (financeToggle && financeDropdown) {
-    var financeArrow = financeToggle.querySelector('.mobile-toggle-arrow');
-    if (financeArrow) {
-      financeArrow.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var isOpen = financeDropdown.classList.contains('open');
-        if (travelDropdown) closeDropdown(travelDropdown, travelToggle);
-        isOpen ? closeDropdown(financeDropdown, financeToggle) : openDropdown(financeDropdown, financeToggle);
-      });
-      financeArrow.addEventListener('touchend', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var isOpen = financeDropdown.classList.contains('open');
-        if (travelDropdown) closeDropdown(travelDropdown, travelToggle);
-        isOpen ? closeDropdown(financeDropdown, financeToggle) : openDropdown(financeDropdown, financeToggle);
-      }, { passive: false });
-    }
+    makeToggleHandler(financeDropdown, financeToggle, travelDropdown, travelToggle);
   }
 
   // ─── NEWSLETTER FORM ──────────────────────────────────────

@@ -2,6 +2,26 @@
 layout: layouts/base.njk
 ---
 
+<!-- READING PROGRESS BAR -->
+<div id="readingProgress" style="position:fixed;top:0;left:0;width:0%;height:3px;background:var(--gold);z-index:9999;transition:width .1s linear;"></div>
+
+<style>
+#readingProgress { pointer-events: none; }
+</style>
+
+<script>
+(function() {
+  var bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = Math.min(pct, 100) + '%';
+  }, { passive: true });
+})();
+</script>
+
 <!-- ARTICLE HERO -->
 <div class="article-hero">
   <img src="{{ featuredImage }}" alt="{{ title }}">
