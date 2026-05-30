@@ -47,220 +47,539 @@ The silver lining: Category 1–7 free night certificates, earned from the World
 
 ## How We Ranked These Properties
 
-Each property was evaluated on five criteria:
-
-- **Award cost** — Moderate-tier points per night (primary sort)
-- **Beach access** — True beachfront vs. beach adjacent vs. ferry/shuttle required
-- **Property quality** — Brand tier, room quality, renovation recency
-- **Amenity depth** — Pool, spa, dining, activities, kids programming
-- **Location value** — Destination desirability, flight accessibility, local context
-
-Properties in Hawaii and Puerto Rico were considered eligible as U.S. territories. All-inclusive properties on the separate Hyatt all-inclusive chart were excluded — this list covers standard-chart hotel properties only.
+Each property was evaluated on five criteria: award cost (moderate-tier points per night, used as the primary sort), beach access (true beachfront vs. adjacent vs. ferry required), property quality (brand tier and renovation recency), amenity depth (pool, spa, dining, activities), and location value (destination desirability and flight accessibility). Properties in Hawaii and Puerto Rico were considered eligible as U.S. territories. All-inclusive properties on the separate Hyatt all-inclusive chart were excluded.
 
 ---
 
 ## The Full List at a Glance
 
-| # | Property | Location | Category | Moderate Rate | Beach Access | Brand Tier |
-|---|---|---|---|---|---|---|
-| 1 | Wild Dunes Resort — Boardwalk Inn | Isle of Palms, SC | 5 | 20,000 pts | True beachfront | Destination by Hyatt |
-| 2 | Hyatt Place Panama City Beach | Panama City Beach, FL | 5 | 20,000 pts | True beachfront | Hyatt Place |
-| 3 | Hyatt Regency Waikiki Beach | Honolulu, Oahu, HI | 5 | 20,000 pts | True beachfront | Hyatt Regency |
-| 4 | Hyatt Regency Clearwater Beach | Clearwater Beach, FL | 6 | 25,000 pts | True beachfront | Hyatt Regency |
-| 5 | Andaz Miami Beach | Miami Beach, FL | 6 | 25,000 pts | True beachfront | Andaz |
-| 6 | The Seabird Ocean Resort & Spa | Oceanside, CA | 6 | 25,000 pts | True beachfront | Destination by Hyatt |
-| 7 | Hyatt Regency Coconut Point | Bonita Springs, FL | 6 | 25,000 pts | Ferry (15 min) | Hyatt Regency |
-| 8 | Hyatt Regency Grand Reserve PR | Río Grande, Puerto Rico | 6 | 25,000 pts | True beachfront | Hyatt Regency |
-| 9 | Hyatt Regency Maui | Ka'anapali, Maui, HI | 6 | 25,000 pts | True beachfront | Hyatt Regency |
-| 10 | Park Hyatt Aviara | Carlsbad, CA | 7 | 30,000 pts | Beach adjacent | Park Hyatt |
-| 11 | Alila Marea Beach Resort | Encinitas, CA | 7 | 30,000 pts | True beachfront | Alila |
-| 12 | Grand Hyatt Kauai | Poipu, Kauai, HI | 8 | 40,000 pts | True beachfront | Grand Hyatt |
-| 13 | Andaz Maui at Wailea | Wailea, Maui, HI | 8 | 40,000 pts | True beachfront | Andaz |
+<style>
+.hyatt-list { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 2rem; }
+.hyatt-list thead tr { background: #1B3A2D; color: #fff; }
+.hyatt-list thead th { padding: 10px 12px; text-align: left; font-weight: 500; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+.hyatt-list tbody tr:nth-child(even) { background: #FAF7F2; }
+.hyatt-list tbody tr:nth-child(odd) { background: #fff; }
+.hyatt-list td { padding: 10px 12px; border-bottom: 1px solid #E8E0D4; color: #4A5568; vertical-align: top; line-height: 1.4; }
+.hyatt-list td:first-child { font-weight: 500; color: #1B3A2D; font-size: 14px; width: 28px; }
+.hyatt-list td:nth-child(2) { font-weight: 500; color: #1B3A2D; }
+.hyatt-cat { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; color: #fff; white-space: nowrap; }
+.hyatt-cat-5 { background: #2C7A5C; }
+.hyatt-cat-6 { background: #1B3A2D; }
+.hyatt-cat-7 { background: #C8922A; }
+.hyatt-cat-8 { background: #4A5568; }
+.beach-badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 3px; white-space: nowrap; }
+.beach-yes { background: #E1F5EE; color: #0F6E56; }
+.beach-adj { background: #FBF3E2; color: #8B6914; }
+.beach-ferry { background: #F1EFE8; color: #5F5E5A; }
+.pts-strong { font-weight: 500; color: #1B3A2D; }
+@media (max-width: 640px) {
+  .hyatt-list { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+.hyatt-card-grid { display: flex; flex-direction: column; gap: 0; margin-bottom: 2rem; }
+.hyatt-card { border: 1px solid #E8E0D4; border-radius: 6px; overflow: hidden; margin-bottom: 10px; }
+.hyatt-card-header { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: #fff; border-bottom: 1px solid #E8E0D4; }
+.hyatt-card-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #E8E0D4; min-width: 36px; line-height: 1; }
+.hyatt-card-title { flex: 1; }
+.hyatt-card-name { font-weight: 500; font-size: 15px; color: #1B3A2D; margin-bottom: 2px; }
+.hyatt-card-loc { font-size: 12px; color: #718096; }
+.hyatt-card-pts { text-align: right; white-space: nowrap; }
+.hyatt-card-pts-main { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 600; color: #1B3A2D; }
+.hyatt-card-pts-label { font-size: 10px; color: #718096; text-transform: uppercase; letter-spacing: .06em; }
+.hyatt-card-pts-range { font-size: 11px; color: #718096; margin-top: 1px; }
+.hyatt-card-meta { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 16px; background: #FAF7F2; }
+.hyatt-card-body { padding: 12px 16px 14px; background: #fff; font-size: 13.5px; color: #4A5568; line-height: 1.65; }
+.hyatt-best-for { font-size: 12px; color: #718096; margin-top: 8px; }
+.hyatt-best-for strong { color: #1B3A2D; font-weight: 500; }
+
+.value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 2rem; }
+.value-card { background: #FAF7F2; border: 1px solid #E8E0D4; border-radius: 6px; padding: 14px 16px; }
+.value-card-type { font-size: 10px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: #C8922A; margin-bottom: 5px; }
+.value-card-pick { font-size: 14px; font-weight: 500; color: #1B3A2D; margin-bottom: 4px; }
+.value-card-why { font-size: 12px; color: #718096; line-height: 1.5; }
+@media (max-width: 640px) {
+  .value-grid { grid-template-columns: 1fr; }
+  .hyatt-card-header { flex-wrap: wrap; gap: 8px; }
+  .hyatt-card-pts { text-align: left; }
+}
+
+.chart-section { background: #FAF7F2; border: 1px solid #E8E0D4; border-radius: 6px; padding: 20px; margin-bottom: 2rem; }
+.chart-title { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: #718096; margin-bottom: 14px; }
+.bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.bar-label { font-size: 12px; color: #4A5568; min-width: 180px; max-width: 180px; line-height: 1.3; }
+.bar-track { flex: 1; background: #E8E0D4; border-radius: 3px; height: 20px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 3px; display: flex; align-items: center; padding-left: 8px; }
+.bar-val { font-size: 11px; font-weight: 500; color: #fff; white-space: nowrap; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
+.chart-leg-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #718096; }
+.chart-leg-sq { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .bar-label { min-width: 120px; max-width: 120px; font-size: 11px; }
+}
+</style>
+
+<div class="chart-section">
+  <div class="chart-title">Points cost by property — moderate tier (standard room)</div>
+  <div class="bar-row"><div class="bar-label">Wild Dunes Boardwalk Inn</div><div class="bar-track"><div class="bar-fill hyatt-cat-5" style="width:40%"><span class="bar-val">20k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Hyatt Place Panama City Beach</div><div class="bar-track"><div class="bar-fill hyatt-cat-5" style="width:40%"><span class="bar-val">20k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Hyatt Regency Waikiki</div><div class="bar-track"><div class="bar-fill hyatt-cat-5" style="width:40%"><span class="bar-val">20k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Regency Clearwater Beach</div><div class="bar-track"><div class="bar-fill hyatt-cat-6" style="width:50%"><span class="bar-val">25k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Andaz Miami Beach</div><div class="bar-track"><div class="bar-fill hyatt-cat-6" style="width:50%"><span class="bar-val">25k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">The Seabird Oceanside</div><div class="bar-track"><div class="bar-fill hyatt-cat-6" style="width:50%"><span class="bar-val">25k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Regency Coconut Point</div><div class="bar-track"><div class="bar-fill hyatt-cat-6" style="width:50%"><span class="bar-val">25k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Grand Reserve Puerto Rico</div><div class="bar-track"><div class="bar-fill hyatt-cat-6" style="width:50%"><span class="bar-val">25k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Regency Maui</div><div class="bar-track"><div class="bar-fill hyatt-cat-6" style="width:50%"><span class="bar-val">25k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Park Hyatt Aviara</div><div class="bar-track"><div class="bar-fill hyatt-cat-7" style="width:60%"><span class="bar-val">30k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Alila Marea Encinitas</div><div class="bar-track"><div class="bar-fill hyatt-cat-7" style="width:60%"><span class="bar-val">30k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Grand Hyatt Kauai</div><div class="bar-track"><div class="bar-fill hyatt-cat-8" style="width:80%"><span class="bar-val">40k pts</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">Andaz Maui at Wailea</div><div class="bar-track"><div class="bar-fill hyatt-cat-8" style="width:80%"><span class="bar-val">40k pts</span></div></div></div>
+  <div class="chart-legend">
+    <div class="chart-leg-item"><div class="chart-leg-sq hyatt-cat-5"></div>Category 5</div>
+    <div class="chart-leg-item"><div class="chart-leg-sq hyatt-cat-6"></div>Category 6</div>
+    <div class="chart-leg-item"><div class="chart-leg-sq hyatt-cat-7"></div>Category 7</div>
+    <div class="chart-leg-item"><div class="chart-leg-sq hyatt-cat-8"></div>Category 8</div>
+  </div>
+</div>
+
+<table class="hyatt-list">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Property</th>
+      <th>Location</th>
+      <th>Cat.</th>
+      <th>Moderate Rate</th>
+      <th>Beach</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Wild Dunes — Boardwalk Inn</td><td>Isle of Palms, SC</td><td><span class="hyatt-cat hyatt-cat-5">Cat 5</span></td><td class="pts-strong">20,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>2</td><td>Hyatt Place Panama City Beach</td><td>Panama City Beach, FL</td><td><span class="hyatt-cat hyatt-cat-5">Cat 5</span></td><td class="pts-strong">20,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>3</td><td>Hyatt Regency Waikiki Beach</td><td>Honolulu, Oahu, HI</td><td><span class="hyatt-cat hyatt-cat-5">Cat 5</span></td><td class="pts-strong">20,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>4</td><td>Hyatt Regency Clearwater Beach</td><td>Clearwater Beach, FL</td><td><span class="hyatt-cat hyatt-cat-6">Cat 6</span></td><td class="pts-strong">25,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>5</td><td>Andaz Miami Beach</td><td>Miami Beach, FL</td><td><span class="hyatt-cat hyatt-cat-6">Cat 6</span></td><td class="pts-strong">25,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>6</td><td>The Seabird Ocean Resort & Spa</td><td>Oceanside, CA</td><td><span class="hyatt-cat hyatt-cat-6">Cat 6</span></td><td class="pts-strong">25,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>7</td><td>Hyatt Regency Coconut Point</td><td>Bonita Springs, FL</td><td><span class="hyatt-cat hyatt-cat-6">Cat 6</span></td><td class="pts-strong">25,000 pts</td><td><span class="beach-badge beach-ferry">Ferry 15 min</span></td></tr>
+    <tr><td>8</td><td>Hyatt Regency Grand Reserve PR</td><td>Río Grande, Puerto Rico</td><td><span class="hyatt-cat hyatt-cat-6">Cat 6</span></td><td class="pts-strong">25,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>9</td><td>Hyatt Regency Maui</td><td>Ka'anapali, Maui, HI</td><td><span class="hyatt-cat hyatt-cat-6">Cat 6</span></td><td class="pts-strong">25,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>10</td><td>Park Hyatt Aviara</td><td>Carlsbad, CA</td><td><span class="hyatt-cat hyatt-cat-7">Cat 7</span></td><td class="pts-strong">30,000 pts</td><td><span class="beach-badge beach-adj">Adjacent</span></td></tr>
+    <tr><td>11</td><td>Alila Marea Beach Resort</td><td>Encinitas, CA</td><td><span class="hyatt-cat hyatt-cat-7">Cat 7</span></td><td class="pts-strong">30,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>12</td><td>Grand Hyatt Kauai</td><td>Poipu, Kauai, HI</td><td><span class="hyatt-cat hyatt-cat-8">Cat 8</span></td><td class="pts-strong">40,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+    <tr><td>13</td><td>Andaz Maui at Wailea</td><td>Wailea, Maui, HI</td><td><span class="hyatt-cat hyatt-cat-8">Cat 8</span></td><td class="pts-strong">40,000 pts</td><td><span class="beach-badge beach-yes">Beachfront</span></td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## The Properties — Ranked by Award Cost
 
-### 1. Wild Dunes Resort — Boardwalk Inn
-**Isle of Palms, SC · Category 5 · 17,000–26,000 pts/night**
+<div class="hyatt-card-grid">
 
-The most underrated beachfront Hyatt redemption on the entire East Coast. Wild Dunes Resort sits on Isle of Palms, a barrier island 30 minutes from downtown Charleston — one of the most beloved cities in the American South. The Boardwalk Inn is the bookable-on-points property within the resort, and it delivers genuine oceanfront access on a quiet, uncrowded Atlantic beach alongside two Tom Fazio-designed championship golf courses, a spa, pools, tennis, Coastal Provisions restaurant, and the kind of Lowcountry warmth that you simply don't find at a big-box resort.
-
-Cash rates regularly run $400–$700 per night in peak season (spring and summer). At Category 5 moderate pricing of 20,000 points that's a compelling value — and the Charleston proximity means you have one of the most interesting small cities in the country to explore on either side of your pool days. Fly into Charleston International (CHS) and you're 40 minutes from check-in.
-
-**Best for:** East Coast families, couples wanting Charleston access, golfers, travelers who want a quieter Atlantic beach without the South Florida crowds.
-
----
-
-### 2. Hyatt Place Panama City Beach — Beachfront
-**Panama City Beach, FL · Category 5 · 17,000–26,000 pts/night**
-
-Don't let the Hyatt Place brand name fool you. This property bears almost no resemblance to a standard airport Hyatt Place. Built and opened in 2022 directly on the Gulf of Mexico, it comes with a lazy river, poolside bar (Coconut Charlies), beach bar, Gulf-view balconies on every room, and two complimentary beach loungers and an umbrella per room per day. Free breakfast is included for all guests — unusual at any beachfront resort at this price point.
-
-Cash rates run $200–$400 per night depending on season, which makes the CPP math modest compared to some Hawaii properties. But the real appeal here is accessibility: this is the most affordable way to get a true beachfront Hyatt stay in the continental U.S., and at Category 5 pricing you can redeem a single Chase Sapphire welcome bonus for multiple nights. Pier Park, one of the Gulf Coast's best outdoor shopping and dining districts, is a 10-minute walk.
-
-<div class="pro-tip">
-  <div class="pro-tip-icon">💡</div>
-  <div>
-    <div class="pro-tip-title">Pro Tip</div>
-    <p>This is one of the few beachfront Hyatt properties where the free breakfast alone — included for all guests regardless of status — meaningfully reduces your on-property spend for the day. Factor that in when calculating total trip cost.</p>
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">01</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Wild Dunes Resort — Boardwalk Inn</div>
+      <div class="hyatt-card-loc">Isle of Palms, SC &nbsp;·&nbsp; Destination by Hyatt</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">20k pts</div>
+      <div class="hyatt-card-pts-range">17k – 26k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-5">Category 5</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">Charleston 30 min</span>
+  </div>
+  <div class="hyatt-card-body">
+    The most underrated beachfront Hyatt redemption on the entire East Coast. Wild Dunes sits on Isle of Palms, a quiet barrier island 30 minutes from downtown Charleston. The Boardwalk Inn delivers genuine oceanfront Atlantic access alongside two Tom Fazio championship golf courses, a spa, pools, tennis, and Coastal Provisions restaurant. Cash rates run $400–$700 in peak season. At 20,000 points, the Charleston proximity means one of the most interesting small American cities is at your doorstep.
+    <div class="hyatt-best-for"><strong>Best for:</strong> East Coast families, couples wanting Charleston access, golfers, quieter Atlantic beach without South Florida crowds.</div>
   </div>
 </div>
 
-**Best for:** Families on a points budget, Gulf Coast beach vacations, travelers looking to maximize a welcome bonus on a full resort stay.
-
----
-
-### 3. Hyatt Regency Waikiki Beach Resort & Spa
-**Honolulu, Oahu, HI · Category 5 · 17,000–26,000 pts/night**
-
-The most accessible Hawaii beachfront redemption in the program. Two towers, over 1,200 rooms, and a location directly across from Kuhio Beach Park that puts you on Waikiki sand in under two minutes. Na Ho'ola Spa on the fifth floor, rooftop pool with Pacific views, SHOR restaurant with a breakfast buffet, and a breezy open-air atrium featuring daily hula demonstrations and cultural programming.
-
-The honest caveats: this is Waikiki at its most immersive, meaning crowds, street noise, and compact standard rooms. It's a city-beach hybrid, not a secluded resort. But for the points cost — the same Category 5 as Wild Dunes and Panama City Beach — you're waking up in Hawaii, steps from the ocean. For first-time Hawaii visitors or anyone who wants to use Oahu as a base for the island's full range of activities, the value is hard to argue with.
-
-**Best for:** First-time Hawaii visitors, travelers who want Oahu's full range of activities, anyone maximizing a Category 1–5 free night certificate in Hawaii.
-
----
-
-### 4. Hyatt Regency Clearwater Beach Resort & Suites
-**Clearwater Beach, FL · Category 6 · 21,000–29,000 pts/night**
-
-Named Best Resort in Florida by Condé Nast Traveler Readers' Choice Awards 2025, and one of the most consistently decorated Gulf Coast properties in the Hyatt portfolio. The Clearwater sits directly on the sand — no ferry, no shuttle, straight out the door onto one of the most celebrated white-sand beaches in North America. 286 residential-style suites range from 450 to 1,600 square feet, most with full kitchenettes or kitchens and Gulf-view balconies. Sandava Spa, a rooftop bar, two restaurants, year-round pool, and Pier 60 within walking distance.
-
-Cash rates run $350–$600 depending on season, making this a moderate points-per-dollar play at the moderate tier. The real value is the room size — a 1,000+ square foot suite with a full kitchen and Gulf views for 25,000 points is genuinely hard to beat anywhere in Florida. Resort fees are waived on award stays; Globalists get valet parking comped.
-
-**Best for:** Families wanting a suite-style stay, Gulf Coast beach vacations, travelers who want Clearwater's famous calm Gulf waters.
-
----
-
-### 5. Andaz Miami Beach
-**Miami Beach, FL · Category 6 · 21,000–29,000 pts/night**
-
-The first Andaz in Florida and one of the most design-forward beachfront openings in the Hyatt portfolio in recent years. Formerly The Confidante, it underwent a $60 million transformation to emerge as a 287-room oceanfront Andaz on Collins Avenue — the beating heart of Miami Beach's Mid-Beach neighborhood, just north of South Beach's energy without being swallowed by it. Art Deco bones preserved, baby-blue exterior stripe intact, everything else reimagined in turquoise tones, soft curves, and ocean-inspired interiors.
-
-The dining program is a genuine differentiator: José Andrés Group runs multiple venues on property, including a signature restaurant that brings serious culinary credentials to a hotel dining lineup. The pool complex includes Miami's first hydraulic pool. 64 oceanfront suites, a full spa, and direct Atlantic beach access round it out. At Category 6 pricing the redemption is solid — cash rates in peak season regularly run $500–$900.
-
-<div class="pullquote">
-  <p>"The Andaz Miami Beach is the most stylish beachfront Hyatt redemption in the continental United States — full stop."</p>
-</div>
-
-**Best for:** Design-forward travelers, couples, Miami Beach first-timers who want a luxury entry point, anyone who values exceptional hotel dining.
-
----
-
-### 6. The Seabird Ocean Resort & Spa
-**Oceanside, CA · Category 6 · 21,000–29,000 pts/night**
-
-Part of Destination by Hyatt, Forbes Recommended, and named a Travel + Leisure Top 10 California Hotel — The Seabird sits steps from Oceanside Beach and the iconic Oceanside Pier, midway between San Diego and Los Angeles. 226 rooms with coastal-inspired interiors, a MICHELIN-starred restaurant (Valle, serving Guadalupe Valley cuisine), The Shore Room with wraparound porch and ocean views, a rooftop bar, spa, pool, and kids' programming through the "Little Seabirds" program.
-
-The property is particularly compelling for travelers who have already done the standard San Diego luxury circuit (La Jolla, Coronado) and want a more independent, character-driven experience. Oceanside itself is an underrated coastal city with a legitimate surf culture, good food scene, and easy access to Camp Pendleton, LEGOLAND, and the wider San Diego county. At Category 6, the redemption competes well against the nearby Alila Marea at Category 7 — similar coastal quality at a lower points cost, with more family-friendly credentials.
-
-**Best for:** SoCal families, couples looking for something less crowded than La Jolla or Coronado, travelers who want a MICHELIN-quality dining experience in a beachfront setting.
-
----
-
-### 7. Hyatt Regency Coconut Point Resort & Spa
-**Bonita Springs, FL · Category 6 · 21,000–29,000 pts/night**
-
-Florida's Gulf Coast family flagship. Coconut Point sits in a sheltered waterway with a private island beach on Big Hickory Key accessible via a 15-minute ferry included with your stay. The caveat — it's not a walk-out-the-door beachfront — is real, but the on-property infrastructure more than compensates for families: a three-acre water park with slides and a lazy river, 18-hole golf at Saltleaf Golf Preserve, kayak rentals, Stillwater Spa, and five restaurants. Cash rates typically run $400–$600. Resort fees are waived on award stays.
-
-**Best for:** Families wanting a full activity lineup, Gulf Coast beach vacations where on-property entertainment matters more than direct sand access.
-
----
-
-### 8. Hyatt Regency Grand Reserve Puerto Rico
-**Río Grande, Puerto Rico · Category 6 · 21,000–29,000 pts/night**
-
-Tucked between El Yunque rainforest and the Atlantic coastline, the Grand Reserve is one of the most underrated resort values in the Hyatt portfolio. True white-sand Atlantic beachfront, lagoon-style pool, two Tom Kite-designed 18-hole championship golf courses, Rainforest Spa, five restaurants, and 579 oceanfront rooms — each at least 520 square feet with a private balcony. No passport required for U.S. travelers. San Juan is served nonstop from dozens of mainland cities.
-
-**Best for:** East Coast travelers wanting Caribbean resort scale without international logistics, golf travelers, couples seeking a long-weekend escape.
-
----
-
-### 9. Hyatt Regency Maui Resort & Spa
-**Ka'anapali Beach, Maui, HI · Category 6 · 21,000–29,000 pts/night**
-
-The best Category 6 beachfront property in Hawaii and the strongest points value on Maui. Located directly on Ka'anapali Beach with six pools (including a 150-foot waterslide and swim-up grotto bar), the Drums of the Pacific Luau, five restaurants, a beachfront spa, and outrigger canoe rides. Dropped from Category 7 to Category 6 in 2025 after a full room renovation. Cash rates typically run $500–$900 per night.
-
-**Best for:** Families visiting Maui for the first time, travelers who want true Ka'anapali beachfront at the most accessible Hawaii points cost.
-
----
-
-### 10. Park Hyatt Aviara Resort, Golf Club & Spa
-**Carlsbad, CA · Category 7 · 25,000–38,000 pts/night**
-
-The only Park Hyatt on the Southern California coast. AAA Five Diamond, 200 acres of coastal sage scrub overlooking Batiquitos Lagoon, with the Pacific visible from the property and the beach a short walk or shuttle away. Arnold Palmer-designed golf course, exceptional spa, and some of the most refined service in the Hyatt portfolio. Weekend cash rates regularly exceed $700–$900, making Category 7 moderate-tier redemptions among the best-value Park Hyatt uses in the country.
-
-**Best for:** Couples, luxury weekend escapes from LA or San Diego, golfers who want the best Park Hyatt redemption on the West Coast.
-
----
-
-### 11. Alila Marea Beach Resort Encinitas
-**Encinitas, CA · Category 7 · 25,000–38,000 pts/night**
-
-Adults-only as of early 2025. Sits on a coastal bluff directly above the Pacific between San Diego and Orange County, with South Ponto Beach steps from the property. 130 rooms, all with ocean views. Infinity pool, Spa Alila, yoga, and Vaga restaurant serving California coastal cuisine. Weekend cash rates hover around $800–$1,000. Small size means award availability can be tight — book well in advance.
-
-**Best for:** Adults-only escapes, design-forward SoCal beach weekends, couples who want something more intimate than the Aviara.
-
----
-
-### 12. Grand Hyatt Kauai Resort & Spa
-**Poipu, Kauai, HI · Category 8 · 35,000–75,000 pts/night**
-
-Flagship Hawaii property on Kauai's sunniest south shore. Sprawling saltwater lagoon pool complex, Tidepools restaurant (one of the most beautiful oceanside dining settings in Hawaii), Club Regency lounge access for Globalists, tennis, spa, and golf. Cash rates regularly run $800–$1,300. The Club floor breakfast and evening hors d'oeuvres available to Globalists add meaningful value to award stays.
-
-<div class="pro-tip">
-  <div class="pro-tip-icon">💡</div>
-  <div>
-    <div class="pro-tip-title">Pro Tip</div>
-    <p>Poipu on Kauai's south shore is the island's sunniest micro-climate — meaningfully drier than the north shore. This isn't marketing; it genuinely matters for a beach vacation on an island that gets significant rainfall.</p>
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">02</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Hyatt Place Panama City Beach — Beachfront</div>
+      <div class="hyatt-card-loc">Panama City Beach, FL &nbsp;·&nbsp; Hyatt Place</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">20k pts</div>
+      <div class="hyatt-card-pts-range">17k – 26k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-5">Category 5</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Free breakfast included</span>
+  </div>
+  <div class="hyatt-card-body">
+    Don't let the brand name fool you — this is nothing like a standard Hyatt Place. Built in 2022 directly on the Gulf of Mexico with a lazy river, Coconut Charlies pool bar, beach bar, Gulf-view balconies on every room, and two complimentary beach loungers per room daily. Free breakfast included for all guests. Cash rates $200–$400. The most affordable true beachfront Hyatt stay in the continental US — a single Chase Sapphire welcome bonus covers multiple nights.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Families on a points budget, Gulf Coast vacations, travelers maximizing a welcome bonus on a full resort stay.</div>
   </div>
 </div>
 
-**Best for:** Luxury travelers, Globalists who'll maximize Club access, anyone who wants the best beach quality and resort scale in Hawaii on one property.
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">03</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Hyatt Regency Waikiki Beach Resort & Spa</div>
+      <div class="hyatt-card-loc">Honolulu, Oahu, HI &nbsp;·&nbsp; Hyatt Regency</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">20k pts</div>
+      <div class="hyatt-card-pts-range">17k – 26k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-5">Category 5</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">Lowest Hawaii pts cost</span>
+  </div>
+  <div class="hyatt-card-body">
+    The most accessible Hawaii beachfront redemption in the program. Two towers directly across from Kuhio Beach, Na Ho'ola Spa on the fifth floor, rooftop pool with Pacific views, and daily hula and cultural programming in the open-air atrium. Urban and bustling — this is Waikiki at full volume. Standard rooms are compact. But at Category 5 pricing, waking up in Hawaii steps from the ocean is hard to beat for the points cost.
+    <div class="hyatt-best-for"><strong>Best for:</strong> First-time Hawaii visitors, Oahu base for island exploration, Cat 1–5 free night certificate holders.</div>
+  </div>
+</div>
 
----
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">04</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Hyatt Regency Clearwater Beach Resort & Suites</div>
+      <div class="hyatt-card-loc">Clearwater Beach, FL &nbsp;·&nbsp; Hyatt Regency</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">25k pts</div>
+      <div class="hyatt-card-pts-range">21k – 29k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-6">Category 6</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#FAC775;color:#412402;">Condé Nast #1 FL Resort 2025</span>
+  </div>
+  <div class="hyatt-card-body">
+    Named Best Resort in Florida by Condé Nast Traveler Readers' Choice Awards 2025. True Gulf beachfront on one of the most celebrated white-sand beaches in North America. 286 residential-style suites from 450 to 1,600 sq ft, most with full kitchenettes and Gulf-view balconies. Sandava Spa, rooftop bar, two restaurants. Resort fees waived on points stays; Globalists get valet comped.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Families wanting a suite-style stay, Gulf Coast beach vacations, travelers who want Florida's best beach at Category 6 pricing.</div>
+  </div>
+</div>
 
-### 13. Andaz Maui at Wailea Resort
-**Wailea, Maui, HI · Category 8 · 35,000–75,000 pts/night**
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">05</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Andaz Miami Beach</div>
+      <div class="hyatt-card-loc">Miami Beach, FL &nbsp;·&nbsp; Andaz</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">25k pts</div>
+      <div class="hyatt-card-pts-range">21k – 29k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-6">Category 6</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">José Andrés dining</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">Florida's first Andaz</span>
+  </div>
+  <div class="hyatt-card-body">
+    A $60 million transformation of the historic Confidante on Collins Avenue — Florida's first Andaz and the most design-forward beachfront Hyatt in the continental US. Art Deco bones preserved, everything else reimagined in turquoise tones and ocean-inspired curves. 287 rooms including 64 oceanfront suites. José Andrés Group runs multiple on-property dining venues. Miami's first hydraulic pool. Direct Atlantic beach access. Cash rates $500–$900 in peak season.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Design-forward travelers, couples, anyone who prioritizes exceptional hotel dining in a beachfront setting.</div>
+  </div>
+</div>
 
-The most aspirational Hyatt beach redemption in the United States. 15 beachfront acres on Mokapu Beach in Wailea — one of the most protected, swimmable beaches on Maui's south shore — with a multi-level pool complex, farm-to-table dining at Ka'ana Kitchen, beachfront villas, Andaz Spa, and 320 accommodations all with private lanais. Cash rates routinely hit $1,200–$2,800 per night. At moderate-tier pricing of 40,000 points, a $1,500 cash night works out to roughly 3.75 cents per point. The risk under the new chart is that high-demand nights push to Upper or Top tier (up to 75,000 points).
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">06</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">The Seabird Ocean Resort & Spa</div>
+      <div class="hyatt-card-loc">Oceanside, CA &nbsp;·&nbsp; Destination by Hyatt</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">25k pts</div>
+      <div class="hyatt-card-pts-range">21k – 29k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-6">Category 6</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#FAC775;color:#412402;">Forbes Recommended 2026</span>
+  </div>
+  <div class="hyatt-card-body">
+    Forbes Recommended and T+L Top 10 California Hotel. Steps from Oceanside Beach and the iconic pier, midway between San Diego and LA. 226 rooms with coastal-inspired interiors, a MICHELIN-starred restaurant (Valle), The Shore Room with wraparound ocean-view porch, rooftop bar, spa, pool, and Little Seabirds kids' programming. Cash rates around $400–$600. A character-driven alternative to the standard San Diego luxury circuit at a lower points cost than Alila Marea.
+    <div class="hyatt-best-for"><strong>Best for:</strong> SoCal families, couples wanting something less crowded than La Jolla, MICHELIN dining in a beachfront setting.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">07</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Hyatt Regency Coconut Point Resort & Spa</div>
+      <div class="hyatt-card-loc">Bonita Springs, FL &nbsp;·&nbsp; Hyatt Regency</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">25k pts</div>
+      <div class="hyatt-card-pts-range">21k – 29k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-6">Category 6</span>
+    <span class="beach-badge beach-ferry">Ferry 15 min</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Water park included</span>
+  </div>
+  <div class="hyatt-card-body">
+    Gulf Coast family infrastructure powerhouse. Private island beach on Big Hickory Key via 15-minute ferry included with your stay. On-property: three-acre water park with slides and lazy river, Saltleaf Golf Preserve (18 holes), kayak marina, Stillwater Spa, and five restaurants. The ferry caveat is real, but no other property on this list matches the amenity density at Category 6 pricing. Cash rates $400–$600. Resort fees waived on points stays.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Families wanting the best activity lineup, Gulf Coast vacations where on-property entertainment is the priority.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">08</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Hyatt Regency Grand Reserve Puerto Rico</div>
+      <div class="hyatt-card-loc">Río Grande, Puerto Rico &nbsp;·&nbsp; Hyatt Regency</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">25k pts</div>
+      <div class="hyatt-card-pts-range">21k – 29k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-6">Category 6</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">No passport required</span>
+  </div>
+  <div class="hyatt-card-body">
+    Tucked between El Yunque rainforest and the Atlantic coastline. True white-sand Atlantic beachfront. Lagoon-style pool, two Tom Kite championship golf courses, Rainforest Spa, five restaurants. 579 rooms all at least 520 sq ft with private ocean balconies. No passport needed for U.S. travelers — San Juan is served nonstop from dozens of mainland cities. Best Caribbean-scale beach resort for US travelers at this points tier.
+    <div class="hyatt-best-for"><strong>Best for:</strong> East Coast travelers wanting Caribbean resort scale, golf travelers, couples wanting a long-weekend escape.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">09</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Hyatt Regency Maui Resort & Spa</div>
+      <div class="hyatt-card-loc">Ka'anapali Beach, Maui, HI &nbsp;·&nbsp; Hyatt Regency</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">25k pts</div>
+      <div class="hyatt-card-pts-range">21k – 29k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-6">Category 6</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">Best Cat 6 Hawaii value</span>
+  </div>
+  <div class="hyatt-card-body">
+    The best Category 6 beachfront property in Hawaii. Dropped from Category 7 in 2025 after a full room renovation — now the strongest value on Maui for points travelers. Directly on Ka'anapali Beach with six pools (including a 150-foot waterslide and swim-up grotto bar), Drums of the Pacific Luau, five restaurants, beachfront spa, and outrigger canoe rides. Cash rates $500–$900 per night.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Families visiting Maui for the first time, anyone who wants Ka'anapali beachfront at the most accessible Hawaii points cost.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">10</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Park Hyatt Aviara Resort, Golf Club & Spa</div>
+      <div class="hyatt-card-loc">Carlsbad, CA &nbsp;·&nbsp; Park Hyatt</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">30k pts</div>
+      <div class="hyatt-card-pts-range">25k – 38k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-7">Category 7</span>
+    <span class="beach-badge beach-adj">Beach adjacent</span>
+    <span class="beach-badge beach-ferry" style="background:#FAC775;color:#412402;">AAA Five Diamond</span>
+    <span class="beach-badge beach-ferry" style="background:#FAC775;color:#412402;">Arnold Palmer Golf</span>
+  </div>
+  <div class="hyatt-card-body">
+    The only Park Hyatt on the Southern California coast. AAA Five Diamond resort set on 200 acres of coastal sage scrub overlooking Batiquitos Lagoon — the Pacific is visible from the property and the beach is a short walk or shuttle away. Arnold Palmer-designed golf course, exceptional spa, and some of the most refined service in the Hyatt portfolio. Cash rates $700–$900 on weekends. Best-value Park Hyatt redemption on the West Coast.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Couples, luxury weekend escapes from LA or San Diego, golfers who want the best Park Hyatt West Coast experience.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">11</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Alila Marea Beach Resort Encinitas</div>
+      <div class="hyatt-card-loc">Encinitas, CA &nbsp;·&nbsp; Alila</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">30k pts</div>
+      <div class="hyatt-card-pts-range">25k – 38k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-7">Category 7</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#EEEDFE;color:#3C3489;">Adults-only</span>
+  </div>
+  <div class="hyatt-card-body">
+    Adults-only as of 2025. Sits on a coastal bluff directly above the Pacific between San Diego and Orange County, with South Ponto Beach steps from the property. 130 rooms, all with ocean views. Infinity pool overlooking the water, Spa Alila, yoga, and Vaga restaurant serving California coastal cuisine. Weekend cash rates hover around $800–$1,000. Small property means award availability can be tight — book well in advance.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Adults-only escapes, design-forward SoCal beach weekends, couples who want intimate over grand.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">12</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Grand Hyatt Kauai Resort & Spa</div>
+      <div class="hyatt-card-loc">Poipu, Kauai, HI &nbsp;·&nbsp; Grand Hyatt</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">40k pts</div>
+      <div class="hyatt-card-pts-range">35k – 75k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-8">Category 8</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#E1F5EE;color:#0F6E56;">Family-friendly</span>
+    <span class="beach-badge beach-ferry" style="background:#E6F1FB;color:#185FA5;">Best Globalist stack</span>
+  </div>
+  <div class="hyatt-card-body">
+    Flagship Hawaii property on Kauai's sunniest south shore. Sprawling saltwater lagoon pool complex, Tidepools restaurant (one of Hawaii's most beautiful oceanside dining settings), Club Regency lounge for Globalists, tennis, spa, and golf. Cash rates regularly $800–$1,300. The Club floor breakfast and evening hors d'oeuvres available to Globalists add meaningful value. Poipu's consistent sunshine is a genuine advantage on an island that gets real rainfall.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Luxury travelers, Globalists who'll stack Club access and Globalist benefits, anyone prioritizing beach quality and resort scale.</div>
+  </div>
+</div>
+
+<div class="hyatt-card">
+  <div class="hyatt-card-header">
+    <div class="hyatt-card-num">13</div>
+    <div class="hyatt-card-title">
+      <div class="hyatt-card-name">Andaz Maui at Wailea Resort</div>
+      <div class="hyatt-card-loc">Wailea, Maui, HI &nbsp;·&nbsp; Andaz</div>
+    </div>
+    <div class="hyatt-card-pts">
+      <div class="hyatt-card-pts-label">Moderate</div>
+      <div class="hyatt-card-pts-main">40k pts</div>
+      <div class="hyatt-card-pts-range">35k – 75k range</div>
+    </div>
+  </div>
+  <div class="hyatt-card-meta">
+    <span class="hyatt-cat hyatt-cat-8">Category 8</span>
+    <span class="beach-badge beach-yes">True beachfront</span>
+    <span class="beach-badge beach-ferry" style="background:#FAC775;color:#412402;">Most aspirational US Hyatt</span>
+  </div>
+  <div class="hyatt-card-body">
+    The most aspirational Hyatt beach redemption in the United States. 15 beachfront acres on Mokapu Beach in Wailea — one of the most protected, swimmable beaches on Maui's south shore. Multi-level pool complex, farm-to-table Ka'ana Kitchen, Andaz Spa, beachfront villas, and 320 accommodations all with private lanais. Cash rates routinely hit $1,200–$2,800 per night. At moderate-tier 40,000 points, a $1,500 night works out to 3.75 cents per point. The risk: high-demand nights can push to 75,000 points.
+    <div class="hyatt-best-for"><strong>Best for:</strong> Honeymoons, milestone trips, travelers with a large Chase or Hyatt balance targeting one extraordinary stay.</div>
+  </div>
+</div>
+
+</div>
 
 <div class="pullquote">
   <p>"The Andaz Maui is the best single-property hotel points redemption in the United States — on the right dates, at the right price tier."</p>
 </div>
 
-**Best for:** Honeymoons, milestone trips, travelers with a large Hyatt or Chase balance looking to maximize one aspirational stay.
-
 ---
 
 ## Best Value Picks by Traveler Type
 
-| Traveler Type | Best Pick | Why |
-|---|---|---|
-| Best overall value | Hyatt Regency Maui | Category 6, true Ka'anapali beachfront, renovated, strong cash rate |
-| Best entry-level Hawaii | Hyatt Regency Waikiki | Category 5, steps from Waikiki Beach, lowest Hawaii points cost |
-| Best family — Florida Gulf | Hyatt Regency Clearwater Beach | True beachfront suites, Conde Nast #1 FL resort, waived resort fees |
-| Best family — all-amenities | Hyatt Regency Coconut Point | Water park, golf, kayaks, five restaurants |
-| Best budget beachfront | Hyatt Place Panama City Beach | Category 5, free breakfast, lazy river, Gulf views |
-| Best East Coast | Wild Dunes — Boardwalk Inn | Category 5, Atlantic beachfront near Charleston |
-| Best luxury / aspirational | Andaz Maui at Wailea | Top-tier property, Mokapu Beach, milestone-trip worthy |
-| Best design / style | Andaz Miami Beach | José Andrés dining, Art Deco bones, Collins Avenue oceanfront |
-| Best SoCal — luxury | Park Hyatt Aviara | AAA Five Diamond, best Park Hyatt West Coast redemption |
-| Best SoCal — intimate | Alila Marea Encinitas | Adults-only, coastal bluff, 130 rooms |
-| Best for Globalists | Grand Hyatt Kauai | Club access, breakfast, best Globalist stack in Hawaii |
-| Best East Coast Caribbean | Hyatt Regency Grand Reserve PR | No passport, Atlantic beachfront, championship golf |
-| Best underrated | The Seabird Oceanside | Forbes Recommended, MICHELIN dining, Category 6 pricing |
+<div class="value-grid">
+  <div class="value-card">
+    <div class="value-card-type">Best overall value</div>
+    <div class="value-card-pick">Hyatt Regency Maui</div>
+    <div class="value-card-why">Category 6, true Ka'anapali beachfront, renovated 2021, strong cash rate justifies the points spend.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best entry-level Hawaii</div>
+    <div class="value-card-pick">Hyatt Regency Waikiki</div>
+    <div class="value-card-why">Category 5 — the lowest points cost for a beachfront Hawaii stay in the entire program.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best family — Florida Gulf</div>
+    <div class="value-card-pick">Hyatt Regency Clearwater Beach</div>
+    <div class="value-card-why">True beachfront suites, Condé Nast #1 FL resort, waived resort fees on points stays.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best family — activities</div>
+    <div class="value-card-pick">Hyatt Regency Coconut Point</div>
+    <div class="value-card-why">Water park, golf, kayaks, five restaurants — deepest activity stack at Category 6 pricing.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best budget beachfront</div>
+    <div class="value-card-pick">Hyatt Place Panama City Beach</div>
+    <div class="value-card-why">Category 5, free breakfast, lazy river, Gulf views. Best value-per-point on the whole list.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best East Coast</div>
+    <div class="value-card-pick">Wild Dunes — Boardwalk Inn</div>
+    <div class="value-card-why">Category 5, Atlantic beachfront, Charleston 30 minutes away. Most underrated redemption on this list.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best luxury / aspirational</div>
+    <div class="value-card-pick">Andaz Maui at Wailea</div>
+    <div class="value-card-why">Top-tier property, Mokapu Beach, best CPP when priced at moderate tier. Milestone-trip worthy.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best design &amp; style</div>
+    <div class="value-card-pick">Andaz Miami Beach</div>
+    <div class="value-card-why">José Andrés dining, Art Deco reimagined, oceanfront on Collins Ave. Most stylish mainland Hyatt.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best SoCal — luxury</div>
+    <div class="value-card-pick">Park Hyatt Aviara</div>
+    <div class="value-card-why">Only Park Hyatt on the SoCal coast. AAA Five Diamond. Best Park Hyatt West Coast redemption.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best SoCal — intimate</div>
+    <div class="value-card-pick">Alila Marea Encinitas</div>
+    <div class="value-card-why">Adults-only, 130 rooms, coastal bluff above the Pacific. Smaller and more considered than Aviara.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Best for Globalists</div>
+    <div class="value-card-pick">Grand Hyatt Kauai</div>
+    <div class="value-card-why">Club access, Globalist breakfast, best benefits stack in Hawaii. Poipu sunshine is a bonus.</div>
+  </div>
+  <div class="value-card">
+    <div class="value-card-type">Most underrated</div>
+    <div class="value-card-pick">The Seabird Oceanside</div>
+    <div class="value-card-why">Forbes Recommended, MICHELIN dining, steps from Oceanside Beach — all at Category 6 pricing.</div>
+  </div>
+</div>
 
 ---
 
 ## The Final Edit
 
-The 2026 award chart changes are real, and anyone telling you otherwise is selling you something. Category 8 properties in Hawaii will price at Upper or Top tier more often than not — that's the reality of year-round demand with no off-season.
+The 2026 award chart changes are real, and anyone telling you otherwise is selling you something. Category 8 properties in Hawaii will price at Upper or Top tier more often than not — that's the reality of year-round demand with no meaningful off-season.
 
-But across these 13 properties, there are excellent redemptions at every level. Three Category 5 properties — Wild Dunes, Panama City Beach, and Waikiki — give you true beachfront stays for 20,000 points or less on moderate nights. The Florida Gulf Coast Category 6 trio (Clearwater, Coconut Point) and the SoCal duo (Seabird, Alila) fill the middle. And the Andaz Miami Beach brings legitimate luxury — oceanfront on Collins Avenue with José Andrés dining — at the same Category 6 cost as the Hyatt Regency Maui.
+But across these 13 properties, there are excellent redemptions at every level. Three Category 5 properties — Wild Dunes, Panama City Beach, and Waikiki — give you true beachfront stays for 20,000 points or less. The Florida and California Category 6 properties fill the middle with genuine quality. And the Andaz Miami Beach brings legitimate luxury at the same 25,000-point cost as the Hyatt Regency Maui.
 
-At the top, the Andaz Maui and Grand Hyatt Kauai remain the aspirational ceiling. Expensive on peak nights, extraordinary when you land a moderate-tier booking. The Category 1–7 free night certificates from the [World of Hyatt credit card](/posts/finance/credit-points/world-of-hyatt-program-explained/) are your best tool for reaching those properties without paying the top-tier premium.
+At the top, the Andaz Maui and Grand Hyatt Kauai remain the aspirational ceiling — extraordinary when you land a moderate-tier booking, punishing at peak. Your Category 1–7 free night certificates from the [World of Hyatt credit card](/posts/finance/credit-points/world-of-hyatt-program-explained/) are your best tool for reaching those properties without paying the full top-tier price.
 
 The program still works. Book strategically, check availability early, target moderate-tier nights, and transfer Chase Ultimate Rewards with intention. These are still the best hotel points redemptions in American beach travel.
 
