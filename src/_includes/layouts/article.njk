@@ -199,7 +199,21 @@ layout: layouts/base.njk
       <div class="section-header-line"></div>
     </div>
     <div class="card-grid cols-3">
-      {%- set relatedPosts = collections.posts | selectattr("data.category", "equalto", category) | reject("equalto", page) | list -%}
+      {%- set relatedByCat = collections.posts | filterByCategory(category) -%}
+      {%- set relatedPosts = [] -%}
+      {%- for post in relatedByCat -%}
+        {%- if post.url !== page.url -%}
+          {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if relatedPosts | length < 3 -%}
+        {%- set relatedByParent = collections.posts | filterByParent(parentCategory) -%}
+        {%- for post in relatedByParent -%}
+          {%- if post.url !== page.url and post.data.category !== category -%}
+            {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
       {%- for post in relatedPosts | limit(3) %}
       <a href="{{ post.url }}" style="text-decoration:none;" class="card">
         <div class="card-img">

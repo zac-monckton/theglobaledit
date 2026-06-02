@@ -94,9 +94,9 @@ header {
 .mobile-menu.open { display: block; }
 
 /* ─── HERO ─────────────────────────────────────────────── */
-.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; min-height: 580px; border-bottom: 1px solid var(--border); }
-.hero-featured { position: relative; overflow: hidden; }
-.hero-featured img { height: 100%; object-fit: cover; transition: transform .6s ease; }
+.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; min-height: 580px; max-height: 620px; border-bottom: 1px solid var(--border); }
+.hero-featured { position: relative; overflow: hidden; max-height: 620px; }
+.hero-featured img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .hero-featured:hover img { transform: scale(1.02); }
 .hero-featured-overlay {
   position: absolute; inset: 0;

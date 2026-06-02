@@ -37,13 +37,29 @@ This is a guide to doing it the second way.
 
 Before anything else, let's look at the actual number from a few angles:
 
-| Frequency | Amount needed |
-|---|---|
-| Per year | $10,000 |
-| Per month | $834 |
-| Per biweekly paycheck | $385 |
-| Per week | $193 |
-| Per day | $27.40 |
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: .75rem; margin: 1.5rem 0;">
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem; text-align: center;">
+    <div style="font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">Per Year</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">$10,000</div>
+  </div>
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem; text-align: center;">
+    <div style="font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">Per Month</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">$834</div>
+  </div>
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem; text-align: center;">
+    <div style="font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">Per Paycheck</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">$385</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .35rem;">biweekly</div>
+  </div>
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem; text-align: center;">
+    <div style="font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">Per Week</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">$193</div>
+  </div>
+  <div style="background: var(--gold); border-radius: 4px; padding: 1.25rem 1rem; text-align: center;">
+    <div style="font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.8); margin-bottom: .5rem;">Per Day</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">$27.40</div>
+  </div>
+</div>
 
 The daily number is useful for perspective. $27.40/day. That's not a cable subscription you cancel once. It's a habit of redirecting money that would otherwise disappear into vague spending — and doing it consistently.
 
@@ -139,11 +155,20 @@ After finding money in Phase 1 and automating in Phase 2, you may still have a g
 
 **The full math at this point:**
 
-| Source | Monthly amount |
-|---|---|
-| Phase 1 - Found money (subscriptions, fees, etc.) | $150–$250 |
-| Phase 3 - Targeted reductions (food, impulse purchases) | $200–$400 |
-| **Remaining gap to hit $834/month** | **$184–$484** |
+<div style="border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0;">
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Phase 1 — Found money (subscriptions, fees, insurance)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$150–$250 <span style="font-size: 11px; color: var(--slate-light); font-weight: 400;">/mo</span></div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Phase 3 — Targeted reductions (food, impulse purchases)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$200–$400 <span style="font-size: 11px; color: var(--slate-light); font-weight: 400;">/mo</span></div>
+  </div>
+  <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
+    <div style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,.8);">Remaining gap — covered by automated Phase 2 transfer</div>
+    <div style="font-size: 14px; font-weight: 600; color: var(--gold); white-space: nowrap; margin-left: 1rem;">$184–$484 <span style="font-size: 11px; color: rgba(255,255,255,.4); font-weight: 400;">/mo</span></div>
+  </div>
+</div>
 
 That remaining gap is your core automated transfer from Phase 2. For most people earning a median household income, this is achievable. For people already running lean budgets, the gap may require Phase 3 work closer to the $400 range — or supplemental income.
 
