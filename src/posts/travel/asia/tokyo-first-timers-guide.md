@@ -1,7 +1,7 @@
 ---
 title: "Tokyo for First-Timers: Everything You Need to Know Before You Land"
 description: "Tokyo is one of the most rewarding cities on earth to visit — and one of the easiest to get wrong. Here's how to plan it, budget it, and make the most of every day."
-date: 2026-06-03
+date: 2026-06-06
 layout: layouts/article.njk
 category: Asia
 parentCategory: Travel
