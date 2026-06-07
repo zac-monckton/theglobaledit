@@ -22,7 +22,7 @@ toc:
   - Our Rating
 ---
 
-The Andaz Maui at Wailea is the kind of hotel that appears on every "best in Hawaii" list — and for the most part, it earns that placement. But lists rarely tell you what the pool crowd is like at 2pm on a Saturday, whether the breakfast is worth $45 per person, or exactly how a Category 6 World of Hyatt redemption stacks up against the cash rate. That's what this review is for.
+The Andaz Maui at Wailea is the kind of hotel that appears on every "best in Hawaii" list — and for the most part, it earns that placement. But lists rarely tell you what the pool crowd is like at 2pm on a Saturday, whether the breakfast is worth $45 per person, or exactly how a Category 8 World of Hyatt redemption stacks up against the cash rate. That's what this review is for.
 
 We stayed for four nights in an Ocean View King room, experienced every pool, ate at both restaurants, participated in three on-site activities, and tested the points math thoroughly. Here's everything.
 
@@ -34,7 +34,7 @@ The downsides are real but manageable: the Bumbye Pool gets crowded and loud by 
 
 <div class="info-box">
   <div class="info-box-title">Property at a Glance</div>
-  <p><strong>Location:</strong> 3550 Wailea Alanui Dr, Wailea, Maui · <strong>Chain:</strong> Andaz (World of Hyatt) · <strong>Category:</strong> Category 6 (22,000–27,000 points/night) · <strong>Cash rate:</strong> $700–$1,200+/night · <strong>Resort fee:</strong> ~$55/night · <strong>Rooms:</strong> 297 · <strong>Pools:</strong> 3 · <strong>Restaurants:</strong> 2 (Ka'ana Kitchen, Morimoto Maui) · <strong>Beach:</strong> Direct access to Mokapu Beach</p>
+  <p><strong>Location:</strong> 3550 Wailea Alanui Dr, Wailea, Maui · <strong>Chain:</strong> Andaz (World of Hyatt) · <strong>Category:</strong> Category 8 (35,000–75,000 points/night) · <strong>Cash rate:</strong> $700–$1,200+/night · <strong>Resort fee:</strong> ~$55/night · <strong>Rooms:</strong> 297 · <strong>Pools:</strong> 3 · <strong>Restaurants:</strong> 2 (Ka'ana Kitchen, Morimoto Maui) · <strong>Beach:</strong> Direct access to Mokapu Beach</p>
 </div>
 
 ## Location and Getting There
@@ -143,12 +143,16 @@ The Andaz sits at the north end of the Wailea resort strip, which gives it acces
 
 ## Points Value Breakdown
 
-This is where the Andaz Maui becomes genuinely compelling for the points-savvy traveler.
+This is where the Andaz Maui requires honest planning — and still delivers compelling value when you find the right dates.
 
-The property sits at **Category 6 in the World of Hyatt program**, which means:
-- Standard rate: **22,000 points/night**
-- Peak rate: **27,000 points/night**
-- Off-peak rate: **17,000 points/night**
+The property moved to **Category 8 in the World of Hyatt program** as part of the May 2026 award chart restructure, which replaced the old three-tier Off-Peak/Standard/Peak system with five pricing bands. Current nightly rates:
+- Lowest rate: **35,000 points/night**
+- Low rate: **45,000 points/night**
+- Moderate rate: **55,000 points/night**
+- Upper rate: **65,000 points/night**
+- Top rate: **75,000 points/night**
+
+Most available nights currently show at Low (45,000) or Moderate (55,000). Lowest-tier nights (35,000) exist but are rare — typically midweek in shoulder months. Always search a range of dates and book Lowest or Low tier wherever available.
 
 <style>
 .points-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:14px;}
@@ -163,18 +167,20 @@ The property sits at **Category 6 in the World of Hyatt program**, which means:
 <table class="points-table">
   <thead><tr><th>Scenario</th><th>Points Cost</th><th>Cash Equivalent</th><th>CPP Value</th></tr></thead>
   <tbody>
-    <tr><td>Off-peak standard room</td><td>17,000/night</td><td>$750–$850/night</td><td class="value-great">~4.4–5.0¢</td></tr>
-    <tr><td>Standard rate, standard room</td><td>22,000/night</td><td>$800–$1,000/night</td><td class="value-great">~3.6–4.5¢</td></tr>
-    <tr><td>Peak rate, standard room</td><td>27,000/night</td><td>$1,000–$1,200/night</td><td class="value-good">~3.7–4.4¢</td></tr>
-    <tr><td>5-night stay (4th night free)</td><td>88,000 total</td><td>$4,000–$5,000 cash</td><td class="value-great">~4.5–5.7¢</td></tr>
+    <tr><td>Lowest rate, standard room</td><td>35,000/night</td><td>$750–$900/night</td><td class="value-good">~2.1–2.6¢</td></tr>
+    <tr><td>Low rate, standard room</td><td>45,000/night</td><td>$800–$1,000/night</td><td class="value-good">~1.8–2.2¢</td></tr>
+    <tr><td>Moderate rate, standard room</td><td>55,000/night</td><td>$900–$1,100/night</td><td class="value-good">~1.6–2.0¢</td></tr>
+    <tr><td>5-night stay at Low rate (4th night free)</td><td>180,000 total</td><td>$4,000–$5,000 cash</td><td class="value-good">~2.2–2.8¢</td></tr>
   </tbody>
 </table>
 
-At the standard rate of 22,000 points/night against cash rates of $800–$1,000, you're consistently getting **3.6–4.5 cents per point** — more than double the 1.7¢ minimum target value for Hyatt points and among the highest CPP redemptions available anywhere in the program.
+At Low pricing (45,000 points/night) against cash rates of $800–$1,000, you're getting **1.8–2.2 cents per point** — above the 1.7¢ minimum target value for Hyatt points and solid for a Category 8 property. The redemption becomes most compelling when you secure Lowest-tier nights at 35,000 points against cash rates approaching $900, where CPP climbs toward 2.5¢.
 
-The **fifth-night-free benefit** amplifies this further. A five-night stay costs 88,000 points (4 nights × 22,000) — the fifth night is complimentary. Against a $4,000–$5,000 cash equivalent, that's approaching 5¢ per point on the overall stay.
+The **fifth-night-free benefit** is particularly valuable here given the high nightly cost. A five-night stay at Low pricing costs 180,000 points (4 nights × 45,000) — the fifth night is complimentary. Against a $4,000–$5,000 cash equivalent, that improves the overall CPP meaningfully. Always book multi-night stays as a single reservation to trigger this benefit.
 
-**How to earn the points:** The most efficient path is through **Chase Ultimate Rewards** — specifically the Chase Sapphire Preferred or Reserve — which transfer to World of Hyatt at a 1:1 ratio. A 60,000–80,000 point sign-up bonus covers 2–3 nights at standard rates. See our [complete World of Hyatt program guide](/posts/finance/credit-points/world-of-hyatt-program-explained/) for the full earning and redemption strategy, and our [Chase Ultimate Rewards guide](/posts/finance/credit-points/chase-ultimate-rewards-maximum-value/) for how to maximize your earning rate.
+**The honest planning note:** A 5-night stay at Low pricing requires 180,000 Hyatt points. That's a significant balance — roughly the equivalent of two or three years of everyday Chase earning, or a large welcome bonus plus ongoing spend. If Maui is the goal, building this points balance needs to start well in advance of the trip, not after.
+
+**How to earn the points:** The most efficient path is through **Chase Ultimate Rewards** — specifically the Chase Sapphire Preferred or Reserve — which transfer to World of Hyatt at a 1:1 ratio. See our [complete World of Hyatt program guide](/posts/finance/credit-points/world-of-hyatt-program-explained/) for the full earning and redemption strategy under the new award chart, and our [Chase Ultimate Rewards guide](/posts/finance/credit-points/chase-ultimate-rewards-maximum-value/) for how to maximize your earning rate.
 
 **Elite status benefits here:** Explorist members get confirmed room upgrades at booking (standard suites when available). Globalist members get confirmed suite upgrades, complimentary breakfast (saving ~$45/person/day — meaningful over a 5-night stay), and guaranteed late checkout. The breakfast benefit alone at Globalist status saves $450+ on a five-night couples trip.
 
@@ -184,7 +190,7 @@ The **fifth-night-free benefit** amplifies this further. A five-night stay costs
   <div style="background:var(--cream);border:1px solid var(--border);border-top:3px solid #0F6E56;border-radius:3px;padding:1.25rem;">
     <div style="font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#0F6E56;margin-bottom:.85rem;">Pros</div>
     <ul style="list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--slate);line-height:1.7;">
-      <li style="padding:.35rem 0;border-bottom:1px solid var(--border);display:flex;gap:.6rem;"><span style="color:#0F6E56;font-weight:600;">✓</span> Exceptional points value — consistently 3.5–5¢ per point</li>
+      <li style="padding:.35rem 0;border-bottom:1px solid var(--border);display:flex;gap:.6rem;"><span style="color:#0F6E56;font-weight:600;">✓</span> Strong points value at Lowest/Low tier — 1.8–2.5¢ per point against high cash rates</li>
       <li style="padding:.35rem 0;border-bottom:1px solid var(--border);display:flex;gap:.6rem;"><span style="color:#0F6E56;font-weight:600;">✓</span> Three distinct pools for different moods and group types</li>
       <li style="padding:.35rem 0;border-bottom:1px solid var(--border);display:flex;gap:.6rem;"><span style="color:#0F6E56;font-weight:600;">✓</span> Direct beach access on one of Wailea's best stretches</li>
       <li style="padding:.35rem 0;border-bottom:1px solid var(--border);display:flex;gap:.6rem;"><span style="color:#0F6E56;font-weight:600;">✓</span> Morimoto Maui is a genuine destination restaurant</li>
@@ -211,14 +217,14 @@ The **fifth-night-free benefit** amplifies this further. A five-night stay costs
 ## Who Should Stay Here
 
 **Perfect for:**
-- **Points travelers with a Hyatt balance or Chase UR points** — this is one of the best redemptions in the entire World of Hyatt program. If you have 88,000 points available, a five-night stay here on points beats almost any other use of that balance.
+- **Points travelers with a substantial Hyatt balance or Chase UR points** — even at Category 8 pricing, this is one of the best resort redemptions in Hawaii. A five-night stay at Low pricing (180,000 points) against $4,000–$5,000 in cash value delivers strong CPP. Start building the balance early.
 - **Honeymooners and couples** — the combination of Elua Pool, Morimoto Maui at sunset, and the overall design sensibility makes this one of the most romantic resorts in Hawaii.
 - **Travelers who want cultural depth alongside luxury** — the outrigger tours, luau, and daily activities add genuine substance to what could otherwise be a passive beach vacation.
 - **Foodies** — two genuinely excellent restaurants on property, with Wailea's broader dining scene a short walk or drive away.
 
 **Might prefer elsewhere:**
 - **Families with young children** — the Hyatt Regency Maui in Kāʻanapali has a better kids' program (Drummond's Camp) and more family-oriented pool energy. The Grand Wailea's elaborate pool complex also edges out the Andaz for families.
-- **Budget-conscious travelers** — even on points this is a Category 6 property. If your points balance is limited, Category 3–4 properties elsewhere will stretch further.
+- **Budget-conscious points travelers** — at Category 8, even the Lowest tier costs 35,000 points per night. If your points balance is limited, Category 3–5 properties elsewhere will stretch significantly further.
 - **Travelers who prioritize room size** — if a large suite is central to your stay, the Four Seasons next door or the Fairmont Kea Lani's all-suite format may be a better fit.
 
 ## Our Rating

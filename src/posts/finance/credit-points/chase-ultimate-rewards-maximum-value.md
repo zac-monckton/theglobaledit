@@ -69,7 +69,7 @@ The "Chase Trifecta" (Sapphire Preferred/Reserve + Freedom Unlimited + Freedom F
 
 <a href="/posts/finance/credit-points/world-of-hyatt-program-explained/">World of Hyatt</a> is the most valuable hotel transfer partner in the Chase ecosystem — and arguably in any major points program. Points transfer at 1:1 and deliver 1.7-4.5 cents per point depending on the property.
 
-The math at a Category 6 property like the <a href="/posts/travel/hotel-reviews/andaz-maui-review/">Andaz Maui at Wailea</a> illustrates why: 22,000 Hyatt points (transferred from 22,000 Chase UR) books a room retailing at $800-1,000/night. That's 3.6-4.5 cents per point — more than double what the Chase Travel portal delivers and more than triple what most airline redemptions achieve.
+The math at a Category 8 property like the <a href="/posts/travel/hotel-reviews/andaz-maui-review/">Andaz Maui at Wailea</a> illustrates the principle: 45,000 Hyatt points (transferred from 45,000 Chase UR) books a Low-tier night retailing at $800–$1,000/night. That's roughly 1.8–2.2 cents per point — still meaningfully above what the Chase Travel portal delivers. At the Lowest tier (35,000 points) against an $850+ cash rate, CPP climbs toward 2.5¢. The key is targeting Lowest and Low tier nights, which currently represent most available dates at the property.
 
 **IHG One Rewards** (transfers at 1:1) occasionally delivers extraordinary value on PointBreaks promotions. Generally less consistent than Hyatt but worth checking for specific properties.
 
@@ -122,8 +122,8 @@ The Chase Travel portal lets you book flights, hotels, and cars directly using p
 
 ## Real-World Redemption Examples
 
-**Andaz Maui — 4 nights, Category 6:**
-22,000 pts/night x 4 = 88,000 UR points transferred to Hyatt. Cash equivalent: $3,200-4,000. Value: approximately 3.6-4.5 cents per point. See our <a href="/posts/travel/hotel-reviews/andaz-maui-review/">full Andaz Maui review</a> for the complete points breakdown.
+**Andaz Maui — 4 nights, Category 8 (Low rate):**
+45,000 pts/night x 4 = 180,000 UR points transferred to Hyatt. Cash equivalent: $3,200–$4,000. Value: approximately 1.8–2.2 cents per point. The fifth-night-free benefit means a 5-night stay costs the same 180,000 points — pushing CPP to 2.2–2.8¢ against a $4,000–$5,000 cash equivalent. See our <a href="/posts/travel/hotel-reviews/andaz-maui-review/">full Andaz Maui review</a> for the complete points breakdown.
 
 **Business class to Europe — Air France Flying Blue:**
 During a Promo Rewards event: 40,000 miles round trip business class transferred from 40,000 Chase UR. Cash equivalent: $3,000-5,000. Value: 7.5-12.5 cents per point — exceptional.

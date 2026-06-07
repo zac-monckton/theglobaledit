@@ -24,13 +24,11 @@ toc:
   - "The Final Edit"
 ---
 
-People assume we have a high income. Or that we don't have a mortgage. Or that international travel is something we splurge on and compensate for everywhere else — no dining out, no concerts, no quality of life the rest of the year.
+Two international trips a year on one income isn't a flex. It's a spreadsheet. There's no secret income, no inheritance, no year of eating rice and beans to fund two weeks abroad. We have a mortgage. We eat out. We go to concerts. The quality of life doesn't get gutted to make the travel happen.
 
-None of that is true.
+What does happen: twelve months before we board a flight, we decide where we're going, put a real cash number on it, divide by twelve, and automate. The travel fund moves on payday like a utility bill. The points accumulate on everyday spending we were doing anyway. By the time we're packing, the expensive parts are already paid for.
 
-Two international trips a year on one income is achievable not because we earn more than average, but because we treat travel like a fixed expense — one we plan for twelve months in advance, automate like a utility bill, and fund with a combination of saved cash and strategically earned points. The result is that travel doesn't feel like a financial stretch. It feels like a line item that does its job.
-
-This article is about the framework behind that — how we think about it, how we actually budget for it, and how you can build the same system regardless of where you're going or what you earn.
+This is the framework behind that — and it works regardless of your income or your destination.
 
 ## The Question We Get Asked Most
 
