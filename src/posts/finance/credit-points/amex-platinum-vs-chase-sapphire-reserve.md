@@ -73,14 +73,14 @@ Let's put the numbers on the table.
     <div style="font-size: 13px; color: var(--slate);">Authorized user fee</div>
     <div style="display: flex; gap: 2rem; text-align: right;">
       <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$195/user</div>
-      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$75/user</div>
+      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$195/user</div>
     </div>
   </div>
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Stated potential annual credit value</div>
     <div style="display: flex; gap: 2rem; text-align: right;">
       <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$3,319+</div>
-      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$2,348+</div>
+      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$3,098+</div>
     </div>
   </div>
   <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
@@ -114,11 +114,25 @@ This is where the two cards diverge most sharply — and where the Reserve wins 
     <div style="font-size: 13px; color: var(--slate);">Flights (booked direct)</div>
     <div style="display: flex; gap: 2rem;">
       <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">5x</div>
-      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">3x</div>
+      <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">4x</div>
     </div>
   </div>
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div style="font-size: 13px; color: var(--slate);">Hotels booked via card portal</div>
+    <div style="font-size: 13px; color: var(--slate);">Flights (booked via portal)</div>
+    <div style="display: flex; gap: 2rem;">
+      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">—</div>
+      <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">8x</div>
+    </div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Hotels (booked direct)</div>
+    <div style="display: flex; gap: 2rem;">
+      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">1x</div>
+      <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">4x</div>
+    </div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Hotels (booked via portal)</div>
     <div style="display: flex; gap: 2rem;">
       <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">5x (Amex Travel)</div>
       <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">10x (Chase Travel)</div>
@@ -126,13 +140,6 @@ This is where the two cards diverge most sharply — and where the Reserve wins 
   </div>
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Dining</div>
-    <div style="display: flex; gap: 2rem;">
-      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">1x</div>
-      <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">3x</div>
-    </div>
-  </div>
-  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div style="font-size: 13px; color: var(--slate);">Other travel</div>
     <div style="display: flex; gap: 2rem;">
       <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">1x</div>
       <div style="font-size: 14px; font-weight: 600; color: #0F6E56; min-width: 100px; text-align: center;">3x</div>
@@ -154,11 +161,11 @@ This is where the two cards diverge most sharply — and where the Reserve wins 
   </div>
 </div>
 
-The Platinum's 5x on flights is the best earning rate on any premium card for that category — and for someone who drops $10,000 or more per year on flights, that's meaningful. But outside of flights and Amex Travel hotel bookings, the Platinum earns 1x on everything: dining, ground transportation, entertainment, everyday purchases. You don't reach for the Platinum at a restaurant.
+The Platinum's 5x on flights booked direct remains the strongest earning rate on any premium card for that category. But outside of flights and Amex Travel hotel bookings, the Platinum earns 1x on everything: dining, hotels booked direct, ground transportation, everyday purchases. You don't reach for the Platinum at a restaurant or when booking a hotel directly with the property.
 
-The Reserve earns 3x on all travel and dining — two of the largest spending categories for most frequent travelers. It also earns 10x on Chase Travel bookings and Lyft rides. For a cardholder who spends $3,000 per year on dining and $4,000 on travel outside of flights, the Reserve is generating meaningful points volume that the Platinum simply can't match.
+The Reserve's earning structure is materially stronger across the board for everyday travel spending. It earns 4x on flights and hotels booked direct, 8x on flights through Chase Travel, 10x on hotels through Chase Travel, and 3x on dining. For a cardholder who spends $3,000 per year on dining and $4,000 on travel outside of portal bookings, the Reserve is generating substantial points volume the Platinum simply can't match.
 
-The Reserve wins the everyday earning battle decisively. The Platinum wins only for cardholders whose largest single spending category is flights booked direct.
+The Reserve wins the everyday earning battle decisively — and the gap is wider than it looks once you account for the 4x direct hotel earning the Platinum doesn't have at all.
 
 <div class="pro-tip">
   <div class="pro-tip-icon">💡</div>
@@ -172,20 +179,114 @@ The Reserve wins the everyday earning battle decisively. The Platinum wins only 
 
 ## Travel Credits: Flexibility vs. Depth
 
-This is the sharpest philosophical divide between the two cards — and where most people make their mistake.
+This is the sharpest philosophical divide between the two cards — and where most people make their mistake. Both cards carry a substantial credit stack. The Reserve's credits are broader and more automatic. The Platinum's credits are deeper but require active management. Neither is better universally — it depends entirely on whether the specific credits map to your actual life.
 
-**The Chase Sapphire Reserve's $300 travel credit** applies automatically to the first $300 you spend on travel each year, and Chase defines travel broadly. Flights, hotels, Airbnb, Uber, Lyft, parking, tolls, taxis, trains — it all counts. For an active traveler, this credit is effectively automatic. It hits your statement without you thinking about it, bringing the Reserve's effective fee from $795 to $495 before you've activated a single other benefit.
+**Chase Sapphire Reserve — full credit stack:**
 
-**The Amex Platinum's travel credits** are deeper but narrower. The $600 hotel credit covers Fine Hotels + Resorts and The Hotel Collection bookings through Amex Travel — not direct hotel bookings, not other platforms, specifically those two programs. The $200 airline incidental credit applies to one airline you designate, and only to incidentals — checked bags, seat upgrades, day passes — not the ticket price itself. The $209 CLEAR+ credit covers a single service. The Global Entry credit applies once every four to five years.
+<div style="border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0;">
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Travel credit (flights, hotels, Uber, Lyft, parking, tolls, etc.)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Hotel credit (select Chase hotels)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$250/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">The Edit by Chase Hotels credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$500/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">OpenTable dining credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">DashPass membership credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$120/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">DashPass promo credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">StubHub credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Apple Music and Apple TV+ credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$288/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Lyft credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$120/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Peloton credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$120/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Global Entry / TSA PreCheck credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$100 every 4 years</div>
+  </div>
+  <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
+    <div style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,.8);">Total stated annual value</div>
+    <div style="font-size: 14px; font-weight: 600; color: var(--gold); white-space: nowrap; margin-left: 1rem;">$3,098+</div>
+  </div>
+</div>
 
-Each of these is real value. But capturing each one requires knowing it exists, enrolling in the relevant program, and making purchases in the right way at the right time.
+The $300 travel credit is the most automatic premium credit in the industry — it applies to virtually any travel purchase without enrollment or category management. The $250 hotel credit and $500 The Edit credit add meaningful hotel value for cardholders who book through Chase's hotel programs. The remaining credits — OpenTable, DashPass, StubHub, Apple, Lyft, Peloton — are lifestyle credits that vary in usefulness depending entirely on your existing habits. If you already use DoorDash, attend live events, and ride Lyft regularly, the Reserve's credit stack competes with the Platinum on total recoverable value. If you don't, the effective fee stays higher.
+
+**Amex Platinum — full credit stack:**
+
+<div style="border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0;">
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Fine Hotels + Resorts / Hotel Collection credit (Amex Travel)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$600/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Airline incidental credit (1 designated airline)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$200/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Equinox credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">lululemon credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Walmart+ membership credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$155/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Oura Ring credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$200/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">CLEAR+ credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$209/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Saks Fifth Avenue credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$100/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Global Entry / TSA PreCheck credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$100 every 4–5 years</div>
+  </div>
+  <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
+    <div style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,.8);">Total stated annual value</div>
+    <div style="font-size: 14px; font-weight: 600; color: var(--gold); white-space: nowrap; margin-left: 1rem;">$3,319+</div>
+  </div>
+</div>
+
+The Platinum's credits are deeper but narrower. The $600 hotel credit applies only to Fine Hotels + Resorts and Hotel Collection bookings through Amex Travel — not direct bookings, not other platforms. The Equinox and lululemon credits are genuinely valuable for people who already use those brands; for everyone else they're noise. The Walmart+ credit is straightforward. The Oura Ring credit requires purchasing or subscribing through the program. Every credit requires knowing it exists, enrolling where required, and spending in the right place at the right time.
 
 <div class="info-box">
   <div class="info-box-title">Amex Enrollment Is Non-Negotiable</div>
   <p>Most Amex Platinum credits require individual enrollment through americanexpress.com before they activate. Log in, navigate to Benefits, and enroll within the first week of getting the card. Credits cannot be applied retroactively to purchases made before enrollment. The Fine Hotels + Resorts hotel credit is the highest-value single benefit on the card — missing the enrollment step costs you $600 per year.</p>
 </div>
-
-The Reserve's credits are more automatic. The Platinum's credits are more valuable in aggregate — but only for the cardholder who manages them actively. If you're the type to set a calendar reminder for semi-annual credit resets, the Platinum's depth rewards you. If you want a premium card that mostly works without project management, the Reserve is the better fit.
 
 ---
 
@@ -206,6 +307,8 @@ The Platinum also includes Priority Pass Select (enrollment required) and up to 
 The Reserve includes Priority Pass Select with access to over 1,300 lounges globally — solid, but variable in quality. An average Priority Pass lounge is worth $30–50 per visit versus buying food and drinks at the terminal. For a frequent traveler, that adds up.
 
 The more compelling benefit is access to the **Chase Sapphire Lounge network**, which Chase has been expanding steadily at major U.S. airports. The quality rivals Centurion Lounges in many locations — curated food and beverage programs, comfortable seating, premium experience. Current locations include BOS, HKG, LAS, LGA, JFK, PHL, PHX, and IAD, with more expanding. [As we covered in our full Chase Sapphire Reserve year-one guide](/posts/finance/credit-points/chase-sapphire-reserve-year-one-guide/), this benefit is becoming more valuable as the network grows — not less.
+
+One meaningful advantage the Reserve holds over the Platinum in the lounge category: **the Reserve includes up to 2 complimentary guests** at both Chase Sapphire Lounges and Priority Pass lounges. The Amex Platinum does not extend complimentary guest access — additional guests at Centurion Lounges are charged per visit. For cardholders who travel with a partner or colleague regularly, this is a tangible real-world difference that compounds across every trip.
 
 **The honest verdict on lounge access:** If you fly heavily through airports with Centurion Lounges, the Platinum wins this category clearly. The Centurion experience is the benchmark everything else is measured against. If your travel doesn't align with Centurion locations, or if Chase Sapphire Lounges cover your primary airports, the gap narrows considerably.
 
@@ -240,7 +343,7 @@ The honest take: for hotel-focused travelers, Chase wins on transfer partner val
 
 The Platinum also includes complimentary enrollment in Fine Hotels + Resorts, where bookings made through Amex Travel add a suite of on-property benefits averaging roughly $550 in additional value per stay: daily breakfast for two, noon check-in, guaranteed 4pm late checkout, a property-specific amenity credit, and room upgrades when available.
 
-**Chase Sapphire Reserve:** Complimentary IHG One Rewards Platinum Elite status through 12/31/27, which must be activated by linking your IHG account through Chase. At the $75,000 annual spend threshold, the Reserve also unlocks automatic World of Hyatt Discoverist status and IHG Diamond Elite — meaningful for Hyatt loyalists who want card spend to count toward their status clock.
+**Chase Sapphire Reserve:** Complimentary IHG One Rewards Platinum Elite status through 12/31/27, which must be activated by linking your IHG account through Chase. At the $75,000 annual spend threshold, the Reserve also unlocks automatic World of Hyatt **Globalist** status and IHG Diamond Elite — Globalist is Hyatt's top tier, including complimentary breakfast, confirmed suite upgrades, club lounge access, and guaranteed 4pm late checkout. For a serious Hyatt loyalist, earning Globalist through card spend rather than 60 qualifying nights is an exceptional benefit.
 
 The Platinum's hotel status benefits are stronger at the baseline — two automatic mid-tier statuses across Hilton and Marriott without any spending requirement is genuinely valuable. The Reserve's IHG Platinum is useful for IHG loyalists but doesn't have the same breadth.
 
@@ -255,17 +358,18 @@ After carrying both, the clearest way to explain the difference is this: the Ame
 - You fly 8 or more times per year through Centurion Lounge airports and that access is worth premium pricing to you
 - You stay at Fine Hotels + Resorts or Hotel Collection properties and want the breakfast, late checkout, and amenity benefits stacked on top of the hotel credit
 - You're a loyal Hilton or Marriott guest who wants automatic Gold status without earning it through stays
-- You'll realistically use a wide range of lifestyle credits — lululemon, Equinox, Resy dining, Walmart+ — and these fit your actual life
-- Maximizing airline points through 5x earning on flights is your primary points strategy
+- You'll realistically use the lifestyle credits — lululemon, Equinox, Oura, Walmart+ — and these genuinely fit your existing spending patterns
+- Maximizing airline points through 5x earning on flights booked direct is your primary points strategy
 
 **Carry the Chase Sapphire Reserve if:**
 
-- Your biggest monthly spend categories are travel and dining — the 3x earning works hard every day
+- Your biggest monthly spend categories are travel and dining — the 4x on flights and hotels direct, plus 3x on dining, works hard every day
 - You want a broad $300 travel credit that applies automatically without managing category restrictions
+- You travel with a partner or colleague and want complimentary guest lounge access — the Reserve covers 2 guests, the Platinum doesn't
 - You value Hyatt as a transfer partner and want your credit card points to convert directly into hotel nights
+- You spend $75,000 per year on the card and want World of Hyatt Globalist status without earning it through 60 qualifying nights
+- You use DoorDash, attend live events via StubHub, use OpenTable, or already subscribe to Apple services — those credits compound quickly
 - You fly through airports with Chase Sapphire Lounges regularly
-- You use Lyft, DoorDash, or OpenTable and want those monthly credits to compound over the year
-- You want premium travel protections with a 6-hour trip delay reimbursement threshold
 
 The Amex Platinum is the card for someone whose primary identity is a frequent flyer who values exclusive access. The Reserve is the card for someone who travels often, eats out often, and wants every dollar spent to earn well without too much credit management overhead.
 
@@ -275,7 +379,7 @@ The Amex Platinum is the card for someone whose primary identity is a frequent f
 
 The honest answer: yes, and many serious points collectors do. The cards don't compete for the same purchases — they complement each other.
 
-The logic is clean. Put flights on the Amex Platinum for the 5x Membership Rewards earning and Centurion access. Put dining, hotels, Lyft, and everything else on the Chase Sapphire Reserve for 3x Ultimate Rewards. Use the $300 travel credit and the monthly Chase credits on the Reserve. Use the Platinum's hotel credit for FHR stays.
+The logic is clean. Put flights on the Amex Platinum for the 5x Membership Rewards earning and Centurion access. Put hotels booked direct, dining, and everything else on the Chase Sapphire Reserve for 4x and 3x Ultimate Rewards respectively. Use the $300 travel credit and the lifestyle credits on the Reserve. Use the Platinum's hotel credit for FHR stays and the lifestyle credits for lululemon, Equinox, and Walmart+.
 
 The combined annual fee is $1,690, which is a real number. But between the $300 Reserve travel credit, the $600 Platinum hotel credit, the monthly Chase credits, and the Amex lifestyle credits, a cardholder who uses both actively can recoup well above that in documented value.
 
@@ -291,7 +395,7 @@ The Amex Platinum and Chase Sapphire Reserve are both exceptional cards, and tha
 
 If you fly heavily through hub airports with Centurion Lounges, want automatic Hilton and Marriott status, and will book two or more Fine Hotels + Resorts stays per year, the Amex Platinum earns its $895 fee and then some. The lounge experience alone makes airports less punishing, and the FHR benefits stack real value on top of every eligible booking. For that specific traveler, nothing else on the market comes close.
 
-For everyone else — which is most people — the Chase Sapphire Reserve is the better card. The $300 travel credit is the most automatic premium credit in the industry. The 3x earning on travel and dining compounds meaningfully over time. The Hyatt transfer partner is still the best hotel conversion in the points world. And the Chase Sapphire Lounge network is growing into a genuinely competitive lounge product.
+For everyone else — which is most people — the Chase Sapphire Reserve is the better card. The $300 travel credit is the most automatic premium credit in the industry. The 4x earning on flights and hotels direct, plus 3x on dining, compounds meaningfully over time. The guest lounge access covers the people you actually travel with. The Hyatt transfer partner — including the possibility of Globalist status at $75k spend — is still the best hotel value in the points world. And the Chase Sapphire Lounge network is growing into a genuinely competitive lounge product.
 
 Our verdict: start with the Reserve. It's the more forgiving card, the stronger everyday earner, and the one that works best without turning credit management into a part-time job. If you outgrow it — if your flying frequency and income both push into Amex Platinum territory — add the Platinum later and run both. But forcing the Platinum as a first premium card and not using the credits is how you waste $895.
 
