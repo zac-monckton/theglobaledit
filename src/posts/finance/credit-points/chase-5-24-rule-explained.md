@@ -5,7 +5,7 @@ date: 2026-06-08
 layout: layouts/article.njk
 category: Credit & Points
 parentCategory: Personal Finance
-featuredImage: "/image/5-24-rule.png"
+featuredImage: "/images/5-24-rule.png"
 readTime: 5
 tags:
   - Credit & Points

@@ -171,7 +171,13 @@ Go early. The piazzale fills with tour groups and buses by 10am and the atmosphe
 
 **Late morning — San Lorenzo Market and the Medici Chapels**
 
-Walk back down to the north bank and into the **San Lorenzo market** — Florence's outdoor leather and textile market surrounding the church of San Lorenzo. The market gets a mixed reputation, but the area immediately around it has several excellent food vendors and the covered **Mercato Centrale** next door is worth a second visit for coffee and a pastry.
+Walk back down to the north bank and into the **San Lorenzo market** — Florence's outdoor leather and textile market surrounding the church of San Lorenzo. The market's reputation is mixed, but the leather is the real draw and it's worth your time if you know how it works.
+
+Florence has been a center of leather craftsmanship since the Renaissance, and the San Lorenzo stalls carry a genuine range of bags, belts, wallets, jackets, and accessories at prices that look high on the tag and aren't. The listed price is always a starting point. Negotiating is expected, not awkward — and discounts of up to 50% off the sticker price are genuinely achievable if you engage confidently and are willing to walk away. We secured a €130 briefcase for €70 by making a reasonable counter-offer and holding firm. The vendor accepted without hesitation.
+
+The approach: pick up the item, examine it properly, ask the price, then make your offer at roughly half — or name a number slightly below what you'd actually pay and let them meet you in the middle. Cash helps. Buying more than one item from the same vendor helps more. Don't apologize for negotiating; it's how this market works and the vendors expect it.
+
+The covered **Mercato Centrale** next door is worth a second visit for coffee and a pastry.
 
 The **Cappelle Medicee** (Medici Chapels), attached to San Lorenzo, contain Michelangelo's sculptures for the Medici tombs — Dawn, Dusk, Day, Night — which are among his finest works and substantially less visited than the Accademia. Entry is €9. If you have time and energy for one more museum, this is the one.
 
