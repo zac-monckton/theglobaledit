@@ -84,7 +84,7 @@ Both cards periodically offer elevated welcome bonuses. Current offers can vary,
 
 **Chase Sapphire Reserve:** Currently offering 125,000 points (with a limited-time offer of 150,000 points) after spending $6,000 in the first 3 months — worth $1,875 through Chase Travel at the 1.5 cent redemption rate, or potentially more through transfer partners.
 
-The Reserve's higher portal redemption value means the same number of bonus points is worth more in your hands. If you're planning to transfer points to airline or hotel partners rather than book through the portal, both cards access identical transfer partners at 1:1 — so bonus value is equivalent in that scenario.
+The Reserve's higher portal redemption value means the same number of bonus points is worth more in your hands. If you're planning to transfer points to airline or hotel partners rather than book through the portal, this is no longer a wash between the two cards. As of June 2026, Chase is cutting the Ultimate Rewards-to-Hyatt transfer ratio from 1:1 to 4:3 for the Preferred — the Reserve keeps 1:1. For airline transfer partners, both cards still transfer at the same ratios, so bonus value is equivalent there. But if World of Hyatt is part of your strategy, the Reserve's transfer ratio is now a meaningful part of the math, not just a footnote. See our [full breakdown of the 2026 Hyatt transfer change](/posts/finance/credit-points/transfer-chase-points-to-hyatt/) for the timeline and what it means for existing Preferred holders.
 
 <div class="pro-tip">
 <div class="pro-tip-icon">💡</div>
@@ -280,7 +280,7 @@ function updateReserveProgress() {
 Most Reserve cardholders never hear about this — but if you spend $75,000 or more on the card in a calendar year, a second tier of benefits unlocks that meaningfully raises the card's value ceiling.
 
 **World of Hyatt Explorist Status**
-Hitting $75K in annual spend triggers automatic World of Hyatt Explorist status for the remainder of the calendar year and the following year. Hyatt status is notoriously hard to earn organically — getting a tier bump from your credit card spend, independent of how many nights you actually stay at Hyatt properties, is a genuine shortcut.
+Hitting $75K in annual spend (effective April 1, 2026) triggers automatic World of Hyatt **Explorist** status — Hyatt's mid-tier, sitting between Discoverist and Globalist — for the remainder of the calendar year and the following year. Explorist normally requires 30 qualifying nights, and includes 20% bonus points on stays, an upgrade to the best available room (excluding suites), 2pm late checkout when available, premium Wi-Fi, and daily bottled water. It's a genuinely useful mid-tier status to unlock through spend rather than nights — though it's worth being clear-eyed that Explorist is the middle tier, not Hyatt's top one. Globalist (Hyatt's highest tier, with suite upgrades and lounge access) still requires 60 nights or equivalent spend, and isn't part of this benefit.
 
 **IHG One Rewards Diamond Elite Status**
 The $75K tier also upgrades your complimentary IHG status from Platinum Elite (included with the base card) to Diamond Elite — IHG's top status tier — for the remainder of the year and the following year.
@@ -319,6 +319,7 @@ For a full breakdown of how to maximize Hyatt points and status benefits, our [W
 - Your travel and dining spend is high enough that the 4x and 8x earning rates meaningfully outpace the Preferred
 - You want the best-in-class travel protections, particularly the 6-hour trip delay reimbursement
 - You fly through airports with Chase Sapphire Lounges regularly
+- You value World of Hyatt as a transfer partner — as of 2026, only the Reserve retains the 1:1 transfer ratio to Hyatt; the Preferred moves to 4:3
 
 The honest truth: if you have to ask whether you'll use the Reserve's credits, the Preferred is probably the right card. The Reserve rewards people who are already living a life that intersects with its benefits — frequent flyers, regular diners, Lyft riders, live event attendees. If that's you, the Reserve isn't just worth it. It's one of the best value propositions in premium travel cards.
 

@@ -75,7 +75,12 @@ Here's how to evaluate one honestly:
 
 The Chase Sapphire Preferred is the most recommended beginner travel card on the market — and not because the industry is wrong about this. It genuinely is the best starting point for most people, for three reasons that compound over time.
 
-**First, it gives you access to Chase Ultimate Rewards transfer partners at a low cost.** Chase Ultimate Rewards is the most flexible points currency in travel. With the Preferred, your points transfer 1:1 to World of Hyatt, United MileagePlus, Southwest Rapid Rewards, Air Canada Aeroplan, British Airways Avios, Air France/KLM Flying Blue, Singapore Airlines KrisFlyer, IHG One Rewards, and Marriott Bonvoy — among others. The Hyatt transfer partner alone is worth the cost of admission; Hyatt points are some of the most valuable in hotel loyalty.
+**First, it gives you access to Chase Ultimate Rewards transfer partners at a low cost.** Chase Ultimate Rewards is the most flexible points currency in travel. With the Preferred, your points transfer to United MileagePlus, Southwest Rapid Rewards, Air Canada Aeroplan, British Airways Avios, Air France/KLM Flying Blue, Singapore Airlines KrisFlyer, IHG One Rewards, World of Hyatt, and Marriott Bonvoy — among others, most at 1:1.
+
+<div class="info-box">
+<div class="info-box-title">2026 Update: Hyatt Transfer Ratio Change</div>
+<p>As of June 15, 2026, new Chase Sapphire Preferred applicants transfer Ultimate Rewards to World of Hyatt at a <strong>4:3 ratio</strong> rather than 1:1 — 40,000 Chase points becomes 30,000 Hyatt points. This is a Preferred-specific change; the <a href="/posts/finance/credit-points/chase-sapphire-reserve-year-one-guide/">Chase Sapphire Reserve</a> retains the 1:1 ratio. Hyatt remains a strong transfer partner from the Preferred — but if Hyatt redemptions are central to your strategy, this is a point in the Reserve's favor. See our <a href="/posts/finance/credit-points/transfer-chase-points-to-hyatt/">full breakdown of the 2026 transfer change</a> for details.</p>
+</div>
 
 **Second, it earns well across the categories that matter most for everyday spenders.** The Preferred earns 5x on travel booked through Chase Travel, 3x on dining, 3x on select streaming services, 3x on online grocery purchases (excluding Target, Walmart, and wholesale clubs), and 2x on all other travel. For most people, dining and groceries are two of their largest monthly spending categories. The Preferred turns both into premium travel currency.
 
@@ -103,11 +108,11 @@ The Chase Sapphire Preferred is the most recommended beginner travel card on the
   </div>
 </div>
 
-The 75,000-point welcome bonus is worth $937 through Chase Travel at 1.25 cents per point — nearly ten years of annual fees in one shot. Transferred to Hyatt, those points can cover multiple free nights at properties that cost $300–500 per night in cash. For a first card, that's an exceptional starting position.
+The 75,000-point welcome bonus is worth $937 through Chase Travel at 1.25 cents per point — nearly ten years of annual fees in one shot. Transferred to Hyatt at the new 4:3 ratio, those 75,000 points become 56,250 Hyatt points — still enough to cover one to two nights at a mid-tier Hyatt property depending on the season. For a first card, that's still an exceptional starting position, even if the Hyatt math isn't quite what it used to be.
 
 The Preferred also comes with solid travel protections: primary rental car insurance (no need to buy the rental company's collision waiver), trip cancellation and interruption insurance up to $10,000 per person, trip delay reimbursement after 12 hours, and baggage delay coverage. These aren't exciting benefits until you need them — and when you do, they're worth substantially more than the annual fee.
 
-**Who the Chase Sapphire Preferred is for:** Almost everyone starting out. If you travel at least a couple of times per year, eat at restaurants, and want access to the best hotel transfer partner in the game (Hyatt), this is the right first card. The path from here — holding the Preferred for a year or two, then product-changing or upgrading to the [Chase Sapphire Reserve](/posts/finance/credit-points/chase-sapphire-reserve-year-one-guide/) when the math justifies it — is the most well-worn road in the beginner-to-advanced travel card journey.
+**Who the Chase Sapphire Preferred is for:** Almost everyone starting out. If you travel at least a couple of times per year, eat at restaurants, and want broad access to Chase's transfer partner network, this is the right first card. Hyatt remains one of the strongest hotel programs to transfer into, even at the new 4:3 ratio — it's just no longer the slam-dunk 1:1 it once was for Preferred holders. The path from here — holding the Preferred for a year or two, then product-changing or upgrading to the [Chase Sapphire Reserve](/posts/finance/credit-points/chase-sapphire-reserve-year-one-guide/) when the math justifies it — is the most well-worn road in the beginner-to-advanced travel card journey, and it's also how you'd regain the 1:1 Hyatt ratio.
 
 **Who should skip it:** Someone whose primary spending is at physical grocery stores (Amex Gold's 4x beats the Preferred there) or who spends heavily on flights and wants a higher earning rate. It's also not the right card if you've already hit 5/24 — you'll be denied regardless.
 
@@ -252,7 +257,7 @@ You don't start here. You build to here — and it starts with the right first c
 
 ## The Final Edit
 
-The Chase Sapphire Preferred is the right first travel card for most people, and that consensus exists for good reason. The $95 fee is low enough to be forgiving, the earning structure rewards the categories that matter, and the Chase Ultimate Rewards transfer partners — led by Hyatt — give you access to some of the best redemption value in the game from day one. Apply for it before anything else, hit the welcome bonus, and let the points accumulate while you learn how the system works.
+The Chase Sapphire Preferred is the right first travel card for most people, and that consensus exists for good reason. The $95 fee is low enough to be forgiving, the earning structure rewards the categories that matter, and the Chase Ultimate Rewards transfer partners give you access to some of the best redemption value in the game from day one — Hyatt included, even at the adjusted 2026 transfer ratio. Apply for it before anything else, hit the welcome bonus, and let the points accumulate while you learn how the system works.
 
 If your life is centered on restaurants and groceries, start with the Amex Gold instead. The 4x earning in those categories is the best available at any fee level, and if you'll realistically use the monthly credits, the $325 fee is an accounting exercise, not a cost.
 

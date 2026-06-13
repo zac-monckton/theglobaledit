@@ -143,7 +143,7 @@ For a full breakdown of the new award chart changes, what drove them, and what t
 
 ## Best Ways to Earn Hyatt Points
 
-**Chase Ultimate Rewards (1:1 transfer)** — The single most powerful Hyatt earning strategy. Transfer <a href="/posts/finance/credit-points/chase-ultimate-rewards-maximum-value/">Chase Ultimate Rewards</a> points to World of Hyatt at a 1:1 ratio instantly. More on this below.
+**Chase Ultimate Rewards (Reserve: 1:1, Preferred: 4:3 as of mid-2026)** — The single most powerful Hyatt earning strategy. Transfer <a href="/posts/finance/credit-points/chase-ultimate-rewards-maximum-value/">Chase Ultimate Rewards</a> points to World of Hyatt — the Chase Sapphire Reserve retains the original 1:1 ratio, while the Sapphire Preferred moved to 4:3 in 2026. More on this below.
 
 **On-property stays (5x base)** — 5 points per $1 spent on qualifying charges. Always attach your loyalty number before checking in.
 
@@ -153,9 +153,9 @@ For a full breakdown of the new award chart changes, what drove them, and what t
 
 ## Chase Ultimate Rewards — The Master Key
 
-Chase Ultimate Rewards points transfer to World of Hyatt at a 1:1 ratio with no fees and near-instant delivery. This makes Hyatt effectively earnable on almost every purchase you make.
+Chase Ultimate Rewards points transfer to World of Hyatt with no fees and near-instant delivery, making Hyatt effectively earnable on almost every purchase you make. As of mid-2026, the transfer ratio depends on which card you hold: the **Chase Sapphire Reserve retains the original 1:1 ratio**, while the **Chase Sapphire Preferred moved to a 4:3 ratio** (40,000 Chase points becomes 30,000 Hyatt points). Existing Preferred holders kept 1:1 until October 1, 2026; new Preferred applicants from June 15, 2026 onward get 4:3 immediately. See our <a href="/posts/finance/credit-points/transfer-chase-points-to-hyatt/">full guide to transferring Chase points to Hyatt</a> for the complete mechanics and timeline.
 
-The Chase Sapphire Reserve earns 8x through Chase Travel and 3x on dining. The Chase Sapphire Preferred earns 5x through Chase Travel and 3x on dining. The Chase Freedom Unlimited earns 1.5x on everything. Combined — the "Chase Trifecta" — every dollar you spend earns at a meaningful rate, all pooling in one account and transferring to Hyatt when you're ready to book.
+The Chase Sapphire Reserve earns 8x through Chase Travel and 3x on dining. The Chase Sapphire Preferred earns 5x through Chase Travel and 3x on dining. The Chase Freedom Unlimited earns 1.5x on everything. Combined — the "Chase Trifecta" — every dollar you spend earns at a meaningful rate, all pooling in one account and transferring to Hyatt when you're ready to book. Where you ultimately transfer from — Reserve or Preferred — now affects how many Hyatt points that pooled balance becomes.
 
 <div class="pro-tip">
   <div class="pro-tip-icon">💡</div>
@@ -232,7 +232,7 @@ World of Hyatt rewards the strategic traveler disproportionately. The new award 
 
 World of Hyatt is no longer the uncomplicated slam dunk it was under the old three-tier chart. The May 2026 restructure introduced real cost increases at the top end, and anyone targeting Category 7 or 8 properties needs to approach redemptions more carefully than before — checking availability tiers, running the cents-per-point math, and being flexible on dates.
 
-But the program is far from broken. Category 3 through 6 properties at Lowest and Low pricing still represent some of the best points value in hotel loyalty. The Chase transfer partnership at 1:1 remains the most powerful way to earn Hyatt points without staying at Hyatt properties. And the fifth-night-free benefit — unchanged by the restructure — continues to reward travelers who plan multi-night stays.
+But the program is far from broken. Category 3 through 6 properties at Lowest and Low pricing still represent some of the best points value in hotel loyalty. The Chase transfer partnership — 1:1 via the Sapphire Reserve, 4:3 via the Preferred as of 2026 — remains the most powerful way to earn Hyatt points without staying at Hyatt properties. And the fifth-night-free benefit — unchanged by the restructure — continues to reward travelers who plan multi-night stays.
 
 The strategy shifts slightly: be more selective at the top of the chart, be more aggressive at the middle. Know your tier before you transfer. And for the full picture on what the new award chart means for specific properties and redemptions, our <a href="/posts/finance/credit-points/hyatt-award-chart-changes-2026/">2026 Hyatt award chart changes article</a> covers every tier, every category, and exactly what to do about it.
 

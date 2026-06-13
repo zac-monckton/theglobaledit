@@ -79,7 +79,7 @@ Let's put the numbers on the table.
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Stated potential annual credit value</div>
     <div style="display: flex; gap: 2rem; text-align: right;">
-      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$3,319+</div>
+      <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$3,484+</div>
       <div style="font-size: 14px; font-weight: 500; color: var(--navy); min-width: 100px; text-align: center;">$3,098+</div>
     </div>
   </div>
@@ -226,7 +226,7 @@ This is the sharpest philosophical divide between the two cards — and where mo
   </div>
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Global Entry / TSA PreCheck credit</div>
-    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$100 every 4 years</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">Up to $120 every 4 years</div>
   </div>
   <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
     <div style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,.8);">Total stated annual value</div>
@@ -246,6 +246,22 @@ The $300 travel credit is the most automatic premium credit in the industry — 
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Airline incidental credit (1 designated airline)</div>
     <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$200/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Uber Cash</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$200/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Uber One membership credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$120/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Resy dining credit</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$400/year</div>
+  </div>
+  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+    <div style="font-size: 13px; color: var(--slate);">Digital entertainment credit (Disney+, ESPN+, Hulu, Peacock, Paramount+, NYT, WSJ, YouTube TV, YouTube Premium — $25/mo)</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$300/year</div>
   </div>
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Equinox credit</div>
@@ -268,20 +284,16 @@ The $300 travel credit is the most automatic premium credit in the industry — 
     <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$209/year</div>
   </div>
   <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div style="font-size: 13px; color: var(--slate);">Saks Fifth Avenue credit</div>
-    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$100/year</div>
-  </div>
-  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
     <div style="font-size: 13px; color: var(--slate);">Global Entry / TSA PreCheck credit</div>
-    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">$100 every 4–5 years</div>
+    <div style="font-size: 14px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">Up to $120 every 4–5 years</div>
   </div>
   <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
     <div style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,.8);">Total stated annual value</div>
-    <div style="font-size: 14px; font-weight: 600; color: var(--gold); white-space: nowrap; margin-left: 1rem;">$3,319+</div>
+    <div style="font-size: 14px; font-weight: 600; color: var(--gold); white-space: nowrap; margin-left: 1rem;">$3,484+</div>
   </div>
 </div>
 
-The Platinum's credits are deeper but narrower. The $600 hotel credit applies only to Fine Hotels + Resorts and Hotel Collection bookings through Amex Travel — not direct bookings, not other platforms. The Equinox and lululemon credits are genuinely valuable for people who already use those brands; for everyone else they're noise. The Walmart+ credit is straightforward. The Oura Ring credit requires purchasing or subscribing through the program. Every credit requires knowing it exists, enrolling where required, and spending in the right place at the right time.
+The Platinum's credits are deeper but narrower. The $600 hotel credit applies only to Fine Hotels + Resorts and Hotel Collection bookings through Amex Travel — not direct bookings, not other platforms. The $400 Resy credit and $300 digital entertainment credit are broadly useful. The Equinox, lululemon, and Oura credits are genuinely valuable for people who already use those brands; for everyone else they're noise. The Walmart+ and Uber credits are straightforward. Every credit requires knowing it exists, enrolling where required, and spending in the right place at the right time.
 
 <div class="info-box">
   <div class="info-box-title">Amex Enrollment Is Non-Negotiable</div>
@@ -343,7 +355,7 @@ The honest take: for hotel-focused travelers, Chase wins on transfer partner val
 
 The Platinum also includes complimentary enrollment in Fine Hotels + Resorts, where bookings made through Amex Travel add a suite of on-property benefits averaging roughly $550 in additional value per stay: daily breakfast for two, noon check-in, guaranteed 4pm late checkout, a property-specific amenity credit, and room upgrades when available.
 
-**Chase Sapphire Reserve:** Complimentary IHG One Rewards Platinum Elite status through 12/31/27, which must be activated by linking your IHG account through Chase. At the $75,000 annual spend threshold, the Reserve also unlocks automatic World of Hyatt **Globalist** status and IHG Diamond Elite — Globalist is Hyatt's top tier, including complimentary breakfast, confirmed suite upgrades, club lounge access, and guaranteed 4pm late checkout. For a serious Hyatt loyalist, earning Globalist through card spend rather than 60 qualifying nights is an exceptional benefit.
+**Chase Sapphire Reserve:** Complimentary IHG One Rewards Platinum Elite status, which must be activated by linking your IHG account through Chase. At the $75,000 annual spend threshold (effective April 1, 2026), IHG status upgrades to Diamond Elite — IHG's top tier — and the Reserve also unlocks automatic World of Hyatt **Explorist** status — Hyatt's mid-tier, sitting between Discoverist and Globalist. Explorist normally requires 30 qualifying nights, and includes 20% bonus points on stays, room upgrades to the best available room (excluding suites), 2pm late checkout, premium Wi-Fi, and daily bottled water. For a Hyatt traveler who doesn't already have status, getting Explorist through card spend rather than 30 nights of stays is a genuine and easy win — though it's worth noting Explorist is Hyatt's middle tier, not its top one.
 
 The Platinum's hotel status benefits are stronger at the baseline — two automatic mid-tier statuses across Hilton and Marriott without any spending requirement is genuinely valuable. The Reserve's IHG Platinum is useful for IHG loyalists but doesn't have the same breadth.
 
@@ -367,7 +379,7 @@ After carrying both, the clearest way to explain the difference is this: the Ame
 - You want a broad $300 travel credit that applies automatically without managing category restrictions
 - You travel with a partner or colleague and want complimentary guest lounge access — the Reserve covers 2 guests, the Platinum doesn't
 - You value Hyatt as a transfer partner and want your credit card points to convert directly into hotel nights
-- You spend $75,000 per year on the card and want World of Hyatt Globalist status without earning it through 60 qualifying nights
+- You spend $75,000 per year on the card and want World of Hyatt Explorist status (Hyatt's mid-tier, 30-night equivalent) without earning it through stays
 - You use DoorDash, attend live events via StubHub, use OpenTable, or already subscribe to Apple services — those credits compound quickly
 - You fly through airports with Chase Sapphire Lounges regularly
 
@@ -395,7 +407,7 @@ The Amex Platinum and Chase Sapphire Reserve are both exceptional cards, and tha
 
 If you fly heavily through hub airports with Centurion Lounges, want automatic Hilton and Marriott status, and will book two or more Fine Hotels + Resorts stays per year, the Amex Platinum earns its $895 fee and then some. The lounge experience alone makes airports less punishing, and the FHR benefits stack real value on top of every eligible booking. For that specific traveler, nothing else on the market comes close.
 
-For everyone else — which is most people — the Chase Sapphire Reserve is the better card. The $300 travel credit is the most automatic premium credit in the industry. The 4x earning on flights and hotels direct, plus 3x on dining, compounds meaningfully over time. The guest lounge access covers the people you actually travel with. The Hyatt transfer partner — including the possibility of Globalist status at $75k spend — is still the best hotel value in the points world. And the Chase Sapphire Lounge network is growing into a genuinely competitive lounge product.
+For everyone else — which is most people — the Chase Sapphire Reserve is the better card. The $300 travel credit is the most automatic premium credit in the industry. The 4x earning on flights and hotels direct, plus 3x on dining, compounds meaningfully over time. The guest lounge access covers the people you actually travel with. The Hyatt transfer partner — and the path to World of Hyatt Explorist status at $75k spend — makes Hyatt one of the best hotel values in the points world. And the Chase Sapphire Lounge network is growing into a genuinely competitive lounge product.
 
 Our verdict: start with the Reserve. It's the more forgiving card, the stronger everyday earner, and the one that works best without turning credit management into a part-time job. If you outgrow it — if your flying frequency and income both push into Amex Platinum territory — add the Platinum later and run both. But forcing the Platinum as a first premium card and not using the credits is how you waste $895.
 
