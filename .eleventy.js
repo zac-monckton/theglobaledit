@@ -12,8 +12,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
   eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
 
-  // Copy standalone HTML tools
+  // Copy standalone HTML tools (ignored from template rendering — contains JS template literals)
   eleventyConfig.addPassthroughCopy("src/travel-budget-calculator.html");
+  eleventyConfig.ignores.add("src/travel-budget-calculator.html");
 
   // Date filters
   eleventyConfig.addFilter("dateDisplay", (dateObj) => {
