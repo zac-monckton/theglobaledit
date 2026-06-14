@@ -12,6 +12,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
   eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
 
+  // Copy standalone HTML tools
+  eleventyConfig.addPassthroughCopy("src/travel-budget-calculator.html");
+
   // Date filters
   eleventyConfig.addFilter("dateDisplay", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {

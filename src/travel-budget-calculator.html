@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Budget Calculator — The Global Edit</title>
+  <meta name="description" content="How long until your next trip? Enter your monthly savings, pick a destination, and see exactly when you can book — with and without travel points." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #FAF7F2;
+      color: #4A5568;
+      -webkit-font-smoothing: antialiased;
+    }
+    button { font-family: 'DM Sans', sans-serif; }
+    input { font-family: 'DM Sans', sans-serif; }
+    /* Transition utilities */
+    .bar-fill { transition: width 0.4s ease; }
+    .result-card { animation: fadeIn 0.2s ease; }
+    @keyframes fadeIn { from { opacity: 0.6; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const NAVY   = "#1B3A2D";
+    const GOLD   = "#C8922A";
+    const CREAM  = "#FAF7F2";
+    const SLATE  = "#4A5568";
+    const BORDER = "#E8E0D4";
+    const WHITE  = "#FEFDFB";
+    const GREEN  = "#0F6E56";
+
+    const DESTINATIONS = [
+      {
+        id: "domestic",
+        label: "Domestic Long Weekend",
+        emoji: "🏙️",
+        subtitle: "New York, Nashville, Chicago, New Orleans",
+        cashLow: 1560, cashHigh: 2850,
+        pointsLow: 960, pointsHigh: 1800,
+        pointsNote: "Points cover hotel (8k–15k Hilton Honors or Hyatt pts/night)",
+        nights: 3,
+        highlights: ["3 nights", "Flights + hotel + dining", "No passport required"],
+      },
+      {
+        id: "caribbean",
+        label: "Caribbean All-Inclusive",
+        emoji: "🌴",
+        subtitle: "7 nights — Jamaica, Dominican Republic, or Turks & Caicos",
+        cashLow: 3500, cashHigh: 7000,
+        pointsLow: 2000, pointsHigh: 4500,
+        pointsNote: "Points cover resort stay (Hilton Honors or Marriott Bonvoy)",
+        nights: 7,
+        highlights: ["7 nights", "All-inclusive resort", "Beach + dining included"],
+      },
+      {
+        id: "latam",
+        label: "Latin America",
+        emoji: "🌎",
+        subtitle: "10 nights — Colombia, Peru, or Mexico City",
+        cashLow: 2800, cashHigh: 5000,
+        pointsLow: 1500, pointsHigh: 3000,
+        pointsNote: "Points cover flights (~60k–80k via Flying Blue or Avianca LifeMiles)",
+        nights: 10,
+        highlights: ["10 nights", "Mid-range boutique hotels", "Flights + food + excursions"],
+      },
+      {
+        id: "europe",
+        label: "Western Europe",
+        emoji: "🏛️",
+        subtitle: "10 nights — Portugal, Spain, France, or Italy",
+        cashLow: 4400, cashHigh: 6400,
+        pointsLow: 3000, pointsHigh: 4200,
+        pointsNote: "Points cover flights (~120k Chase UR via Air France/KLM Flying Blue)",
+        nights: 10,
+        highlights: ["10 nights", "Mid-range hotels", "Flights + dining + transport"],
+      },
+      {
+        id: "maui",
+        label: "Maui — Luxury Resort",
+        emoji: "🌺",
+        subtitle: "7 nights, Wailea, Maui",
+        cashLow: 7700, cashHigh: 11200,
+        pointsLow: 2500, pointsHigh: 3700,
+        pointsNote: "Points cover hotel (315k–385k World of Hyatt pts for 7 nights)",
+        nights: 7,
+        highlights: ["7 nights", "Luxury resort stay", "Flights + car rental + dining"],
+      },
+      {
+        id: "asia",
+        label: "Southeast Asia",
+        emoji: "🛕",
+        subtitle: "14 nights — Vietnam, Thailand, or Bali",
+        cashLow: 3580, cashHigh: 5980,
+        pointsLow: 1980, pointsHigh: 3380,
+        pointsNote: "Points cover flights (~130k Chase UR via Singapore KrisFlyer)",
+        nights: 14,
+        highlights: ["14 nights", "Premium mid-range hotels", "Flights + food + tours"],
+      },
+      {
+        id: "japan",
+        label: "Tokyo — First-Timer",
+        emoji: "🗾",
+        subtitle: "7 nights, Tokyo",
+        cashLow: 4500, cashHigh: 7000,
+        pointsLow: 2500, pointsHigh: 4500,
+        pointsNote: "Points cover flights (~88k Chase UR via United/ANA MileagePlus)",
+        nights: 7,
+        highlights: ["7 nights", "Business hotels + ryokan", "Flights + rail + dining"],
+      },
+      {
+        id: "japan_luxury",
+        label: "Japan — Luxury Tier",
+        emoji: "⛩️",
+        subtitle: "7 nights, Tokyo + Kyoto ryokan",
+        cashLow: 6000, cashHigh: 10000,
+        pointsLow: 3000, pointsHigh: 6000,
+        pointsNote: "Points cover business class flights (~88k–110k ANA via United) + luxury hotel",
+        nights: 7,
+        highlights: ["7 nights", "Luxury hotel + ryokan", "Business class flights"],
+      },
+    ];
+
+    const fmt = (n) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+
+    function Toggle({ on, onToggle }) {
+      return (
+        <button
+          onClick={onToggle}
+          aria-pressed={on}
+          style={{
+            width: 48, height: 26, borderRadius: 13,
+            border: "none", background: on ? GOLD : BORDER,
+            cursor: "pointer", position: "relative", flexShrink: 0,
+            transition: "background 0.2s",
+          }}
+        >
+          <span style={{
+            position: "absolute", top: 3,
+            left: on ? 25 : 3, width: 20, height: 20,
+            borderRadius: "50%", background: "#fff",
+            transition: "left 0.2s",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.2)",
+            display: "block",
+          }} />
+        </button>
+      );
+    }
+
+    function DestButton({ dest, selected, onClick }) {
+      const isSelected = dest.id === selected;
+      return (
+        <button
+          onClick={onClick}
+          style={{
+            display: "flex", alignItems: "center", gap: "0.75rem",
+            padding: "0.85rem 1rem", width: "100%", textAlign: "left",
+            border: `2px solid ${isSelected ? GOLD : BORDER}`,
+            borderRadius: 6, cursor: "pointer",
+            background: isSelected ? "#FDF8F0" : WHITE,
+            transition: "border-color 0.15s, background 0.15s",
+          }}
+        >
+          <span style={{ fontSize: "1.25rem", lineHeight: 1 }}>{dest.emoji}</span>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: isSelected ? NAVY : SLATE }}>
+              {dest.label}
+            </div>
+            <div style={{ fontSize: 11, color: SLATE, marginTop: 2, opacity: 0.8 }}>
+              {dest.subtitle}
+            </div>
+          </div>
+          {isSelected && (
+            <span style={{ color: GOLD, fontWeight: 700, fontSize: "1rem" }}>✓</span>
+          )}
+        </button>
+      );
+    }
+
+    function CompareRow({ dest, monthly, usePoints, selected, onClick }) {
+      const lo  = usePoints ? dest.pointsLow  : dest.cashLow;
+      const hi  = usePoints ? dest.pointsHigh : dest.cashHigh;
+      const mid = (lo + hi) / 2;
+      const months = Math.ceil(mid / monthly);
+      const isSelected = dest.id === selected;
+      const pct = Math.min(100, (monthly / mid) * 100 * 8);
+
+      return (
+        <button
+          onClick={onClick}
+          style={{
+            display: "flex", alignItems: "center", gap: "0.75rem",
+            width: "100%", padding: "0.55rem 0",
+            borderBottom: `1px solid ${BORDER}`,
+            background: "none", border: "none",
+            cursor: "pointer", textAlign: "left",
+          }}
+        >
+          <span style={{ fontSize: "1rem", width: 22, flexShrink: 0 }}>{dest.emoji}</span>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 12, fontWeight: isSelected ? 600 : 400, color: isSelected ? NAVY : SLATE }}>
+              {dest.label}
+            </div>
+            <div style={{ height: 4, background: BORDER, borderRadius: 2, marginTop: 4, overflow: "hidden" }}>
+              <div className="bar-fill" style={{
+                height: "100%", width: `${pct}%`,
+                background: isSelected ? GOLD : "#C8D5CF", borderRadius: 2,
+              }} />
+            </div>
+          </div>
+          <div style={{
+            fontSize: 12, fontWeight: 600,
+            color: isSelected ? GOLD : SLATE,
+            whiteSpace: "nowrap", minWidth: 54, textAlign: "right",
+          }}>
+            {months <= 1 ? "≤ 1 mo" : `${months} mo`}
+          </div>
+        </button>
+      );
+    }
+
+    function App() {
+      const [monthly,    setMonthly]    = useState(500);
+      const [inputValue, setInputValue] = useState("500");
+      const [usePoints,  setUsePoints]  = useState(false);
+      const [selected,   setSelected]   = useState("europe");
+      const [animKey,    setAnimKey]    = useState(0);
+
+      useEffect(() => { setAnimKey(k => k + 1); }, [selected, usePoints, monthly]);
+
+      const dest     = DESTINATIONS.find(d => d.id === selected);
+      const low      = usePoints ? dest.pointsLow  : dest.cashLow;
+      const high     = usePoints ? dest.pointsHigh : dest.cashHigh;
+      const mid      = Math.round((low + high) / 2);
+      const monthsMid  = Math.ceil(mid / monthly);
+      const monthsLow  = Math.ceil(low / monthly);
+      const monthsHigh = Math.ceil(high / monthly);
+      const barPct   = Math.min(100, (monthly / mid) * 100 * 8);
+
+      const handleInput = (e) => {
+        const val = e.target.value.replace(/[^0-9]/g, "");
+        setInputValue(val);
+        const n = parseInt(val, 10);
+        if (!isNaN(n) && n > 0) setMonthly(n);
+      };
+
+      const PRESETS = [250, 500, 750, 1000, 1500];
+
+      const label = monthsMid < 1
+        ? "< 1 month"
+        : monthsMid === 1
+        ? "1 month"
+        : `${monthsMid} months`;
+
+      return (
+        <div style={{ fontFamily: "'DM Sans', sans-serif", background: CREAM, minHeight: "100vh" }}>
+
+          {/* ── Header ── */}
+          <div style={{ background: NAVY, padding: "2.5rem 1.5rem 2rem", textAlign: "center" }}>
+            <a href="/" style={{ textDecoration: "none" }}>
+              <div style={{
+                fontSize: 11, fontWeight: 600, letterSpacing: "0.15em",
+                textTransform: "uppercase", color: GOLD, marginBottom: "0.6rem",
+              }}>
+                The Global Edit
+              </div>
+            </a>
+            <h1 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(1.5rem, 5vw, 2.2rem)",
+              fontWeight: 600, color: "#fff",
+              margin: "0 0 0.5rem", lineHeight: 1.2,
+            }}>
+              Travel Budget Calculator
+            </h1>
+            <p style={{
+              color: "rgba(255,255,255,0.6)", fontSize: "0.875rem",
+              margin: "0 auto", maxWidth: 380,
+            }}>
+              Set your monthly savings, pick a destination, and see exactly when you can book.
+            </p>
+          </div>
+
+          {/* ── Main ── */}
+          <div style={{ maxWidth: 620, margin: "0 auto", padding: "1.5rem 1rem 4rem" }}>
+
+            {/* Monthly savings */}
+            <div style={{
+              background: WHITE, border: `1px solid ${BORDER}`,
+              borderRadius: 8, padding: "1.5rem", marginBottom: "1rem",
+            }}>
+              <label style={{
+                display: "block", fontSize: 11, fontWeight: 600,
+                letterSpacing: "0.1em", textTransform: "uppercase",
+                color: SLATE, marginBottom: "0.75rem",
+              }}>
+                Monthly savings for travel
+              </label>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+                <div style={{ position: "relative", flex: 1 }}>
+                  <span style={{
+                    position: "absolute", left: "0.9rem", top: "50%",
+                    transform: "translateY(-50%)",
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: "1.2rem", color: NAVY, fontWeight: 600,
+                    pointerEvents: "none",
+                  }}>$</span>
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    value={inputValue}
+                    onChange={handleInput}
+                    aria-label="Monthly savings amount"
+                    style={{
+                      width: "100%",
+                      padding: "0.8rem 0.75rem 0.8rem 2rem",
+                      fontSize: "1.25rem",
+                      fontFamily: "'Playfair Display', serif",
+                      fontWeight: 600, color: NAVY,
+                      background: WHITE,
+                      border: `2px solid ${GOLD}`,
+                      borderRadius: 6, outline: "none",
+                    }}
+                  />
+                </div>
+                <span style={{ color: SLATE, fontSize: "0.85rem", whiteSpace: "nowrap" }}>/ month</span>
+              </div>
+
+              {/* Presets */}
+              <div style={{ display: "flex", gap: "0.4rem", marginTop: "0.75rem", flexWrap: "wrap" }}>
+                {PRESETS.map(v => (
+                  <button key={v} onClick={() => { setMonthly(v); setInputValue(String(v)); }}
+                    style={{
+                      padding: "0.3rem 0.65rem", fontSize: 12, fontWeight: 500,
+                      border: `1px solid ${monthly === v ? GOLD : BORDER}`,
+                      borderRadius: 4,
+                      background: monthly === v ? GOLD : WHITE,
+                      color: monthly === v ? "#fff" : SLATE,
+                      cursor: "pointer", transition: "all 0.15s",
+                    }}>
+                    ${v.toLocaleString()}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Points toggle */}
+            <div style={{
+              background: WHITE, border: `1px solid ${BORDER}`,
+              borderRadius: 8, padding: "1rem 1.25rem",
+              marginBottom: "1rem",
+              display: "flex", alignItems: "center",
+              justifyContent: "space-between", gap: "1rem",
+            }}>
+              <div>
+                <div style={{ fontSize: 13, fontWeight: 500, color: NAVY }}>
+                  I'm earning travel rewards points
+                </div>
+                <div style={{ fontSize: 11, color: SLATE, marginTop: 2, opacity: 0.8 }}>
+                  Shows cost with points covering flights or hotel
+                </div>
+              </div>
+              <Toggle on={usePoints} onToggle={() => setUsePoints(p => !p)} />
+            </div>
+
+            {/* Destination picker */}
+            <div style={{
+              background: WHITE, border: `1px solid ${BORDER}`,
+              borderRadius: 8, padding: "1.25rem 1.25rem 0.75rem",
+              marginBottom: "1rem",
+            }}>
+              <div style={{
+                fontSize: 11, fontWeight: 600,
+                letterSpacing: "0.1em", textTransform: "uppercase",
+                color: SLATE, marginBottom: "0.75rem",
+              }}>
+                Where are you going?
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", paddingBottom: "0.5rem" }}>
+                {DESTINATIONS.map(d => (
+                  <DestButton key={d.id} dest={d} selected={selected} onClick={() => setSelected(d.id)} />
+                ))}
+              </div>
+            </div>
+
+            {/* Result card */}
+            <div key={animKey} className="result-card" style={{
+              background: NAVY, borderRadius: 8,
+              padding: "1.75rem 1.5rem", marginBottom: "1rem",
+            }}>
+              {/* Card header */}
+              <div style={{
+                display: "flex", alignItems: "center", gap: "0.5rem",
+                marginBottom: "1.25rem",
+              }}>
+                <span style={{ fontSize: "1.1rem" }}>{dest.emoji}</span>
+                <span style={{
+                  fontSize: 11, fontWeight: 600,
+                  letterSpacing: "0.12em", textTransform: "uppercase", color: GOLD,
+                }}>
+                  {dest.label}
+                </span>
+                {usePoints && (
+                  <span style={{
+                    marginLeft: "0.25rem",
+                    background: GOLD, color: "#fff",
+                    fontSize: 9, padding: "2px 6px",
+                    borderRadius: 3, letterSpacing: "0.08em",
+                    textTransform: "uppercase", fontWeight: 700,
+                  }}>
+                    With Points
+                  </span>
+                )}
+              </div>
+
+              {/* Cost + duration row */}
+              <div style={{
+                display: "grid", gridTemplateColumns: "1fr 1fr",
+                gap: "1rem", marginBottom: "1.5rem",
+              }}>
+                <div>
+                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginBottom: 4 }}>
+                    Trip cost range
+                  </div>
+                  <div style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: "clamp(1.1rem, 3.5vw, 1.4rem)",
+                    fontWeight: 600, color: "#fff", lineHeight: 1.2,
+                  }}>
+                    {fmt(low)}<span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.85em" }}> – </span>{fmt(high)}
+                  </div>
+                </div>
+                <div>
+                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginBottom: 4 }}>
+                    Duration
+                  </div>
+                  <div style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: "clamp(1.1rem, 3.5vw, 1.4rem)",
+                    fontWeight: 600, color: "#fff", lineHeight: 1.2,
+                  }}>
+                    {dest.nights} nights
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline */}
+              <div style={{
+                background: "rgba(255,255,255,0.06)", borderRadius: 6,
+                padding: "1.25rem", marginBottom: "1rem",
+              }}>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginBottom: "0.4rem" }}>
+                  At {fmt(monthly)}/month, you'll be ready in
+                </div>
+                <div style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: "clamp(1.8rem, 8vw, 2.6rem)",
+                  fontWeight: 600, color: GOLD,
+                  lineHeight: 1, marginBottom: "0.3rem",
+                }}>
+                  {label}
+                </div>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.35)" }}>
+                  {fmt(monthly * monthsLow)} – {fmt(monthly * monthsHigh)} saved · varies by season and booking
+                </div>
+              </div>
+
+              {/* Progress bar */}
+              <div style={{ marginBottom: "1rem" }}>
+                <div style={{
+                  display: "flex", justifyContent: "space-between",
+                  fontSize: 11, color: "rgba(255,255,255,0.4)",
+                  marginBottom: "0.35rem",
+                }}>
+                  <span>Monthly savings vs. trip cost</span>
+                  <span>{Math.min(100, Math.round((monthly / mid) * 100))}% per month</span>
+                </div>
+                <div style={{
+                  height: 6, background: "rgba(255,255,255,0.1)",
+                  borderRadius: 3, overflow: "hidden",
+                }}>
+                  <div className="bar-fill" style={{
+                    height: "100%", width: `${barPct}%`,
+                    background: GOLD, borderRadius: 3,
+                  }} />
+                </div>
+              </div>
+
+              {/* Highlight tags */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
+                {dest.highlights.map(h => (
+                  <span key={h} style={{
+                    fontSize: 11, color: "rgba(255,255,255,0.6)",
+                    background: "rgba(255,255,255,0.08)",
+                    padding: "3px 10px", borderRadius: 3,
+                  }}>
+                    {h}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Points callout */}
+            {usePoints && (
+              <div style={{
+                background: "#FDF8F0", border: `1px solid ${GOLD}`,
+                borderRadius: 8, padding: "0.9rem 1.1rem",
+                marginBottom: "1rem", fontSize: 12, color: SLATE, lineHeight: 1.6,
+              }}>
+                <span style={{ fontWeight: 600, color: NAVY }}>Points strategy: </span>
+                {dest.pointsNote}.
+              </div>
+            )}
+
+            {/* Comparison strip */}
+            <div style={{
+              background: WHITE, border: `1px solid ${BORDER}`,
+              borderRadius: 8, padding: "1.25rem 1.25rem 0.5rem",
+              marginBottom: "1.5rem",
+            }}>
+              <div style={{
+                fontSize: 11, fontWeight: 600,
+                letterSpacing: "0.1em", textTransform: "uppercase",
+                color: SLATE, marginBottom: "0.6rem",
+              }}>
+                All destinations at {fmt(monthly)}/month
+              </div>
+              {DESTINATIONS.map(d => (
+                <CompareRow
+                  key={d.id} dest={d}
+                  monthly={monthly} usePoints={usePoints}
+                  selected={selected} onClick={() => setSelected(d.id)}
+                />
+              ))}
+            </div>
+
+            {/* Footer */}
+            <p style={{
+              fontSize: 11, color: "#A0AEC0",
+              textAlign: "center", lineHeight: 1.7, margin: 0,
+            }}>
+              Estimates based on 2 travelers departing a major US hub.
+              Figures verified from{" "}
+              <a href="/posts/finance/budgeting/what-10000-buys-in-travel/"
+                style={{ color: GOLD, textDecoration: "none" }}>
+                What $10,000 Actually Buys You in Travel
+              </a>.{" "}
+              Points values reflect current 2026 program rates.
+              Always verify directly with airlines and hotels before booking.
+            </p>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+</html>
