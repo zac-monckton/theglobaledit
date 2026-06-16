@@ -53,7 +53,7 @@ That said, more properties doesn't mean better value per point. The two things a
 
 ## What Bonvoy Points Are Actually Worth
 
-Here's the number that governs everything else: in 2026, Marriott Bonvoy points are worth approximately **0.7 to 0.9 cents each** for typical hotel redemptions. TPG's June 2026 valuation places them at 0.8 cents per point. Independent analysis tracking real-world redemptions puts the median observed value at roughly 0.77 cents per point.
+Here's the number that governs everything else: in 2026, Marriott Bonvoy points are worth approximately **0.7 to 0.9 cents each** for typical hotel redemptions. Independent analysis tracking real-world redemptions puts the median observed value at roughly 0.77–0.8 cents per point.
 
 That baseline is lower than most other major travel currencies. Chase Ultimate Rewards points, Amex Membership Rewards, and Citi ThankYou Points all carry valuations above 1.5 cents each when used well. Even Delta SkyMiles, which has its own valuation challenges, benchmarks slightly above Bonvoy on average.
 
@@ -107,6 +107,10 @@ Marriott's own page describes earning as up to 10 points per $1 on hotel stays, 
   <p>The important caveat: in most cases, your Amex or Chase points are worth more in other programs. Transfer to Bonvoy only when you have a specific redemption in hand that pencils out — not speculatively.</p>
 </div>
 
+**One more reason to watch Chase UR transfer bonuses closely:** Chase periodically runs limited-time transfer bonuses to Marriott Bonvoy — and they can be significant. As of June 2026, Chase is offering a **55% bonus** on UR-to-Bonvoy transfers, meaning every 1,000 Chase points becomes 1,550 Bonvoy points. That's the highest bonus we've seen from Chase to Marriott. It won't be available indefinitely, and it doesn't make speculative transfers wise — but if you have a specific Bonvoy redemption in hand, this window meaningfully changes the math. Hyatt, by comparison, has never offered a transfer bonus of this magnitude through Chase UR.
+
+<img src="/images/chase-ur-bonvoy-55pct-bonus.png" alt="Chase Ultimate Rewards offering 55% bonus points transfer to Marriott Bonvoy" loading="lazy" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 1rem 0;">
+
 **Through Bonvoy's dining program** and various travel and lifestyle partners, members can also earn points without a hotel stay. Hertz car rentals earn up to 700 points, and select airline partners allow miles-to-points transfers at a 1:1 ratio with Air Canada Aeroplan.
 
 ## How to Redeem Bonvoy Points
@@ -122,6 +126,38 @@ Marriott Bonvoy Moments, the program's experiences platform, lets members use po
 Cash + Points is a hybrid redemption where you pay a lower points amount alongside a cash co-pay. This can occasionally make sense when you're short on points for a specific booking, but the effective per-point value is usually no better than a straight points redemption and sometimes worse.
 
 PointSavers offers discounts of up to 20% off standard award pricing at participating properties. This is worth checking when you're searching — the same stay that prices at 60,000 points might show a PointSavers rate of 48,000 points — but availability is limited and property selection rotates.
+
+<div class="info-box">
+  <div class="info-box-title">How to Get the Most Value from Bonvoy Points</div>
+  <p>Not all redemptions are equal. Here's how the options stack up, best to worst:</p>
+  <div style="border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1rem 0;">
+    <div style="background: #0F6E56; display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 13px; font-weight: 500; color: #fff;">Luxury hotel stays (high cash rate, 5+ nights)</div>
+      <div style="font-size: 13px; font-weight: 600; color: #fff; white-space: nowrap; margin-left: 1rem;">1.1–1.5¢/pt ✓ Best</div>
+    </div>
+    <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 13px; color: var(--slate);">Standard hotel stays (any property)</div>
+      <div style="font-size: 13px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">0.77–0.9¢/pt</div>
+    </div>
+    <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 13px; color: var(--slate);">PointSavers rates (up to 20% off)</div>
+      <div style="font-size: 13px; font-weight: 500; color: var(--navy); white-space: nowrap; margin-left: 1rem;">0.9–1.1¢/pt</div>
+    </div>
+    <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 13px; color: var(--slate);">Cash + Points hybrid bookings</div>
+      <div style="font-size: 13px; font-weight: 500; color: var(--slate-light); white-space: nowrap; margin-left: 1rem;">~0.7¢/pt — situational</div>
+    </div>
+    <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 13px; color: var(--slate);">Bonvoy Moments (experiences)</div>
+      <div style="font-size: 13px; font-weight: 500; color: #C0392B; white-space: nowrap; margin-left: 1rem;">~0.4¢/pt — avoid</div>
+    </div>
+    <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
+      <div style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,.8);">Airline transfers (3:1 ratio)</div>
+      <div style="font-size: 13px; font-weight: 600; color: #E24B4A; white-space: nowrap; margin-left: 1rem;">~0.4–0.5¢/pt — worst use</div>
+    </div>
+  </div>
+  <p style="margin-top: .5rem; font-size: 13px;">The rule of thumb: if a redemption pencils out below 0.7 cents per point, you're better off paying cash and saving your points for a stronger opportunity.</p>
+</div>
 
 <div class="pro-tip">
   <div class="pro-tip-icon">💡</div>
@@ -156,21 +192,70 @@ A concrete example: the W Maldives at a cash rate of roughly $1,200 per night mi
 
 The fifth-night-free benefit is available to all Bonvoy members — you don't need elite status to access it. It applies to standard award redemptions and also to PointSavers rates where available. The one requirement: all five nights must be booked as a single reservation at the same property.
 
+**A real-world example:** The Cloudveil, Autograph Collection in Teton Village, Wyoming — a luxury property minutes from Jackson Hole Mountain Resort — prices at 473,500 points for a four-night award stay in August, or roughly 118,375 points per night. The cash rate for the same dates runs $1,626 per night. That works out to **1.37 cents per point** — well above the Bonvoy average and exactly the kind of high-cash-rate redemption the program rewards. Add a fifth night and that free night saves you another 118,375 points — roughly $1,626 in value at cash-equivalent rates.
+
+<img src="/images/cloudveil-jackson-hole-award.png" alt="The Cloudveil Autograph Collection in Jackson Hole priced at 473,500 Bonvoy points for 4 nights, cash rate $1,626 per night" loading="lazy" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 1rem 0;">
+
 If you're planning a longer stay at a single property, structure your booking to take advantage of this. A four-night stay and a five-night stay at identical nightly pricing have very different effective costs per night.
 
 ## Elite Status - What Each Tier Gets You
 
 Marriott Bonvoy has five elite tiers, earned through qualifying nights per calendar year. Here's what each one actually delivers:
 
-**Silver Elite (10 nights):** A 10% bonus on base points earning and priority late checkout. That's it. Silver is barely a tier — it's an acknowledgment that you've stayed somewhere ten times. The benefits don't move the needle.
+<div style="border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0;">
+  <div style="background: var(--navy); display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr 1.2fr 1.4fr; padding: .6rem 1rem; gap: .5rem;">
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--gold);">Tier</div>
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--gold);">Nights</div>
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--gold);">Bonus Points</div>
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--gold);">Room Upgrade</div>
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--gold);">Late Checkout</div>
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--gold);">Standout Perk</div>
+  </div>
+  <div style="background: var(--cream); display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr 1.2fr 1.4fr; padding: .75rem 1rem; gap: .5rem; border-top: 1px solid var(--border);">
+    <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Silver Elite</div>
+    <div style="font-size: 13px; color: var(--slate);">10</div>
+    <div style="font-size: 13px; color: var(--slate);">+10%</div>
+    <div style="font-size: 13px; color: var(--slate);">—</div>
+    <div style="font-size: 13px; color: var(--slate);">Priority</div>
+    <div style="font-size: 13px; color: var(--slate-light);">Barely a tier</div>
+  </div>
+  <div style="background: #fff; display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr 1.2fr 1.4fr; padding: .75rem 1rem; gap: .5rem; border-top: 1px solid var(--border);">
+    <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Gold Elite</div>
+    <div style="font-size: 13px; color: var(--slate);">25</div>
+    <div style="font-size: 13px; color: var(--slate);">+25%</div>
+    <div style="font-size: 13px; color: var(--slate);">Enhanced (avail.)</div>
+    <div style="font-size: 13px; color: var(--slate);">2pm guaranteed</div>
+    <div style="font-size: 13px; color: var(--slate);">Guaranteed 2pm checkout</div>
+  </div>
+  <div style="background: var(--cream); display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr 1.2fr 1.4fr; padding: .75rem 1rem; gap: .5rem; border-top: 1px solid var(--border);">
+    <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Platinum Elite</div>
+    <div style="font-size: 13px; color: var(--slate);">50</div>
+    <div style="font-size: 13px; color: var(--slate);">+50%</div>
+    <div style="font-size: 13px; color: var(--slate);">Suites (avail.)</div>
+    <div style="font-size: 13px; color: var(--slate);">4pm (avail.)</div>
+    <div style="font-size: 13px; color: var(--slate);">Welcome gift + lounge access</div>
+  </div>
+  <div style="background: #fff; display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr 1.2fr 1.4fr; padding: .75rem 1rem; gap: .5rem; border-top: 1px solid var(--border);">
+    <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Titanium Elite</div>
+    <div style="font-size: 13px; color: var(--slate);">75</div>
+    <div style="font-size: 13px; color: var(--slate);">+75%</div>
+    <div style="font-size: 13px; color: var(--slate);">Suites (avail.)</div>
+    <div style="font-size: 13px; color: var(--slate);">4pm (avail.)</div>
+    <div style="font-size: 13px; color: var(--slate);">Guaranteed reservations</div>
+  </div>
+  <div style="background: var(--navy); display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr 1.2fr 1.4fr; padding: .75rem 1rem; gap: .5rem; border-top: 1px solid var(--border);">
+    <div style="font-size: 13px; font-weight: 500; color: var(--gold);">Ambassador Elite</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,.7);">100 + $23K</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,.7);">+75%</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,.7);">Suites (avail.)</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,.7);">Your24™</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,.7);">Personal Ambassador + Your24</div>
+  </div>
+</div>
 
-**Gold Elite (25 nights):** A 25% points bonus, enhanced room upgrade upon arrival (subject to availability, and Marriott's upgrade delivery is inconsistent), and guaranteed 2pm late checkout. Gold is where the program starts becoming useful for leisure travelers. The 2pm checkout is genuinely valuable on travel days.
+A few notes on what the table doesn't fully capture. **Silver is barely worth mentioning** — 10 nights and a 10% points bump is a participation trophy, not a loyalty reward. **Gold** is the first tier that actually changes your experience: the guaranteed 2pm checkout is genuinely useful on any travel day. **Platinum at 50 nights** is where Bonvoy starts to compete — lounge access and the welcome gift (choose between bonus points, a breakfast offering, or an amenity) add up over multiple stays. **Titanium and Ambassador** reward travelers who are essentially living in Marriott properties, with Ambassador's Your24 benefit — choose your own check-in time and keep the room until the same hour on departure — being the single most practical elite perk in the whole program for long-haul travelers.
 
-**Platinum Elite (50 nights):** A 50% points bonus, enhanced upgrade including select suites (subject to availability), a welcome gift choice upon arrival (points, a breakfast offering, or an amenity — varies by brand), and access to club lounges at properties that have them. Platinum is the first tier where Bonvoy becomes competitive with Hyatt Globalist in terms of practical benefits — though Globalist is still meaningfully stronger.
-
-**Titanium Elite (75 nights):** A 75% points bonus, the same upgrade and welcome gift benefits as Platinum, and guaranteed reservation benefits. Titanium is the threshold at which Bonvoy becomes genuinely generous with its top-staying members — but 75 nights per year is a significant travel commitment.
-
-**Ambassador Elite (100 nights + $23,000 spend):** The top tier, requiring both a night threshold and a minimum annual spend. Ambassador members receive a dedicated personal Ambassador available to assist with reservations and requests, plus the Your24 benefit — the ability to choose your own check-in time and keep the room until the same hour on departure day. The Your24 perk is exceptional for long-haul travelers whose schedules don't align with standard hotel check-in times.
+The honest caveat on upgrades across all tiers: Marriott's upgrade delivery is inconsistent. "Subject to availability" means different things at different properties, and unlike World of Hyatt's Globalist confirmed suite upgrades, Bonvoy upgrades are never guaranteed until check-in.
 
 <div class="pro-tip">
   <div class="pro-tip-icon">💡</div>
