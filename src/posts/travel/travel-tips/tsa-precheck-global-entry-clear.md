@@ -1,7 +1,7 @@
 ---
 title: "TSA PreCheck vs. Global Entry vs. CLEAR: Which Ones Are Actually Worth It"
 description: "Three programs, three different problems they solve. Here's the real cost, the real wait, and which combination actually makes sense for how you travel."
-date: 2026-06-19
+date: 2026-06-20
 layout: layouts/article.njk
 category: Travel Tips
 parentCategory: Travel
