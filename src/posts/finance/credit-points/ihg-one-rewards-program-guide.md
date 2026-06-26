@@ -1,7 +1,7 @@
 ---
 title: "IHG One Rewards: The Underrated Hotel Program With a Secret Weapon"
 description: "IHG One Rewards has nearly 7,000 hotels, 21 brands, and one benefit no other program matches at zero annual fee. Here's how the program actually works and where it earns its place."
-date: 2026-06-25
+date: 2026-06-23
 layout: layouts/article.njk
 category: Credit & Points
 parentCategory: Personal Finance
@@ -53,43 +53,6 @@ IHG One Rewards has five membership levels. The first three are earned through q
 <img src="/images/ihg-status-tiers-qualification.png" alt="IHG One Rewards elite status tier qualification table showing nights, points, and bonus point requirements" loading="lazy" style="width: 100%; border-radius: 4px; margin: 1rem 0 0.5rem;">
 <p style="font-size: 12px; color: var(--slate-light); text-align: center; margin: 0 0 1.5rem;">Source: IHG One Rewards</p>
 
-<div style="border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0;">
-  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div>
-      <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Club (base)</div>
-      <div style="font-size: 11px; color: var(--slate-light);">Free to join</div>
-    </div>
-    <div style="font-size: 13px; color: var(--slate); text-align: right; margin-left: 1rem;">Member rates · earn points · no blackout dates</div>
-  </div>
-  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div>
-      <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Silver Elite</div>
-      <div style="font-size: 11px; color: var(--slate-light);">10 qualifying nights</div>
-    </div>
-    <div style="font-size: 13px; color: var(--slate); text-align: right; margin-left: 1rem;">20% bonus points · rollover nights · points don't expire</div>
-  </div>
-  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div>
-      <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Gold Elite</div>
-      <div style="font-size: 11px; color: var(--slate-light);">20 nights or 40,000 qualifying points</div>
-    </div>
-    <div style="font-size: 13px; color: var(--slate); text-align: right; margin-left: 1rem;">40% bonus points · Milestone Rewards (from 20 nights)</div>
-  </div>
-  <div style="background: var(--cream); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);">
-    <div>
-      <div style="font-size: 13px; font-weight: 500; color: var(--navy);">Platinum Elite</div>
-      <div style="font-size: 11px; color: var(--slate-light);">40 nights, 60,000 qualifying points, or IHG Premier card</div>
-    </div>
-    <div style="font-size: 13px; color: var(--slate); text-align: right; margin-left: 1rem;">60% bonus points · upgrades · welcome amenity · early check-in</div>
-  </div>
-  <div style="background: var(--navy); display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.25rem;">
-    <div>
-      <div style="font-size: 13px; font-weight: 500; color: #fff;">Diamond Elite</div>
-      <div style="font-size: 11px; color: rgba(255,255,255,.45);">70 nights, 120,000 qualifying points, or $40K card spend</div>
-    </div>
-    <div style="font-size: 13px; color: var(--gold); text-align: right; margin-left: 1rem; font-weight: 500;">Daily breakfast for two · Diamond support line · all Platinum benefits</div>
-  </div>
-</div>
 
 A few things worth noting: Platinum Elite is the most attainable meaningful tier for the average traveler — and the IHG One Rewards Premier card ($99/year) delivers it automatically, without needing to hit 40 qualifying nights or 60,000 qualifying points. That means complimentary upgrades, a welcome amenity at check-in, and early check-in access just for carrying the card.
 
@@ -195,6 +158,42 @@ Without the fourth-night-free benefit, four nights would cost 390,000 points. Wi
 ## How IHG Compares to Hyatt, Marriott, and Hilton
 
 This is the honest positioning for where IHG fits in a smart travel wallet.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: .75rem; margin: 1.5rem 0;">
+  <div style="background: var(--gold); border-radius: 4px; padding: 1.25rem 1rem;">
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.8); margin-bottom: .5rem;">World of Hyatt</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">1.7¢</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.65); margin-top: .25rem;">avg · peak 2.5¢+</div>
+    <div style="border-top: 1px solid rgba(255,255,255,.2); margin: .75rem 0 .5rem;"></div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.9); font-weight: 500;">Best raw value</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.6); margin-top: .2rem;">Chase UR · Bilt</div>
+  </div>
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem;">
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">Marriott Bonvoy</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">0.8¢</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .25rem;">avg · peak 1.5¢</div>
+    <div style="border-top: 1px solid rgba(255,255,255,.1); margin: .75rem 0 .5rem;"></div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.7);">5th night free (Silver+)</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .2rem;">Chase UR · Bilt</div>
+  </div>
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem;">
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">Hilton Honors</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">0.5¢</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .25rem;">avg · peak 1.2¢</div>
+    <div style="border-top: 1px solid rgba(255,255,255,.1); margin: .75rem 0 .5rem;"></div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.7);">5th night free (Silver+)</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .2rem;">No major flexible transfers</div>
+  </div>
+  <div style="background: var(--navy); border-radius: 4px; padding: 1.25rem 1rem; border: 1.5px solid var(--gold);">
+    <div style="font-size: 10px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem;">IHG One Rewards</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 600; color: #fff; line-height: 1;">0.55¢</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .25rem;">avg · peak 1.5¢</div>
+    <div style="border-top: 1px solid rgba(255,255,255,.1); margin: .75rem 0 .5rem;"></div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.7);">4th night free ($0 card)</div>
+    <div style="font-size: 11px; color: rgba(255,255,255,.4); margin-top: .2rem;">Chase UR · Bilt</div>
+  </div>
+</div>
+<p style="font-size: 12px; color: var(--slate-light); margin: -.5rem 0 1.5rem;">Averages are approximate and vary by property and redemption. Peak values reflect best attainable redemptions using each program's primary benefit. All figures in cents per point.</p>
 
 **IHG vs. Hyatt:** Hyatt wins on per-point value and on the quality of its luxury redemptions — Park Hyatt and Andaz properties represent the best cents-per-point in the hotel loyalty space. IHG wins on footprint (nearly 7,000 properties vs. Hyatt's roughly 1,200) and on the fourth-night-free benefit, which Hyatt doesn't offer at any fee tier. If you're a four-or-more-nights-per-stay traveler and Kimpton or InterContinental properties fit your destinations, IHG can compete with or beat Hyatt on specific redemptions.
 
